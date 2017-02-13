@@ -64,7 +64,6 @@
         android:text="Recuperar"
         android:layout_height="50dp"
         android:id="@+id/buttonRecuperar"
-        android:background="@drawable/botao_branco"
         android:layout_width="230dp"
         android:layout_marginEnd="16dp"
         app:layout_constraintRight_toRightOf="parent"
