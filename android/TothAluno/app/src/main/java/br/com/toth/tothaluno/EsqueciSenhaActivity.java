@@ -14,7 +14,7 @@ public class EsqueciSenhaActivity extends AppCompatActivity{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.esqueci_senha);
+        setContentView(R.layout.activity_esqueciSenha);
 
     }
 

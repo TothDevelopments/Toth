@@ -15,7 +15,7 @@ public class LoginActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.login);
+        setContentView(R.layout.activity_login);
 
     }
 
@@ -38,6 +38,6 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     public void Toast(View view){
-        Toast.makeText(getApplicationContext(), "Botão login tocado.", Toast.LENGTH_SHORT).show();
+        Toast.makeText(getApplicationContext(), "Botão activity_login tocado.", Toast.LENGTH_SHORT).show();
     }
 }

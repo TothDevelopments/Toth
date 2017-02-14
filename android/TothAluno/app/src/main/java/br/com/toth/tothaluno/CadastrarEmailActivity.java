@@ -14,11 +14,11 @@ public class CadastrarEmailActivity extends AppCompatActivity{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.cadastrar_email);
+        setContentView(R.layout.activity_cadastrarEmail);
 
     }
 
     public void Toast(View view){
-        Toast.makeText(getApplicationContext(), "Botão login tocado.", Toast.LENGTH_LONG).show();
+        Toast.makeText(getApplicationContext(), "Botão activity_login tocado.", Toast.LENGTH_LONG).show();
     }
 }
