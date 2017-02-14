@@ -12,7 +12,7 @@
         <activity
             android:name=".MainActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/Theme.AppCompat.NoActionBar">
+            android:label="Principal">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,14 +23,14 @@
         <activity
             android:name=".LoginActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:theme="@style/AppThemeNoActionBar"
             android:parentActivityName=".MainActivity" >
         </activity>
 
         <activity
             android:name=".CadastrarEmailActivity"
             android:screenOrientation="portrait"
-            android:label="Cadastre-se"
+            android:label="Cadastrar com e-mail"
             android:parentActivityName=".LoginActivity">
         </activity>
 

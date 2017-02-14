@@ -4,9 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    style="@android:style/Widget.Material.Light.ScrollView"
+    style="@android:style/Widget.DeviceDefault.Light.ScrollView"
     android:fillViewport="true"
-    android:background="@color/colorBackgroundLogin"
     android:screenOrientation="portrait" >
 
         <android.support.constraint.ConstraintLayout
@@ -14,11 +13,9 @@
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:background="@color/colorBackgroundLogin"
             android:focusable="true"
-            android:focusableInTouchMode="true"
-            android:minHeight="155dp"
-            android:id="@+id/contrain">
-
+            android:focusableInTouchMode="true" >
 
                 <ImageView
                     app:srcCompat="@drawable/toth_imagem_login"
@@ -50,7 +47,8 @@
                     android:textSize="14sp"
                     android:onClick="entrarGoogle"
                     android:layout_width="270dp"
-                    android:layout_height="50dp" />
+                    android:layout_height="50dp"
+                    android:textColor="@android:color/white" />
 
                 <Button
                     android:text="Entrar com Facebook"
@@ -68,7 +66,8 @@
                     android:textSize="14sp"
                     android:onClick="entrarFacebook"
                     android:layout_width="270dp"
-                    android:layout_height="50dp" />
+                    android:layout_height="50dp"
+                    android:textColor="@android:color/white" />
 
                 <TextView
                     android:text="OU"
@@ -129,7 +128,8 @@
                     app:layout_constraintTop_toBottomOf="@+id/imageViewInputSenha"
                     android:onClick="Toast"
                     android:background="@drawable/botao_branco"
-                    android:layout_width="270dp" />
+                    android:layout_width="270dp"
+                    android:textColor="@android:color/black" />
 
 
 
@@ -145,7 +145,7 @@
                     android:layout_marginRight="24dp"
                     android:background="@android:color/transparent"
                     android:hint="E-mail"
-                    android:textColorHint="?attr/colorButtonNormal"
+                    android:textColorHint="?attr/colorAccent"
                     android:textColor="@android:color/white"
                     android:textColorLink="@android:color/white"
                     app:layout_constraintLeft_toRightOf="@+id/imageViewIconeEmail"
@@ -166,7 +166,7 @@
                     android:background="@android:color/transparent"
                     android:hint="Senha"
                     android:textColor="@android:color/white"
-                    android:textColorHint="?attr/colorButtonNormal"
+                    android:textColorHint="?attr/colorAccent"
                     android:layout_marginStart="24dp"
                     app:layout_constraintLeft_toRightOf="@+id/imageViewIconeSenha"
                     android:layout_marginLeft="24dp"

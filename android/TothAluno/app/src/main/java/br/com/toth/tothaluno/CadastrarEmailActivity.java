@@ -14,7 +14,7 @@ public class CadastrarEmailActivity extends AppCompatActivity{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_cadastrarEmail);
+        setContentView(R.layout.activity_cadastrar_email);
 
     }
 
