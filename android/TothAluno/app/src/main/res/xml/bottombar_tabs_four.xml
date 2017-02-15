@@ -2,14 +2,18 @@
 <tabs>
     <tab
         id="@+id/tab_atividades"
-        icon="@drawable/ic_library_books_white_24dp"/>
+        icon="@drawable/ic_library_books_white_24dp"
+        title="Atividades" />
     <tab
         id="@+id/tab_calendario"
-        icon="@drawable/ic_today_white_24dp"/>
+        icon="@drawable/ic_today_white_24dp"
+        title="Agenda" />
     <tab
         id="@+id/tab_chats"
-        icon="@drawable/ic_chat_white_24dp"/>
+        icon="@drawable/ic_chat_white_24dp"
+        title="Conversas" />
     <tab
         id="@+id/tab_opcoes"
-        icon="@drawable/ic_settings_white_24dp"/>
+        icon="@drawable/ic_settings_white_24dp"
+        title="Opções" />
 </tabs>

@@ -3,6 +3,75 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/listaGrupos"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:background="@color/colorBackgroundListaGrupos" >
+
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@xml/circulo_grupo"
+                android:id="@+id/imageButton1"
+                android:layout_margin="10dp"
+                android:background="@color/colorBackgroundListaGrupos"/>
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@xml/circulo_grupo"
+                android:id="@+id/imageButton2"
+                android:layout_margin="10dp"
+                android:background="@color/colorBackgroundListaGrupos"/>
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@xml/circulo_grupo"
+                android:id="@+id/imageButton3"
+                android:layout_margin="10dp"
+                android:background="@color/colorBackgroundListaGrupos"/>
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@xml/circulo_grupo"
+                android:id="@+id/imageButton4"
+                android:layout_margin="10dp"
+                android:background="@color/colorBackgroundListaGrupos"/>
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@xml/circulo_grupo"
+                android:id="@+id/imageButton5"
+                android:layout_margin="10dp"
+                android:background="@color/colorBackgroundListaGrupos"/>
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@xml/circulo_grupo"
+                android:id="@+id/imageButton6"
+                android:layout_margin="10dp"
+                android:background="@color/colorBackgroundListaGrupos"/>
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@xml/circulo_grupo"
+                android:id="@+id/imageButton7"
+                android:layout_margin="10dp"
+                android:background="@color/colorBackgroundListaGrupos"/>
+
+            </LinearLayout>
+    </HorizontalScrollView>
+
+
     <com.roughike.bottombar.BottomBar
         android:id="@+id/bottomBar"
         android:layout_width="match_parent"
@@ -17,7 +86,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent" >
 
-        <!-- Your loooooong scrolling content here. -->
 
     </android.support.v4.widget.NestedScrollView>
 
