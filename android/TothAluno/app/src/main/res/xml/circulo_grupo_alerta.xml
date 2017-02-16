@@ -4,8 +4,12 @@
     <item>
         <shape android:shape="oval">
             <solid android:color="#EBECEB"/>
+            <stroke
+                android:width="2dp"
+                android:color="#0044ff"/>
         </shape>
     </item>
+
     <item
         android:drawable="@drawable/ic_group"
         android:bottom="20dp"
