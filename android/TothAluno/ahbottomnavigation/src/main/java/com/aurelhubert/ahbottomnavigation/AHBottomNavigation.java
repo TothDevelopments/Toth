@@ -81,12 +81,12 @@ public class AHBottomNavigation extends FrameLayout {
 	private LinearLayout linearLayoutContainer;
 	private View backgroundColorView;
 	private Animator circleRevealAnim;
-	private boolean colored = false;
-	private boolean selectedBackgroundVisible = false;
+	private boolean colored = true;
+	private boolean selectedBackgroundVisible = true;
 	private boolean translucentNavigationEnabled;
 	private boolean isHidden = false;
 	private List<AHNotification> notifications = AHNotification.generateEmptyList(MAX_ITEMS);
-	private boolean isBehaviorTranslationSet = false;
+	private boolean isBehaviorTranslationSet = true;
 	private int currentItem = 0;
 	private int currentColor = 0;
 	private boolean behaviorTranslationEnabled = true;
@@ -107,7 +107,7 @@ public class AHBottomNavigation extends FrameLayout {
 	private int bottomNavigationHeight, navigationBarHeight = 0;
 	private float selectedItemWidth, notSelectedItemWidth;
 	private boolean forceTint = false;
-	private TitleState titleState = TitleState.SHOW_WHEN_ACTIVE;
+	private TitleState titleState = TitleState.ALWAYS_SHOW;
 
 	// Notifications
 	private @ColorInt int notificationTextColor;
@@ -198,8 +198,8 @@ public class AHBottomNavigation extends FrameLayout {
 		bottomNavigationHeight = (int) resources.getDimension(R.dimen.bottom_navigation_height);
 
 		// Item colors
-		titleColorActive = ContextCompat.getColor(context, R.color.colorBottomNavigationAccent);
-		titleColorInactive = ContextCompat.getColor(context, R.color.colorBottomNavigationInactive);
+		titleColorActive = ContextCompat.getColor(context, R.color.colorBottomNavigationActiveColored);
+		titleColorInactive = ContextCompat.getColor(context, R.color.colorBottomNavigationInactiveColored);
 		// Colors for colored bottom navigation
 		coloredTitleColorActive = ContextCompat.getColor(context, R.color.colorBottomNavigationActiveColored);
 		coloredTitleColorInactive = ContextCompat.getColor(context, R.color.colorBottomNavigationInactiveColored);

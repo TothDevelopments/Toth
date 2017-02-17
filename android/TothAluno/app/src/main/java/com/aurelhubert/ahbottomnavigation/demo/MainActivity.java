@@ -69,10 +69,12 @@ public class MainActivity extends AppCompatActivity {
 			AHBottomNavigationItem item1 = new AHBottomNavigationItem(R.string.tab_1, R.drawable.ic_apps_black_24dp, R.color.color_tab_1);
 			AHBottomNavigationItem item2 = new AHBottomNavigationItem(R.string.tab_2, R.drawable.ic_maps_local_bar, R.color.color_tab_2);
 			AHBottomNavigationItem item3 = new AHBottomNavigationItem(R.string.tab_3, R.drawable.ic_maps_local_restaurant, R.color.color_tab_3);
+			AHBottomNavigationItem item4 = new AHBottomNavigationItem(R.string.tab_4, R.drawable.ic_maps_local_restaurant, R.color.color_tab_4);
 
 			bottomNavigationItems.add(item1);
 			bottomNavigationItems.add(item2);
 			bottomNavigationItems.add(item3);
+			bottomNavigationItems.add(item4);
 
 			bottomNavigation.addItems(bottomNavigationItems);
 		}
@@ -229,31 +231,8 @@ public class MainActivity extends AppCompatActivity {
 	public void updateBottomNavigationItems(boolean addItems) {
 
 		if (useMenuResource) {
-			if (addItems) {
-				navigationAdapter = new AHBottomNavigationAdapter(this, R.menu.bottom_navigation_menu_5);
-				navigationAdapter.setupWithBottomNavigation(bottomNavigation, tabColors);
-				bottomNavigation.setNotification("1", 3);
-			} else {
-				navigationAdapter = new AHBottomNavigationAdapter(this, R.menu.bottom_navigation_menu_4);
-				navigationAdapter.setupWithBottomNavigation(bottomNavigation, tabColors);
-			}
-
-		} else {
-			if (addItems) {
-				AHBottomNavigationItem item4 = new AHBottomNavigationItem(getString(R.string.tab_4),
-						ContextCompat.getDrawable(this, R.drawable.ic_maps_local_bar),
-						ContextCompat.getColor(this, R.color.color_tab_4));
-				AHBottomNavigationItem item5 = new AHBottomNavigationItem(getString(R.string.tab_5),
-						ContextCompat.getDrawable(this, R.drawable.ic_maps_place),
-						ContextCompat.getColor(this, R.color.color_tab_5));
-
-				bottomNavigation.addItem(item4);
-				bottomNavigation.addItem(item5);
-				bottomNavigation.setNotification("1", 3);
-			} else {
-				bottomNavigation.removeAllItems();
-				bottomNavigation.addItems(bottomNavigationItems);
-			}
+			navigationAdapter = new AHBottomNavigationAdapter(this, R.menu.bottom_navigation_menu_4);
+			navigationAdapter.setupWithBottomNavigation(bottomNavigation, tabColors);
 		}
 	}
 
