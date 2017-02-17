@@ -42,8 +42,12 @@ public class BottomNavigatorFragment extends Fragment {
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 		if (getArguments().getInt("index", 0) == 0) {
-			View view = inflater.inflate(R.layout.fragment_demo_settings, container, false);
-			initDemoSettings(view);
+//			View view = inflater.inflate(R.layout.fragment_demo_settings, container, false);
+//			initDemoSettings(view);
+//			return view;
+
+			View view = inflater.inflate(R.layout.fragment_demo_list, container, false);
+			initDemoList(view);
 			return view;
 		} else {
 			View view = inflater.inflate(R.layout.fragment_demo_list, container, false);

@@ -5,10 +5,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="110dp">
+
+    </ScrollView>
+
     <com.aurelhubert.ahbottomnavigation.AHBottomNavigationViewPager
         android:id="@+id/view_pager"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent"
+        android:layout_marginTop="110dp"/>
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/floating_action_button"
