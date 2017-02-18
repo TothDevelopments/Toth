@@ -1,6 +1,7 @@
 package com.aurelhubert.ahbottomnavigation.demo;
 
 import android.animation.Animator;
+import android.app.Fragment;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
@@ -12,14 +13,19 @@ import android.support.v4.view.animation.LinearOutSlowInInterpolator;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.animation.OvershootInterpolator;
+import android.widget.HorizontalScrollView;
+import android.widget.ScrollView;
 
 import com.aurelhubert.ahbottomnavigation.AHBottomNavigation;
 import com.aurelhubert.ahbottomnavigation.AHBottomNavigationAdapter;
 import com.aurelhubert.ahbottomnavigation.AHBottomNavigationItem;
 import com.aurelhubert.ahbottomnavigation.AHBottomNavigationViewPager;
+import com.aurelhubert.ahbottomnavigation.demo.view.ScrollViewDemoFragment;
 import com.aurelhubert.ahbottomnavigation.notification.AHNotification;
 
 import java.util.ArrayList;
+
+import me.everything.android.ui.overscroll.OverScrollDecoratorHelper;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -39,11 +45,26 @@ public class MainActivity extends AppCompatActivity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+
+		ScrollViewDemoFragment scrollViewDemoFragment = new ScrollViewDemoFragment();
+
 		boolean enabledTranslucentNavigation = getSharedPreferences("shared", Context.MODE_PRIVATE)
 				.getBoolean("translucentNavigation", false);
 		setTheme(enabledTranslucentNavigation ? R.style.AppTheme_TranslucentNavigation : R.style.AppTheme);
 		setContentView(R.layout.activity_main);
 		initUI();
+
+//		replaceMainFragment(new ScrollViewDemoFragment(), R.string.app_name);
+	}
+//	private void replaceMainFragment(Fragment fragment, int titleResId) {
+//		getFragmentManager().beginTransaction()
+//				.setCustomAnimations(R.animator.fade_in_slow, R.animator.fade_out_quick)
+//				.replace(R.id.fragment_placeholder, fragment)
+//				.commit();
+//	}
+
+	private void initHorizontalScrollView(HorizontalScrollView scrollView) {
+		OverScrollDecoratorHelper.setUpOverScroll(scrollView);
 	}
 
 	@Override

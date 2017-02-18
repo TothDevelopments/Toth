@@ -15,8 +15,11 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.CompoundButton;
 import android.widget.FrameLayout;
+import android.widget.HorizontalScrollView;
 
 import java.util.ArrayList;
+
+import me.everything.android.ui.overscroll.OverScrollDecoratorHelper;
 
 /**
  *
@@ -59,66 +62,66 @@ public class BottomNavigatorFragment extends Fragment {
 	/**
 	 * Init demo settings
 	 */
-	private void initDemoSettings(View view) {
-
-		final MainActivity mainActivity = (MainActivity) getActivity();
-		final SwitchCompat switchColored = (SwitchCompat) view.findViewById(R.id.fragment_demo_switch_colored);
-		final SwitchCompat switchFiveItems = (SwitchCompat) view.findViewById(R.id.fragment_demo_switch_five_items);
-		final SwitchCompat showHideBottomNavigation = (SwitchCompat) view.findViewById(R.id.fragment_demo_show_hide);
-		final SwitchCompat showSelectedBackground = (SwitchCompat) view.findViewById(R.id.fragment_demo_selected_background);
-		final SwitchCompat switchForceTitleHide = (SwitchCompat) view.findViewById(R.id.fragment_demo_force_title_hide);
-		final SwitchCompat switchTranslucentNavigation = (SwitchCompat) view.findViewById(R.id.fragment_demo_translucent_navigation);
-
-		switchColored.setChecked(mainActivity.isBottomNavigationColored());
-		switchFiveItems.setChecked(mainActivity.getBottomNavigationNbItems() == 5);
-		switchTranslucentNavigation.setChecked(getActivity()
-				.getSharedPreferences("shared", Context.MODE_PRIVATE)
-				.getBoolean("translucentNavigation", false));
-		switchTranslucentNavigation.setVisibility(
-				Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP ? View.VISIBLE : View.GONE);
-
-		switchTranslucentNavigation.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-			@Override
-			public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-				getActivity()
-						.getSharedPreferences("shared", Context.MODE_PRIVATE)
-						.edit()
-						.putBoolean("translucentNavigation", isChecked)
-						.apply();
-				mainActivity.reload();
-			}
-		});
-		switchColored.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-			@Override
-			public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-				mainActivity.updateBottomNavigationColor(isChecked);
-			}
-		});
-		switchFiveItems.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-			@Override
-			public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-				mainActivity.updateBottomNavigationItems(isChecked);
-			}
-		});
-		showHideBottomNavigation.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-			@Override
-			public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-				mainActivity.showOrHideBottomNavigation(isChecked);
-			}
-		});
-		showSelectedBackground.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-			@Override
-			public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-				mainActivity.updateSelectedBackgroundVisibility(isChecked);
-			}
-		});
-		switchForceTitleHide.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-			@Override
-			public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-				mainActivity.setForceTitleHide(isChecked);
-			}
-		});
-	}
+//	private void initDemoSettings(View view) {
+//
+//		final MainActivity mainActivity = (MainActivity) getActivity();
+//		final SwitchCompat switchColored = (SwitchCompat) view.findViewById(R.id.fragment_demo_switch_colored);
+//		final SwitchCompat switchFiveItems = (SwitchCompat) view.findViewById(R.id.fragment_demo_switch_five_items);
+//		final SwitchCompat showHideBottomNavigation = (SwitchCompat) view.findViewById(R.id.fragment_demo_show_hide);
+//		final SwitchCompat showSelectedBackground = (SwitchCompat) view.findViewById(R.id.fragment_demo_selected_background);
+//		final SwitchCompat switchForceTitleHide = (SwitchCompat) view.findViewById(R.id.fragment_demo_force_title_hide);
+//		final SwitchCompat switchTranslucentNavigation = (SwitchCompat) view.findViewById(R.id.fragment_demo_translucent_navigation);
+//
+//		switchColored.setChecked(mainActivity.isBottomNavigationColored());
+//		switchFiveItems.setChecked(mainActivity.getBottomNavigationNbItems() == 5);
+//		switchTranslucentNavigation.setChecked(getActivity()
+//				.getSharedPreferences("shared", Context.MODE_PRIVATE)
+//				.getBoolean("translucentNavigation", false));
+//		switchTranslucentNavigation.setVisibility(
+//				Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP ? View.VISIBLE : View.GONE);
+//
+//		switchTranslucentNavigation.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+//			@Override
+//			public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+//				getActivity()
+//						.getSharedPreferences("shared", Context.MODE_PRIVATE)
+//						.edit()
+//						.putBoolean("translucentNavigation", isChecked)
+//						.apply();
+//				mainActivity.reload();
+//			}
+//		});
+//		switchColored.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+//			@Override
+//			public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+//				mainActivity.updateBottomNavigationColor(isChecked);
+//			}
+//		});
+//		switchFiveItems.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+//			@Override
+//			public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+//				mainActivity.updateBottomNavigationItems(isChecked);
+//			}
+//		});
+//		showHideBottomNavigation.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+//			@Override
+//			public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+//				mainActivity.showOrHideBottomNavigation(isChecked);
+//			}
+//		});
+//		showSelectedBackground.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+//			@Override
+//			public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+//				mainActivity.updateSelectedBackgroundVisibility(isChecked);
+//			}
+//		});
+//		switchForceTitleHide.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+//			@Override
+//			public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+//				mainActivity.setForceTitleHide(isChecked);
+//			}
+//		});
+//	}
 
 	/**
 	 * Init the fragment
