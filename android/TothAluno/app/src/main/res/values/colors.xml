@@ -22,4 +22,7 @@
         <item name="tab_4">#2196F3</item>
     </array>
 
+    <color name="background_tarefa">#8BC34A</color>
+    <color name="background_trabalho">#FFC107</color>
+    <color name="background_prova">#F44336</color>
 </resources>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/background_tarefa">
+
+
+        <TextView
+            android:text="T"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/textViewAtividadeNota"
+            android:gravity="center_vertical|center_horizontal"
+            android:textColor="#fff"
+            android:textSize="50sp"
+            />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        >
+
+        <TextView
+            android:text="Nome da Tarefa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:id="@+id/textViewNomeAtividade"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_toLeftOf="@+id/buttonVerCorrecao"
+            android:layout_toStartOf="@+id/buttonVerCorrecao" />
+
+        <TextView
+            android:text="Entragar em 30 de março"
+            android:layout_width="match_parent"
+            android:textSize="13sp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewDataEntrega"
+            android:layout_below="@+id/textViewNomeAtividade"
+            android:layout_toLeftOf="@+id/buttonVerCorrecao"
+            android:layout_toStartOf="@+id/buttonVerCorrecao"/>
+
+        <Button
+            android:text="Correção"
+            android:layout_width="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:textSize="13sp"
+            android:textColor="@color/colorPrimary"
+            android:id="@+id/buttonVerCorrecao"
+            android:background="@drawable/botao_linha_azul"
+            android:layout_height="40dp" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="#ECECEC"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_height="1dp" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:text="70 minutos para realizar a atividade"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_below="@+id/textViewDataEntrega"
+                android:id="@+id/textViewTempoatividade"
+                android:gravity="center_horizontal"/>
+
+            <TextView
+                android:text="Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker. Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker."
+                android:paddingTop="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewIntroducaoAtividade" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

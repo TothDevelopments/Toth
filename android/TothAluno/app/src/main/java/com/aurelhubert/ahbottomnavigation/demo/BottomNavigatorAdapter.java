@@ -30,7 +30,7 @@ public class BottomNavigatorAdapter extends RecyclerView.Adapter<BottomNavigator
 
 	@Override
 	public BottomNavigatorAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-		View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.layout_item_demo, parent, false);
+		View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.layout_item_lista_grupos, parent, false);
 		ViewHolder vh = new ViewHolder(v);
 		return vh;
 	}

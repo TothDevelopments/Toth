@@ -63,6 +63,11 @@ public class MainActivity extends AppCompatActivity {
 //				.commit();
 //	}
 
+	public void abrirAtividade(View view){
+		Intent intent = new Intent(this, ResumoAtividadeActivity.class);
+		startActivity(intent);
+	}
+
 	private void initHorizontalScrollView(HorizontalScrollView scrollView) {
 		OverScrollDecoratorHelper.setUpOverScroll(scrollView);
 	}
