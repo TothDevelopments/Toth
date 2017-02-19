@@ -12,6 +12,7 @@ import android.support.v4.content.ContextCompat;
 import android.support.v4.view.animation.LinearOutSlowInInterpolator;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.view.Window;
 import android.view.animation.OvershootInterpolator;
 import android.widget.HorizontalScrollView;
 import android.widget.ScrollView;
@@ -45,8 +46,9 @@ public class MainActivity extends AppCompatActivity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+//		ScrollViewDemoFragment scrollViewDemoFragment = new ScrollViewDemoFragment();
 
-		ScrollViewDemoFragment scrollViewDemoFragment = new ScrollViewDemoFragment();
+		
 
 		boolean enabledTranslucentNavigation = getSharedPreferences("shared", Context.MODE_PRIVATE)
 				.getBoolean("translucentNavigation", false);
