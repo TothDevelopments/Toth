@@ -12,6 +12,8 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.FrameLayout;
 
+import com.aurelhubert.ahbottomnavigation.AHBottomNavigation;
+
 import java.util.ArrayList;
 
 /**
@@ -38,83 +40,26 @@ public class BottomNavigatorFragment extends Fragment {
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 		if (getArguments().getInt("index", 0) == 0) {
-//			View view = inflater.inflate(R.layout.fragment_demo_settings, container, false);
-//			initDemoSettings(view);
+			View view = inflater.inflate(R.layout.fragment_lista_ativiades, container, false);
+			initDemoList(view);
+			return view;
+		} else if (getArguments().getInt("index", 0) == 1) {
+//			View view = inflater.inflate(R.layout.fragment_lista_ativiades, container, false);
+//			initDemoList(view);
 //			return view;
-
-			View view = inflater.inflate(R.layout.fragment_lista_ativiades, container, false);
-			initDemoList(view);
-			return view;
-		} else {
-			View view = inflater.inflate(R.layout.fragment_lista_ativiades, container, false);
-			initDemoList(view);
-			return view;
+			return null;
+		} else if (getArguments().getInt("index", 0) == 2) {
+//			View view = inflater.inflate(R.layout.fragment_lista_ativiades, container, false);
+//			initDemoList(view);
+//			return view;
+			return null;
+		}else {
+//			View view = inflater.inflate(R.layout.fragment_lista_ativiades, container, false);
+//			initDemoList(view);
+//			return view;
+			return null;
 		}
 	}
-
-	/**
-	 * Init demo settings
-	 */
-//	private void initDemoSettings(View view) {
-//
-//		final MainActivity mainActivity = (MainActivity) getActivity();
-//		final SwitchCompat switchColored = (SwitchCompat) view.findViewById(R.id.fragment_demo_switch_colored);
-//		final SwitchCompat switchFiveItems = (SwitchCompat) view.findViewById(R.id.fragment_demo_switch_five_items);
-//		final SwitchCompat showHideBottomNavigation = (SwitchCompat) view.findViewById(R.id.fragment_demo_show_hide);
-//		final SwitchCompat showSelectedBackground = (SwitchCompat) view.findViewById(R.id.fragment_demo_selected_background);
-//		final SwitchCompat switchForceTitleHide = (SwitchCompat) view.findViewById(R.id.fragment_demo_force_title_hide);
-//		final SwitchCompat switchTranslucentNavigation = (SwitchCompat) view.findViewById(R.id.fragment_demo_translucent_navigation);
-//
-//		switchColored.setChecked(mainActivity.isBottomNavigationColored());
-//		switchFiveItems.setChecked(mainActivity.getBottomNavigationNbItems() == 5);
-//		switchTranslucentNavigation.setChecked(getActivity()
-//				.getSharedPreferences("shared", Context.MODE_PRIVATE)
-//				.getBoolean("translucentNavigation", false));
-//		switchTranslucentNavigation.setVisibility(
-//				Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP ? View.VISIBLE : View.GONE);
-//
-//		switchTranslucentNavigation.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-//			@Override
-//			public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-//				getActivity()
-//						.getSharedPreferences("shared", Context.MODE_PRIVATE)
-//						.edit()
-//						.putBoolean("translucentNavigation", isChecked)
-//						.apply();
-//				mainActivity.reload();
-//			}
-//		});
-//		switchColored.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-//			@Override
-//			public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-//				mainActivity.updateBottomNavigationColor(isChecked);
-//			}
-//		});
-//		switchFiveItems.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-//			@Override
-//			public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-//				mainActivity.updateBottomNavigationItems(isChecked);
-//			}
-//		});
-//		showHideBottomNavigation.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-//			@Override
-//			public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-//				mainActivity.showOrHideBottomNavigation(isChecked);
-//			}
-//		});
-//		showSelectedBackground.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-//			@Override
-//			public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-//				mainActivity.updateSelectedBackgroundVisibility(isChecked);
-//			}
-//		});
-//		switchForceTitleHide.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-//			@Override
-//			public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-//				mainActivity.setForceTitleHide(isChecked);
-//			}
-//		});
-//	}
 
 	/**
 	 * Init the fragment
@@ -128,9 +73,10 @@ public class BottomNavigatorFragment extends Fragment {
 		recyclerView.setLayoutManager(layoutManager);
 
 		ArrayList<String> itemsData = new ArrayList<>();
-		for (int i = 0; i < 50; i++) {
+		for (int i = 0; i < 10; i++) {
 			itemsData.add("Fragment " + getArguments().getInt("index", -1) + " / Item " + i);
 		}
+
 
 		BottomNavigatorAdapter adapter = new BottomNavigatorAdapter(itemsData);
 		recyclerView.setAdapter(adapter);
@@ -140,7 +86,7 @@ public class BottomNavigatorFragment extends Fragment {
 	 * Refresh
 	 */
 	public void refresh() {
-		if (getArguments().getInt("index", 0) > 0 && recyclerView != null) {
+		if (getArguments().getInt("index", 0) >= 0 && recyclerView != null) {
 			recyclerView.smoothScrollToPosition(0);
 		}
 	}

@@ -32,8 +32,6 @@ public class MainActivity extends AppCompatActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 
-
-
 		boolean enabledTranslucentNavigation = getSharedPreferences("shared", Context.MODE_PRIVATE)
 				.getBoolean("translucentNavigation", false);
 		setTheme(enabledTranslucentNavigation ? R.style.AppTheme_TranslucentNavigation : R.style.AppTheme);
@@ -112,13 +110,6 @@ public class MainActivity extends AppCompatActivity {
 				return true;
 			}
 		});
-
-
-//		bottomNavigation.setOnNavigationPositionListener(new AHBottomNavigation.OnNavigationPositionListener() {
-//			@Override public void onPositionChange(int y) {
-//				Log.d("MainActivity", "BottomNavigation Position: " + y);
-//			}
-//		});
 
 
 		viewPager.setOffscreenPageLimit(4);
