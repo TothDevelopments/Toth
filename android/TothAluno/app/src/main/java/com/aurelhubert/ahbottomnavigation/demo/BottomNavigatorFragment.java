@@ -12,8 +12,6 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.FrameLayout;
 
-import com.aurelhubert.ahbottomnavigation.AHBottomNavigation;
-
 import java.util.ArrayList;
 
 /**
@@ -40,21 +38,21 @@ public class BottomNavigatorFragment extends Fragment {
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 		if (getArguments().getInt("index", 0) == 0) {
-			View view = inflater.inflate(R.layout.fragment_lista_ativiades, container, false);
+			View view = inflater.inflate(R.layout.fragment_lista_atividades, container, false);
 			initDemoList(view);
 			return view;
 		} else if (getArguments().getInt("index", 0) == 1) {
-//			View view = inflater.inflate(R.layout.fragment_lista_ativiades, container, false);
+//			View view = inflater.inflate(R.layout.fragment_lista_atividades, container, false);
 //			initDemoList(view);
 //			return view;
 			return null;
 		} else if (getArguments().getInt("index", 0) == 2) {
-//			View view = inflater.inflate(R.layout.fragment_lista_ativiades, container, false);
+//			View view = inflater.inflate(R.layout.fragment_lista_atividades, container, false);
 //			initDemoList(view);
 //			return view;
 			return null;
 		}else {
-//			View view = inflater.inflate(R.layout.fragment_lista_ativiades, container, false);
+//			View view = inflater.inflate(R.layout.fragment_lista_atividades, container, false);
 //			initDemoList(view);
 //			return view;
 			return null;
