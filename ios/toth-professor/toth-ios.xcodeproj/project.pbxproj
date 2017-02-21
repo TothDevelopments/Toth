@@ -23,6 +23,8 @@
 		54A984A71E54F7E100639B03 /* AtivAbertaTimeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A984A61E54F7E100639B03 /* AtivAbertaTimeline.swift */; };
 		54AD2A491E4E80F300990611 /* EsqueciSenhaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AD2A481E4E80F300990611 /* EsqueciSenhaVC.swift */; };
 		54AD2A4D1E4E87AF00990611 /* CadastroVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AD2A4C1E4E87AF00990611 /* CadastroVC.swift */; };
+		54F3A55A1E5CF0E400400937 /* Agenda.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F3A5591E5CF0E400400937 /* Agenda.swift */; };
+		54F3A55D1E5CF12100400937 /* FSCalendar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54F3A55C1E5CF12100400937 /* FSCalendar.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +46,8 @@
 		54A984A61E54F7E100639B03 /* AtivAbertaTimeline.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AtivAbertaTimeline.swift; sourceTree = "<group>"; };
 		54AD2A481E4E80F300990611 /* EsqueciSenhaVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EsqueciSenhaVC.swift; sourceTree = "<group>"; };
 		54AD2A4C1E4E87AF00990611 /* CadastroVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CadastroVC.swift; sourceTree = "<group>"; };
+		54F3A5591E5CF0E400400937 /* Agenda.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Agenda.swift; sourceTree = "<group>"; };
+		54F3A55C1E5CF12100400937 /* FSCalendar.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FSCalendar.framework; path = Carthage/Build/iOS/FSCalendar.framework; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54F3A55D1E5CF12100400937 /* FSCalendar.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +82,7 @@
 		544C22431E4A754C003B3914 /* toth-ios */ = {
 			isa = PBXGroup;
 			children = (
+				54F3A55B1E5CF10C00400937 /* Frameworks */,
 				544C22581E4A7714003B3914 /* Model */,
 				544C22571E4A770A003B3914 /* Controller */,
 				544C22561E4A76FB003B3914 /* View */,
@@ -107,6 +113,7 @@
 				54A984A41E54F66E00639B03 /* TimelineVC.swift */,
 				544874F31E58CD0200AF2F06 /* GruposVC.swift */,
 				544874FB1E58E5D400AF2F06 /* NotificacoesVC.swift */,
+				54F3A5591E5CF0E400400937 /* Agenda.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -121,6 +128,14 @@
 			name = Model;
 			sourceTree = "<group>";
 		};
+		54F3A55B1E5CF10C00400937 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				54F3A55C1E5CF12100400937 /* FSCalendar.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -131,6 +146,7 @@
 				544C223D1E4A754C003B3914 /* Sources */,
 				544C223E1E4A754C003B3914 /* Frameworks */,
 				544C223F1E4A754C003B3914 /* Resources */,
+				54F3A5581E5CEC2F00400937 /* Carthage */,
 			);
 			buildRules = (
 			);
@@ -188,6 +204,24 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		54F3A5581E5CEC2F00400937 /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/FSCalendar.framework",
+			);
+			name = Carthage;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		544C223D1E4A754C003B3914 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -198,6 +232,7 @@
 				54AD2A4D1E4E87AF00990611 /* CadastroVC.swift in Sources */,
 				54A984A71E54F7E100639B03 /* AtivAbertaTimeline.swift in Sources */,
 				544C22471E4A754C003B3914 /* LoginVC.swift in Sources */,
+				54F3A55A1E5CF0E400400937 /* Agenda.swift in Sources */,
 				544874F81E58D30700AF2F06 /* GruposSV.swift in Sources */,
 				54A984A31E54F46A00639B03 /* AtivAbertaCell.swift in Sources */,
 				544C22451E4A754C003B3914 /* AppDelegate.swift in Sources */,
@@ -329,6 +364,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "toth-ios/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.andre.toth-ios";
@@ -342,6 +381,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "toth-ios/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.andre.toth-ios";
