@@ -6,8 +6,4 @@
 .DS_Store
 /build
 /captures
-
-gen
-
-.idea
-*.iml
+.externalNativeBuild
