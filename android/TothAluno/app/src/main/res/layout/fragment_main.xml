@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="br.com.tothprofessor.tothaluno.MainActivityFragment"
+    tools:showIn="@layout/activity_main">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include layout="@layout/lista_grupos_horizontal"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/horizontal_scroll_view_lista_grupos">
+
+                <include layout="@layout/item_lista_grupos"/>
+                <include layout="@layout/item_lista_grupos"/>
+                <include layout="@layout/item_lista_grupos"/>
+                <include layout="@layout/item_lista_grupos"/>
+                <include layout="@layout/item_lista_grupos"/>
+                <include layout="@layout/item_lista_grupos"/>
+                <include layout="@layout/item_lista_grupos"/>
+                <include layout="@layout/item_lista_grupos"/>
+                <include layout="@layout/item_lista_grupos"/>
+                <include layout="@layout/item_lista_grupos"/>
+                <include layout="@layout/item_lista_grupos"/>
+                <include layout="@layout/item_lista_grupos"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+    <!-- This could be your fragment container, or something -->
+    <FrameLayout
+        android:id="@+id/contentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottomBar" />
+
+    <com.roughike.bottombar.BottomBar
+        android:id="@+id/bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        app:bb_tabXmlResource="@xml/bottom_navigator"
+        app:bb_behavior="shifting|underNavbar" />
+</RelativeLayout>
