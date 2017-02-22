@@ -23,22 +23,12 @@
 
             <include layout="@layout/lista_grupos_horizontal"/>
 
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:id="@+id/horizontal_scroll_view_lista_grupos">
+            <com.aurelhubert.ahbottomnavigation.AHBottomNavigationViewPager
+                android:id="@+id/view_pager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
 
-                <include layout="@layout/item_lista_atividades"/>
-                <include layout="@layout/item_lista_atividades"/>
-                <include layout="@layout/item_lista_atividades"/>
-                <include layout="@layout/item_lista_atividades"/>
-                <include layout="@layout/item_lista_atividades"/>
-                <include layout="@layout/item_lista_atividades"/>
-                <include layout="@layout/item_lista_atividades"/>
-                <include layout="@layout/item_lista_atividades"/>
-                <include layout="@layout/item_lista_atividades"/>
-            </LinearLayout>
+
 
 
         </LinearLayout>

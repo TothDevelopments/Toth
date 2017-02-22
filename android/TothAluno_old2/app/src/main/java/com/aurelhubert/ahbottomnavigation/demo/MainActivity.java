@@ -2,6 +2,7 @@ package com.aurelhubert.ahbottomnavigation.demo;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
@@ -78,6 +79,8 @@ public class MainActivity extends AppCompatActivity {
 		}
 
 		bottomNavigation.setTranslucentNavigationEnabled(true);
+		bottomNavigation.setAccentColor(Color.parseColor("#F63D2B"));
+		bottomNavigation.setInactiveColor(Color.parseColor("#747474"));
 
 		bottomNavigation.setOnTabSelectedListener(new AHBottomNavigation.OnTabSelectedListener() {
 			@Override
