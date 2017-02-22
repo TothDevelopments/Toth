@@ -9,15 +9,14 @@
 import UIKit
 
 class NotificacoesVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
-
     
     @IBOutlet weak var tableView: UITableView!
+    
+    var notificacoes = [Notificacao]()
     
     @IBAction func backBtnPress(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
-    
-    var notificacoes = [Notificacao]()
     
     
     override func viewDidLoad() {
@@ -37,6 +36,7 @@ class NotificacoesVC: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
         if let cell = tableView.dequeueReusableCell(withIdentifier: "NotificacaoCell", for: indexPath) as? NotificacaoCell{
             
             let notificacao = notificacoes[indexPath.row]

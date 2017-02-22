@@ -20,8 +20,8 @@ class NotificacaoCell: UITableViewCell {
     }
 
     func updateNotificacaoUI(Notificacao: Notificacao){
-     //   NotPreviewImg.image = UIImage(named: Notificacao.notImgPreview)
-        NotTitle.text = Notificacao.notName + Notificacao.notDescription
+        NotPreviewImg.image = UIImage(named: Notificacao.notImgPreview)
+        NotTitle.text = Notificacao.notName + " " + Notificacao.notDescription
         NotTimeLeft.text = Notificacao.notTimeLeft
     }
     
