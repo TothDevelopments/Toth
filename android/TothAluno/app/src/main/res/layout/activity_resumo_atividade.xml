@@ -4,18 +4,23 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <FrameLayout
+    <LinearLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="100dp"
-        android:id="@+id/tipoAtividade" >
+        android:background="@color/background_tarefa">
 
-        <android.support.v7.widget.RecyclerView
-            android:id="@+id/quadro_tipo_atividade"
+
+        <TextView
+            android:text="T"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-        </android.support.v7.widget.RecyclerView>
-    </FrameLayout>
+            android:layout_height="match_parent"
+            android:id="@+id/textViewAtividadeNota"
+            android:gravity="center_vertical|center_horizontal"
+            android:textColor="#fff"
+            android:textSize="50sp"
+            />
+    </LinearLayout>
 
 
     <RelativeLayout
