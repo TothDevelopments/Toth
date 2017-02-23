@@ -14,17 +14,6 @@
         android:paddingTop="8dp"
         android:onClick="abrirAtividade">
 
-        <ImageView
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            card_view:srcCompat="@drawable/ic_book_white_48dp"
-            android:id="@+id/imageView"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_marginLeft="16dp"
-            android:background="#8BC34A"/>
-
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -68,7 +57,22 @@
 
             </RelativeLayout>
 
+
         </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/imageViewAtividade"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="16dp"
+            card_view:srcCompat="@drawable/icone_atividade_tarefa"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="5dp"/>
+
+
+
     </RelativeLayout>
 
 
