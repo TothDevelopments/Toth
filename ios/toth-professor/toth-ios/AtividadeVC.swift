@@ -10,27 +10,25 @@ import UIKit
 
 class AtividadeVC: UIViewController {
     
-    @IBOutlet weak var buttonStart: UIButton!
-    @IBOutlet weak var labelTitle: UILabel!
-    @IBOutlet weak var labelDueDate: UILabel!
     @IBOutlet weak var labelDescription: UITextView!
+    @IBOutlet weak var labelTitle: UILabel!
+    @IBOutlet weak var labelDueTime: UILabel!
     @IBOutlet weak var labelTime: UILabel!
+    @IBOutlet weak var scrollView: UIScrollView!
     
     var ativAbertas = [AtivAbertaTimeline]()
-    
-    
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let p1 = AtivAbertaTimeline(ativImgPreview: "a1", ativTitle: "Tarefa Matemática", ativDetails: "Detalhes sobre a tarefa: deverá ser entregue em papel ou impressão o exercício proposto na aula da última semana.", ativTimeLeft: "Restam 5 dias")
-        
-        labelTitle.text = p1.ativTitle
-        labelDueDate.text = p1.ativTimeLeft
-        labelDescription.text = p1.ativDetails
+        let p1 = AtivAbertaTimeline(ativImgPreview: "a1", ativTitle: "Tarefa Matemática", ativDetails: "Detalhes sobre a tarefa: deverá ser entregue em papel ou impressão o exercício proposto na aula da última semana, não atrasem pois se não o pau vai comer! Grato desde já. Att.", ativTimeLeft: "Restam 5 dias")
         
         ativAbertas.append(p1)
+        
+        scrollView.contentSize.height = 700
+        labelDescription.text = p1.ativDetails
+        
+       // scrollView.text = p1.ativDetails
         
     }
     
