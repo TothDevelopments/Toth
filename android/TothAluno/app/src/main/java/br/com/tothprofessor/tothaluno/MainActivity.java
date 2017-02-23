@@ -77,12 +77,6 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-
-    public void abrirAtividade(View view){
-        Intent intent = new Intent(this, ResumoAtividadeActivity.class);
-        startActivity(intent);
-    }
-
     @Override
     protected void onDestroy() {
         super.onDestroy();
@@ -122,6 +116,8 @@ public class MainActivity extends AppCompatActivity {
         bottomNavigation.setForceTint(true);
         bottomNavigation.setColored(true);
         bottomNavigation.setTitleState(AHBottomNavigation.TitleState.ALWAYS_SHOW);
+// Disable the translation inside the CoordinatorLayout
+        bottomNavigation.setBehaviorTranslationEnabled(false);
 
         bottomNavigation.setOnTabSelectedListener(new AHBottomNavigation.OnTabSelectedListener() {
             @Override

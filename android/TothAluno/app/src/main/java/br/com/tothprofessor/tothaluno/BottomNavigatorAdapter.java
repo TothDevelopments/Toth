@@ -16,10 +16,12 @@ public class BottomNavigatorAdapter extends RecyclerView.Adapter<BottomNavigator
 	private ArrayList<String> mDataset = new ArrayList<>();
 
 	public static class ViewHolder extends RecyclerView.ViewHolder {
-		public TextView mTextView;
+		public TextView mTextViewTitulo;
+		public TextView mTextViewSubtitulo;
 		public ViewHolder(View v) {
 			super(v);
-			mTextView = (TextView) v.findViewById(R.id.layout_item_demo_title);
+			mTextViewTitulo = (TextView) v.findViewById(R.id.layout_item_titulo);
+			mTextViewSubtitulo = (TextView) v.findViewById(R.id.layout_item_subtitulo);
 		}
 	}
 
@@ -37,7 +39,7 @@ public class BottomNavigatorAdapter extends RecyclerView.Adapter<BottomNavigator
 
 	@Override
 	public void onBindViewHolder(ViewHolder holder, int position) {
-		holder.mTextView.setText(mDataset.get(position));
+		holder.mTextViewTitulo.setText(mDataset.get(position));
 
 	}
 

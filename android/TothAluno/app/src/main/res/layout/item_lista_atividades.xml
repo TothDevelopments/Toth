@@ -33,19 +33,20 @@
             android:paddingTop="5dp">
 
             <TextView
-                android:id="@+id/layout_item_demo_subtitle"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="13sp"
-                android:text="Lorem Ipsum é simples."
-                android:layout_below="@+id/layout_item_demo_title"/>
-
-            <TextView
-                android:id="@+id/layout_item_demo_title"
+                android:id="@+id/layout_item_titulo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="16sp"
                 android:text="Lorem Ipsum é simples." />
+
+            <TextView
+                android:id="@+id/layout_item_subtitulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:text="Lorem Ipsum é simples."
+                android:layout_below="@+id/layout_item_titulo"/>
+
 
             <TextView
                 android:id="@+id/layout_item_dias"

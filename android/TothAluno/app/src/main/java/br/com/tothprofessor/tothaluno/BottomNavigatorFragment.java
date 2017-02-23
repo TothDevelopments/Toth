@@ -39,7 +39,7 @@ public class BottomNavigatorFragment extends Fragment {
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 		if (getArguments().getInt("index", 0) == 0) {
 			View view = inflater.inflate(R.layout.fragment_lista_atividades, container, false);
-			initDemoList(view);
+			initListAtividadesTab1(view);
 			return view;
 		} else if (getArguments().getInt("index", 0) == 1) {
 //			View view = inflater.inflate(R.layout.fragment_lista_atividades, container, false);
@@ -62,7 +62,7 @@ public class BottomNavigatorFragment extends Fragment {
 	/**
 	 * Init the fragment
 	 */
-	private void initDemoList(View view) {
+	private void initListAtividadesTab1(View view) {
 
 		fragmentContainer = (FrameLayout) view.findViewById(R.id.fragment_container);
 		recyclerView = (RecyclerView) view.findViewById(R.id.fragment_demo_recycler_view);
@@ -71,10 +71,10 @@ public class BottomNavigatorFragment extends Fragment {
 		recyclerView.setLayoutManager(layoutManager);
 
 		ArrayList<String> itemsData = new ArrayList<>();
+		itemsData.add("Scrow");
 		for (int i = 0; i < 10; i++) {
-			itemsData.add("Fragment " + getArguments().getInt("index", -1) + " / Item " + i);
+			itemsData.add("Atividade " + i);
 		}
-
 
 		BottomNavigatorAdapter adapter = new BottomNavigatorAdapter(itemsData);
 		recyclerView.setAdapter(adapter);
