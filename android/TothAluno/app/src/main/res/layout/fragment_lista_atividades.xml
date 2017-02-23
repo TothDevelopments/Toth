@@ -4,9 +4,31 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <!--<ScrollView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_alignParentTop="true"-->
+    <!--android:layout_alignParentLeft="true"-->
+    <!--android:layout_alignParentStart="true"-->
+    <!--android:scrollbars="none" >-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="vertical">-->
+
+    <!--<include layout="@layout/lista_grupos_horizontal"/>-->
+
+    <!--<android.support.v7.widget.RecyclerView-->
+    <!--android:id="@+id/fragment_demo_recycler_view"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent" />-->
+
+    <!--</LinearLayout>-->
+    <!--</ScrollView>-->
+
     <android.support.v7.widget.RecyclerView
         android:id="@+id/fragment_demo_recycler_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
-
 </FrameLayout>

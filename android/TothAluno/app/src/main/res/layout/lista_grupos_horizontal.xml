@@ -7,7 +7,7 @@
         android:id="@+id/horizontal_scroll_view"
         android:layout_width="match_parent"
         android:layout_height="100dp"
-        android:paddingTop="10dp"
+        android:paddingTop="5dp"
         android:layout_weight="3"
         android:background="@color/background_lista_grupos"
         android:scrollbars="none">

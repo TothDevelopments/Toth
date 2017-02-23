@@ -14,17 +14,6 @@
         android:paddingTop="8dp"
         android:onClick="abrirAtividade">
 
-        <ImageView
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            card_view:srcCompat="@drawable/ic_book_white_48dp"
-            android:id="@+id/imageView"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_marginLeft="16dp"
-            android:background="#8BC34A"/>
-
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -33,19 +22,20 @@
             android:paddingTop="5dp">
 
             <TextView
-                android:id="@+id/layout_item_demo_subtitle"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="13sp"
-                android:text="Lorem Ipsum é simples."
-                android:layout_below="@+id/layout_item_demo_title"/>
-
-            <TextView
-                android:id="@+id/layout_item_demo_title"
+                android:id="@+id/layout_item_titulo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="16sp"
                 android:text="Lorem Ipsum é simples." />
+
+            <TextView
+                android:id="@+id/layout_item_subtitulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:text="Lorem Ipsum é simples."
+                android:layout_below="@+id/layout_item_titulo"/>
+
 
             <TextView
                 android:id="@+id/layout_item_dias"
@@ -67,7 +57,22 @@
 
             </RelativeLayout>
 
+
         </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/imageViewAtividade"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="16dp"
+            card_view:srcCompat="@drawable/icone_atividade_tarefa"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="5dp"/>
+
+
+
     </RelativeLayout>
 
 

@@ -4,11 +4,11 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:layout_marginRight="20dp" >
+    android:layout_marginRight="10dp" >
 
     <ImageView
-        android:layout_height="64dp"
-        android:layout_width="64dp"
+        android:layout_height="75dp"
+        android:layout_width="75dp"
         android:src="@mipmap/ic_account_circle_white_48dp"
         android:layout_gravity="center"/>
 
@@ -16,7 +16,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Nome grupo"
-        android:textSize="12sp"
+        android:textSize="10sp"
         android:layout_gravity="center"
         android:textColor="#fff" />
 

@@ -4,18 +4,23 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <FrameLayout
+    <LinearLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="100dp"
-        android:id="@+id/tipoAtividade" >
+        android:background="@color/background_tarefa"
+        android:id="@+id/backgroundAtividadeNota">
 
-        <android.support.v7.widget.RecyclerView
-            android:id="@+id/quadro_tipo_atividade"
+
+        <TextView
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-        </android.support.v7.widget.RecyclerView>
-    </FrameLayout>
+            android:layout_height="match_parent"
+            android:id="@+id/textViewAtividadeNota"
+            android:gravity="center_vertical|center_horizontal"
+            android:textColor="#fff"
+            android:textSize="50sp"
+            />
+    </LinearLayout>
 
 
     <RelativeLayout
@@ -91,7 +96,7 @@
                 android:gravity="center_horizontal"/>
 
             <TextView
-                android:text="Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker. Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker."
+                android:text="..."
                 android:paddingTop="16dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

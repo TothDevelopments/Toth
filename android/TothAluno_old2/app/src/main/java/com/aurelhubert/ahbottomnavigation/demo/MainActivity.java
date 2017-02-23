@@ -57,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
 	 */
 	private void initUI() {
 
-		bottomNavigation = (AHBottomNavigation) findViewById(R.id.bottom_navigation);
+		bottomNavigation = (AHBottomNavigation) findViewById(R.id.bottom_navigation_container);
 		viewPager = (AHBottomNavigationViewPager) findViewById(R.id.view_pager);
 
 		if (useMenuResource) {

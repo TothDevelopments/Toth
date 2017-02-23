@@ -58,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
+        getMenuInflater().inflate(R.menu.activity_main, menu);
         return true;
     }
 
@@ -70,17 +70,12 @@ public class MainActivity extends AppCompatActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
+        if (id == R.id.action_notificacoes) {
+            Intent intent = new Intent(this, ResumoAtividadeActivity.class);
+            startActivity(intent);
         }
 
         return super.onOptionsItemSelected(item);
-    }
-
-
-    public void abrirAtividade(View view){
-        Intent intent = new Intent(this, ResumoAtividadeActivity.class);
-        startActivity(intent);
     }
 
     @Override
@@ -122,6 +117,8 @@ public class MainActivity extends AppCompatActivity {
         bottomNavigation.setForceTint(true);
         bottomNavigation.setColored(true);
         bottomNavigation.setTitleState(AHBottomNavigation.TitleState.ALWAYS_SHOW);
+// Disable the translation inside the CoordinatorLayout
+        bottomNavigation.setBehaviorTranslationEnabled(false);
 
         bottomNavigation.setOnTabSelectedListener(new AHBottomNavigation.OnTabSelectedListener() {
             @Override
@@ -187,5 +184,14 @@ public class MainActivity extends AppCompatActivity {
     public void reload() {
         startActivity(new Intent(this, MainActivity.class));
         finish();
+    }
+
+
+    public void abrirAtividade(View view){
+        Intent intent = new Intent(this, ResumoAtividadeActivity.class);
+//        EditText editText = (EditText) findViewById(R.id.edit_message);
+//        String message = editText.getText().toString();
+//        intent.putExtra(EXTRA_MESSAGE, message);
+        startActivity(intent);
     }
 }
