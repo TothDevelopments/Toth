@@ -42,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "toth-ios/Agenda.swift"
-            timestampString = "509413533.348298"
+            timestampString = "509494078.501311"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "27"
-            endingLineNumber = "27"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
             landmarkName = "Agenda"
             landmarkType = "3">
          </BreakpointContent>

@@ -11,21 +11,15 @@ import FSCalendar
 
 class Agenda: UIViewController, UITableViewDelegate, FSCalendarDataSource, FSCalendarDelegate, UIGestureRecognizerDelegate {
 
-    @IBOutlet weak var calendar: FSCalendar!
+    //@IBOutlet weak var calendar: FSCalendar!
+    @IBOutlet weak var scrollView: UIScrollView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let view = UIView(frame: UIScreen.main.bounds)
-        view.backgroundColor = UIColor.groupTableViewBackground
-        self.view = view
-    
-        calendar.scrollDirection = .vertical
-
+        scrollView.contentSize.height = 700
+      //  calendar.clipsToBounds = true
+      //  calendar.scope = .month
     }
-
-   
-
-  
 
 }
