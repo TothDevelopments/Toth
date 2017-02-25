@@ -31,7 +31,7 @@
         >
 
         <TextView
-            android:text="Nome da Tarefa"
+            android:text="..."
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="20sp"
@@ -43,7 +43,7 @@
             android:layout_toStartOf="@+id/buttonVerCorrecao" />
 
         <TextView
-            android:text="Entragar em 30 de março"
+            android:text="..."
             android:layout_width="match_parent"
             android:textSize="13sp"
             android:layout_height="wrap_content"
@@ -53,8 +53,8 @@
             android:layout_toStartOf="@+id/buttonVerCorrecao"/>
 
         <Button
-            android:text="Correção"
-            android:layout_width="wrap_content"
+            android:text="..."
+            android:layout_width="100dp"
             android:layout_alignParentTop="true"
             android:layout_alignParentRight="true"
             android:layout_alignParentEnd="true"
@@ -87,7 +87,7 @@
             android:padding="16dp">
 
             <TextView
-                android:text="70 minutos para realizar a atividade"
+                android:text="..."
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="16sp"

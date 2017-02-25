@@ -6,9 +6,11 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import java.util.ArrayList;
+import java.util.Random;
 
 /**
  *
@@ -22,6 +24,8 @@ public class BottomNavigatorAdapter extends RecyclerView.Adapter<BottomNavigator
 		public TextView mTextViewSubtitulo;
 		public TextView mTextViewDiasRestantes;
 		public ImageView mImageView;
+		public LinearLayout mLinearLayout_lista_ativiade;
+
 
 		public ViewHolder(View v) {
 			super(v);
@@ -46,14 +50,19 @@ public class BottomNavigatorAdapter extends RecyclerView.Adapter<BottomNavigator
 
 	@Override
 	public void onBindViewHolder(ViewHolder holder, int position) {
-		if (position == 0){
-
-		}
-
 		holder.mTextViewTitulo.setText(mDataset.get(position));
 		holder.mTextViewSubtitulo.setText("Descrição...");
 		holder.mTextViewDiasRestantes.setText("3 dias");
-		holder.mImageView.setBackgroundResource(R.drawable.icone_atividade_tarefa);
+
+		Random gerador = new Random();
+		int aux = gerador.nextInt(4);
+		if (aux == 1){
+			holder.mImageView.setImageResource(R.drawable.icon_atividade_tarefa);
+		} else if (aux == 2){
+			holder.mImageView.setImageResource(R.drawable.icon_atividade_trabalho);
+		} else if (aux == 3){
+			holder.mImageView.setImageResource(R.drawable.icon_atividade_prova);
+		}
 
 	}
 

@@ -5,8 +5,6 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Handler;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
@@ -30,6 +28,8 @@ public class MainActivity extends AppCompatActivity {
     private int[] tabColors;
     private Handler handler = new Handler();
 
+    private Toolbar toolbar;
+
     // UI
     private AHBottomNavigationViewPager viewPager;
     private AHBottomNavigation bottomNavigation;
@@ -37,8 +37,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        toolbar = (Toolbar) findViewById(R.id.toolbar);
+        toolbar.setTitle("Atividade");
         setSupportActionBar(toolbar);
+
 
 //        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
 //        fab.setOnClickListener(new View.OnClickListener() {
@@ -53,6 +55,8 @@ public class MainActivity extends AppCompatActivity {
                 .getBoolean("translucentNavigation", false);
         setTheme(enabledTranslucentNavigation ? R.style.AppTheme_TranslucentNavigation : R.style.AppTheme);
         initUI();
+
+
     }
 
     @Override
@@ -64,14 +68,13 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 
-        //noinspection SimplifiableIfStatement
         if (id == R.id.action_notificacoes) {
             Intent intent = new Intent(this, ResumoAtividadeActivity.class);
+            startActivity(intent);
+        } else if (id == R.id.action_login) {
+            Intent intent = new Intent(this, LoginActivity.class);
             startActivity(intent);
         }
 
@@ -117,7 +120,6 @@ public class MainActivity extends AppCompatActivity {
         bottomNavigation.setForceTint(true);
         bottomNavigation.setColored(true);
         bottomNavigation.setTitleState(AHBottomNavigation.TitleState.ALWAYS_SHOW);
-// Disable the translation inside the CoordinatorLayout
         bottomNavigation.setBehaviorTranslationEnabled(false);
 
         bottomNavigation.setOnTabSelectedListener(new AHBottomNavigation.OnTabSelectedListener() {
@@ -141,11 +143,21 @@ public class MainActivity extends AppCompatActivity {
                 currentFragment = adapter.getCurrentFragment();
                 currentFragment.willBeDisplayed();
 
-                if (position == 1) {
+                if (position == 0 ){
+                    toolbar.setTitle("Atividade");
+
+                } else if (position == 1) {
+                    toolbar.setTitle("Agenda");
                     bottomNavigation.setNotification("", 1);
 
-                } else {
-//					bottomNavigation.setNotification("5", 2);
+                } else if (position == 2) {
+                    toolbar.setTitle("Conversas");
+                    bottomNavigation.setNotification("", 1);
+
+                } else if (position == 3) {
+                    toolbar.setTitle("Opções");
+                    bottomNavigation.setNotification("", 1);
+
                 }
 
                 return true;
@@ -174,7 +186,7 @@ public class MainActivity extends AppCompatActivity {
 //						Snackbar.LENGTH_SHORT).show();
 
             }
-        }, 3000);
+        }, 2000);
     }
 
 
