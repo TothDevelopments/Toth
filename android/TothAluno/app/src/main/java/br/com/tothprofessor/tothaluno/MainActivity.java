@@ -71,7 +71,7 @@ public class MainActivity extends AppCompatActivity {
         int id = item.getItemId();
 
         if (id == R.id.action_notificacoes) {
-            Intent intent = new Intent(this, ResumoAtividadeActivity.class);
+            Intent intent = new Intent(this, NotificacoesActivity.class);
             startActivity(intent);
         } else if (id == R.id.action_login) {
             Intent intent = new Intent(this, LoginActivity.class);

@@ -38,9 +38,10 @@
             android:label="Esqueci a senha"
             android:parentActivityName=".EsqueciSenhaActivity" />
 
+
         <activity
-            android:name=".ResumoAtividadeActivity"
-            android:label="Atividade"
+            android:name=".NotificacoesActivity"
+            android:label="Notificações"
             android:screenOrientation="portrait"
             android:parentActivityName=".MainActivity" />
 
