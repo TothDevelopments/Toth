@@ -40,6 +40,13 @@
 
 
         <activity
+            android:name=".ResumoAtividadeActivity"
+            android:label="Atividade"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".MainActivity" />
+
+
+        <activity
             android:name=".NotificacoesActivity"
             android:label="Notificações"
             android:screenOrientation="portrait"
