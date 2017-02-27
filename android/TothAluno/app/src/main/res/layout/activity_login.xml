@@ -19,7 +19,7 @@
                     android:layout_width="match_parent"
                     app:srcCompat="@drawable/toth_imagem_login"
                     android:id="@+id/imageViewLogo"
-                    android:layout_marginTop="20dp"
+                    android:layout_marginTop="50dp"
                     android:layout_marginBottom="16dp"
                     android:layout_height="75dp" />
 
@@ -27,7 +27,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="center_horizontal"
-                    android:paddingTop="16dp">
+                    android:paddingTop="30dp">
 
                         <Button
                             android:text="Entrar com Facebook"
@@ -57,7 +57,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="center_horizontal"
-                    android:paddingTop="16dp">
+                    android:paddingTop="5dp">
 
                         <Button
                             android:text="Entrar com Google"
@@ -140,7 +140,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="center"
-                    android:paddingTop="16dp">
+                    android:paddingTop="5dp">
 
                         <ImageView
                             android:layout_width="260dp"
@@ -184,7 +184,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="center_horizontal"
-                    android:paddingTop="16dp">
+                    android:paddingTop="10dp">
 
                         <Button
                             android:text="ENTRAR"
@@ -193,7 +193,8 @@
                             android:id="@+id/buttonEntrar"
                             android:background="@drawable/botao_branco"
                             android:layout_alignParentTop="true"
-                            android:layout_centerHorizontal="true" />
+                            android:layout_centerHorizontal="true"
+                            android:textColor="@android:color/black" />
                 </RelativeLayout>
 
                 <RelativeLayout
