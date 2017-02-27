@@ -18,6 +18,9 @@ import com.aurelhubert.ahbottomnavigation.AHBottomNavigationViewPager;
 
 import java.util.ArrayList;
 
+import br.com.tothprofessor.tothaluno.libs.BottomNavigatorFragment;
+import br.com.tothprofessor.tothaluno.libs.BottomNavigatorPagerAdapter;
+
 public class MainActivity extends AppCompatActivity {
 
     private BottomNavigatorFragment currentFragment;

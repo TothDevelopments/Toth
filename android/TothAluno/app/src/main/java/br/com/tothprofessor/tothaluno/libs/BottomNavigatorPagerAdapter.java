@@ -1,4 +1,4 @@
-package br.com.tothprofessor.tothaluno;
+package br.com.tothprofessor.tothaluno.libs;
 
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;

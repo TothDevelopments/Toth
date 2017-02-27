@@ -24,7 +24,7 @@
 
     <color name="background_tarefa">#8BC34A</color>
     <color name="background_trabalho">#FFC107</color>
-    <color name="background_prova">#F44336</color>
+    <color name="background_prova">#f44336</color>
 
     <color name="background_lista_grupos">#90CAF9</color>
 </resources>

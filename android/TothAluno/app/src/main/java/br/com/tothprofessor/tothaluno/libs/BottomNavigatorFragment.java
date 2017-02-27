@@ -1,4 +1,4 @@
-package br.com.tothprofessor.tothaluno;
+package br.com.tothprofessor.tothaluno.libs;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -13,6 +13,8 @@ import android.view.animation.AnimationUtils;
 import android.widget.FrameLayout;
 
 import java.util.ArrayList;
+
+import br.com.tothprofessor.tothaluno.R;
 
 /**
  *
@@ -42,20 +44,18 @@ public class BottomNavigatorFragment extends Fragment {
 			initListAtividadesTab1(view);
 			return view;
 		} else if (getArguments().getInt("index", 0) == 1) {
-//			View view = inflater.inflate(R.layout.fragment_lista_atividades, container, false);
-//			initDemoList(view);
-//			return view;
-			return null;
+			View view = inflater.inflate(R.layout.fragment_calendario, container, false);
+			initFragmentCalendario(view);
+			return view;
 		} else if (getArguments().getInt("index", 0) == 2) {
 //			View view = inflater.inflate(R.layout.fragment_lista_atividades, container, false);
 //			initDemoList(view);
 //			return view;
 			return null;
 		}else {
-//			View view = inflater.inflate(R.layout.fragment_lista_atividades, container, false);
-//			initDemoList(view);
-//			return view;
-			return null;
+			View view = inflater.inflate(R.layout.fragment_opcoes, container, false);
+			initFragmentOpcoes(view);
+			return view;
 		}
 	}
 
@@ -75,6 +75,38 @@ public class BottomNavigatorFragment extends Fragment {
 		for (int i = 0; i < 10; i++) {
 			itemsData.add("Atividade " + i);
 		}
+
+		BottomNavigatorAdapter adapter = new BottomNavigatorAdapter(itemsData);
+		recyclerView.setAdapter(adapter);
+	}
+
+	private void initFragmentCalendario(View view) {
+
+		fragmentContainer = (FrameLayout) view.findViewById(R.id.fragment_container);
+		recyclerView = (RecyclerView) view.findViewById(R.id.fragment_demo_recycler_view);
+		recyclerView.setHasFixedSize(true);
+		layoutManager = new LinearLayoutManager(getActivity());
+		recyclerView.setLayoutManager(layoutManager);
+
+		ArrayList<String> itemsData = new ArrayList<>();
+		itemsData.add("Scrow");
+		for (int i = 0; i < 3; i++) {
+			itemsData.add("Atividade " + i);
+		}
+
+		BottomNavigatorAdapter adapter = new BottomNavigatorAdapter(itemsData);
+		recyclerView.setAdapter(adapter);
+	}
+
+	private void initFragmentOpcoes(View view) {
+
+		fragmentContainer = (FrameLayout) view.findViewById(R.id.fragment_container);
+		recyclerView = (RecyclerView) view.findViewById(R.id.fragment_demo_recycler_view);
+		recyclerView.setHasFixedSize(true);
+		layoutManager = new LinearLayoutManager(getActivity());
+		recyclerView.setLayoutManager(layoutManager);
+
+		ArrayList<String> itemsData = new ArrayList<>();
 
 		BottomNavigatorAdapter adapter = new BottomNavigatorAdapter(itemsData);
 		recyclerView.setAdapter(adapter);
