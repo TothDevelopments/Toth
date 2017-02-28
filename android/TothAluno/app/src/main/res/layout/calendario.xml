@@ -1,27 +1,77 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical" android:layout_width="match_parent"
     android:id="@+id/linear_layout_lista"
-    android:layout_height="210dp">
+    android:layout_height="260dp"
+    android:background="#fff">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_keyboard_arrow_left_white_48dp"
+            android:id="@+id/imageButtonVoltarCalendario"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/textView2"
+            android:layout_toStartOf="@+id/textView2"
+            android:layout_marginRight="22dp"
+            android:layout_marginEnd="22dp"
+            android:background="@android:color/transparent" />
+
+
+        <TextView
+            android:text="Fevereiro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="#455A64"
+            android:textSize="18sp" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_keyboard_arrow_right_white_48dp"
+            android:id="@+id/imageButtonAvancarCalendario"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/textView2"
+            android:layout_toEndOf="@+id/textView2"
+            android:layout_marginLeft="18dp"
+            android:layout_marginStart="18dp"
+            android:background="@android:color/transparent" />
+
+
+    </RelativeLayout>
 
     <com.github.sundeepk.compactcalendarview.CompactCalendarView
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:id="@+id/compactcalendar_view"
         android:layout_width="fill_parent"
-        android:layout_height="250dp"
         app:compactCalendarTargetHeight="250dp"
         app:compactCalendarTextSize="12sp"
-        app:compactCalendarBackgroundColor="@color/background_lista_grupos"
-        app:compactCalendarTextColor="#fff"
+        app:compactCalendarTextColor="#455A64"
         app:compactCalendarCurrentSelectedDayBackgroundColor="#8BC34A"
         app:compactCalendarCurrentDayBackgroundColor="#FFC107"
         app:compactCalendarCurrentDayIndicatorStyle="fill_large_indicator"
         app:compactCalendarEventIndicatorStyle="small_indicator"
         app:compactCalendarOtherMonthDaysTextColor="#534c4c"
         app:compactCalendarShouldSelectFirstDayOfMonthOnScroll="true"
-        />
+        android:layout_height="210dp" />
 
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:background="#ECECEC"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_height="1dp" />
 </LinearLayout>
 
 

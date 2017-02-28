@@ -63,6 +63,7 @@ public class BottomNavigatorFragment extends Fragment {
 	 * Init the fragment
 	 */
 	private void initListaAtividades(View view) {
+
 		fragmentContainer = (FrameLayout) view.findViewById(R.id.fragment_container);
 		recyclerView = (RecyclerView) view.findViewById(R.id.fragment_demo_recycler_view);
 		recyclerView.setHasFixedSize(true);
@@ -80,6 +81,7 @@ public class BottomNavigatorFragment extends Fragment {
 	}
 
 	private void initFragmentCalendario(View view) {
+
 		fragmentContainer = (FrameLayout) view.findViewById(R.id.fragment_container);
 		recyclerView = (RecyclerView) view.findViewById(R.id.fragment_demo_recycler_view);
 		recyclerView.setHasFixedSize(true);
@@ -87,13 +89,12 @@ public class BottomNavigatorFragment extends Fragment {
 		recyclerView.setLayoutManager(layoutManager);
 
 		ArrayList<String> itemsData = new ArrayList<>();
-		itemsData.add("grupos");
-//		itemsData.add("calendarios");
+		itemsData.add("calendario");
 		for (int i = 0; i < 3; i++) {
 			itemsData.add("Atividade " + i);
 		}
 
-		BottomNavigatorAdapter adapter = new BottomNavigatorAdapter(itemsData);
+		BottomNavigatorCalendarioAdapter adapter = new BottomNavigatorCalendarioAdapter(itemsData);
 		recyclerView.setAdapter(adapter);
 	}
 
