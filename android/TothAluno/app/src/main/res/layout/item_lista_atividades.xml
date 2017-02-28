@@ -13,21 +13,22 @@
         android:layout_width="match_parent"
         android:paddingTop="5dp"
         android:onClick="abrirAtividade"
-        android:layout_height="75dp">
+        android:layout_height="65dp">
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:paddingLeft="85dp"
+            android:paddingLeft="75dp"
             android:paddingRight="16dp"
-            android:paddingTop="10dp">
+            android:paddingTop="5dp">
 
             <TextView
                 android:id="@+id/layout_item_titulo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="16sp"
-                android:text="Lorem Ipsum é simples." />
+                android:text="Lorem Ipsum é simples."
+                android:textColor="#212121" />
 
             <TextView
                 android:id="@+id/layout_item_subtitulo"
@@ -69,8 +70,8 @@
             android:layout_marginLeft="16dp"
             card_view:srcCompat="@drawable/icon_atividade_tarefa"
             android:layout_marginTop="5dp"
-            android:layout_width="55dp"
-            android:layout_height="55dp" />
+            android:layout_width="45dp"
+            android:layout_height="45dp" />
 
 
 
