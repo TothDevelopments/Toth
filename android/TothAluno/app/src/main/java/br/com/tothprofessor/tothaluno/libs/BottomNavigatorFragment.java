@@ -41,10 +41,10 @@ public class BottomNavigatorFragment extends Fragment {
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 		if (getArguments().getInt("index", 0) == 0) {
 			View view = inflater.inflate(R.layout.fragment_lista_atividades, container, false);
-			initListAtividadesTab1(view);
+			initListaAtividades(view);
 			return view;
 		} else if (getArguments().getInt("index", 0) == 1) {
-			View view = inflater.inflate(R.layout.fragment_calendario, container, false);
+			View view = inflater.inflate(R.layout.fragment_lista_atividades, container, false);
 			initFragmentCalendario(view);
 			return view;
 		} else if (getArguments().getInt("index", 0) == 2) {
@@ -62,8 +62,7 @@ public class BottomNavigatorFragment extends Fragment {
 	/**
 	 * Init the fragment
 	 */
-	private void initListAtividadesTab1(View view) {
-
+	private void initListaAtividades(View view) {
 		fragmentContainer = (FrameLayout) view.findViewById(R.id.fragment_container);
 		recyclerView = (RecyclerView) view.findViewById(R.id.fragment_demo_recycler_view);
 		recyclerView.setHasFixedSize(true);
@@ -71,7 +70,7 @@ public class BottomNavigatorFragment extends Fragment {
 		recyclerView.setLayoutManager(layoutManager);
 
 		ArrayList<String> itemsData = new ArrayList<>();
-		itemsData.add("Scrow");
+		itemsData.add("grupos");
 		for (int i = 0; i < 10; i++) {
 			itemsData.add("Atividade " + i);
 		}
@@ -81,7 +80,6 @@ public class BottomNavigatorFragment extends Fragment {
 	}
 
 	private void initFragmentCalendario(View view) {
-
 		fragmentContainer = (FrameLayout) view.findViewById(R.id.fragment_container);
 		recyclerView = (RecyclerView) view.findViewById(R.id.fragment_demo_recycler_view);
 		recyclerView.setHasFixedSize(true);
@@ -89,7 +87,8 @@ public class BottomNavigatorFragment extends Fragment {
 		recyclerView.setLayoutManager(layoutManager);
 
 		ArrayList<String> itemsData = new ArrayList<>();
-		itemsData.add("Scrow");
+		itemsData.add("grupos");
+//		itemsData.add("calendarios");
 		for (int i = 0; i < 3; i++) {
 			itemsData.add("Atividade " + i);
 		}

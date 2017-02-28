@@ -19,14 +19,14 @@ import br.com.tothprofessor.tothaluno.R;
 public class BottomNavigatorAdapter extends RecyclerView.Adapter<BottomNavigatorAdapter.ViewHolder> {
 
 	private ArrayList<String> mDataset = new ArrayList<>();
+	private Boolean exibeListaGrupos = true;
 
 	public static class ViewHolder extends RecyclerView.ViewHolder {
 		public TextView mTextViewTitulo;
 		public TextView mTextViewSubtitulo;
 		public TextView mTextViewDiasRestantes;
 		public ImageView mImageView;
-		public LinearLayout mLinearLayout_lista_ativiade;
-
+//		public LinearLayout mLinearLayout_lista_ativiade;
 
 		public ViewHolder(View v) {
 			super(v);
@@ -34,37 +34,49 @@ public class BottomNavigatorAdapter extends RecyclerView.Adapter<BottomNavigator
 			mTextViewSubtitulo = (TextView) v.findViewById(R.id.layout_item_subtitulo);
 			mTextViewDiasRestantes = (TextView) v.findViewById(R.id.layout_item_dias);
 			mImageView = (ImageView) v.findViewById(R.id.imageViewAtividade);
+//			mLinearLayout_lista_ativiade = (LinearLayout) v.findViewById(R.id.linear_layout_lista);
 		}
 	}
 
 	public BottomNavigatorAdapter(ArrayList<String> dataset) {
 		mDataset.clear();
+		exibeListaGrupos = true;
 		mDataset.addAll(dataset);
 	}
 
 	@Override
 	public BottomNavigatorAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-		View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_lista_atividades, parent, false);
-		ViewHolder vh = new ViewHolder(v);
-		return vh;
+		if (exibeListaGrupos) {
+			View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.lista_grupos_horizontal, parent, false);
+			ViewHolder vh = new ViewHolder(v);
+			exibeListaGrupos = false;
+			return vh;
+		} else {
+			View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_lista_atividades, parent, false);
+			ViewHolder vh = new ViewHolder(v);
+			return vh;
+		}
 	}
 
 	@Override
 	public void onBindViewHolder(ViewHolder holder, int position) {
-		holder.mTextViewTitulo.setText(mDataset.get(position));
-		holder.mTextViewSubtitulo.setText("Descrição...");
-		holder.mTextViewDiasRestantes.setText("3 dias");
+		if (mDataset.get(position) == "grupos") {
 
-		Random gerador = new Random();
-		int aux = gerador.nextInt(4);
-		if (aux == 1){
-			holder.mImageView.setImageResource(R.drawable.icon_atividade_tarefa);
-		} else if (aux == 2){
-			holder.mImageView.setImageResource(R.drawable.icon_atividade_trabalho);
-		} else if (aux == 3){
-			holder.mImageView.setImageResource(R.drawable.icon_atividade_prova);
+		}else{
+			holder.mTextViewTitulo.setText(mDataset.get(position));
+			holder.mTextViewSubtitulo.setText("Descrição...");
+			holder.mTextViewDiasRestantes.setText("3 dias");
+
+			Random gerador = new Random();
+			int aux = gerador.nextInt(4);
+			if (aux == 1){
+				holder.mImageView.setImageResource(R.drawable.icon_atividade_tarefa);
+			} else if (aux == 2){
+				holder.mImageView.setImageResource(R.drawable.icon_atividade_trabalho);
+			} else if (aux == 3){
+				holder.mImageView.setImageResource(R.drawable.icon_atividade_prova);
+			}
 		}
-
 	}
 
 	@Override

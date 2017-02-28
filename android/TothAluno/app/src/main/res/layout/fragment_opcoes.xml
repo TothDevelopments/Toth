@@ -20,7 +20,7 @@
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:background="@color/colorPrimary"
+                android:background="@color/background_lista_grupos"
                 android:layout_height="160dp">
 
                 <ImageButton
