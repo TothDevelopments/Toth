@@ -30,4 +30,5 @@ dependencies {
 
     compile 'com.aurelhubert:ahbottomnavigation:2.0.5'
     compile 'com.github.sundeepk:compact-calendar-view:2.0.0'
+    compile 'com.android.support.constraint:constraint-layout:1.0.0-beta5'
 }

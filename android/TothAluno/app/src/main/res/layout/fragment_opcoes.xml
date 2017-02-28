@@ -81,7 +81,8 @@
                 android:paddingLeft="8dp"
                 android:paddingRight="8dp"
                 android:paddingBottom="8dp"
-                android:layout_height="55dp">
+                android:layout_height="55dp"
+                android:onClick="activityMeuBoletim">
 
 
                 <TextView

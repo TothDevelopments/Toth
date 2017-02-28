@@ -11,7 +11,6 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:paddingTop="5dp"
-        android:onClick="abrirAtividade"
         android:layout_height="95dp">
 
         <RelativeLayout

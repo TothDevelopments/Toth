@@ -54,8 +54,20 @@
             android:parentActivityName=".MainActivity" />
 
         <activity
-            android:name=".NovoGrupoActivity"
+            android:name=".PesquisarNovoGrupoActivity"
+            android:label="Encontrar novo grupo"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".MainActivity" />
+
+        <activity
+            android:name=".ResultadoNovoGrupoActivity"
             android:label="Novo grupo"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".PesquisarNovoGrupoActivity" />
+
+        <activity
+            android:name=".MeuBoletimActivity"
+            android:label="Meu Boletim"
             android:screenOrientation="portrait"
             android:parentActivityName=".MainActivity" />
 

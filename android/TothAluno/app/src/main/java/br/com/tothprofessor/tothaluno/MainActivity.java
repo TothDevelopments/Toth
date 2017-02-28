@@ -3,7 +3,6 @@ package br.com.tothprofessor.tothaluno;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
-import android.media.Image;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
@@ -11,9 +10,6 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.Button;
-import android.widget.ImageView;
-import android.widget.LinearLayout;
 
 import com.aurelhubert.ahbottomnavigation.AHBottomNavigation;
 import com.aurelhubert.ahbottomnavigation.AHBottomNavigationAdapter;
@@ -214,7 +210,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void activityNovoGrupo(View view){
-        Intent intent = new Intent(this, NovoGrupoActivity.class);
+        Intent intent = new Intent(this, PesquisarNovoGrupoActivity.class);
+        startActivity(intent);
+    }
+    public void activityMeuBoletim(View view){
+        Intent intent = new Intent(this, MeuBoletimActivity.class);
         startActivity(intent);
     }
 
