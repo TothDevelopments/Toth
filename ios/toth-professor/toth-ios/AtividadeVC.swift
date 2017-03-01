@@ -24,8 +24,7 @@ class AtividadeVC: UIViewController {
         let p1 = AtivAbertaTimeline(ativImgPreview: "a1", ativTitle: "Tarefa Matemática", ativDetails: "Detalhes sobre a tarefa: deverá ser entregue em papel ou impressão o exercício proposto na aula da última semana, não atrasem pois se não o pau vai comer! Grato desde já. Att.", ativTimeLeft: "Restam 5 dias")
         
         ativAbertas.append(p1)
-        
-        scrollView.contentSize.height = 700
+    
         labelDescription.text = p1.ativDetails
         
        // scrollView.text = p1.ativDetails

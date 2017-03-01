@@ -25,6 +25,7 @@
 		54AD2A4D1E4E87AF00990611 /* CadastroVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AD2A4C1E4E87AF00990611 /* CadastroVC.swift */; };
 		54F3A55A1E5CF0E400400937 /* Agenda.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F3A5591E5CF0E400400937 /* Agenda.swift */; };
 		54F3A55D1E5CF12100400937 /* FSCalendar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54F3A55C1E5CF12100400937 /* FSCalendar.framework */; };
+		92038D211E67134100C6C4C0 /* AjustesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92038D201E67134100C6C4C0 /* AjustesVC.swift */; };
 		923936E61E5E4FE500E3C234 /* AtividadeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923936E51E5E4FE500E3C234 /* AtividadeVC.swift */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +50,7 @@
 		54AD2A4C1E4E87AF00990611 /* CadastroVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CadastroVC.swift; sourceTree = "<group>"; };
 		54F3A5591E5CF0E400400937 /* Agenda.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Agenda.swift; sourceTree = "<group>"; };
 		54F3A55C1E5CF12100400937 /* FSCalendar.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FSCalendar.framework; path = Carthage/Build/iOS/FSCalendar.framework; sourceTree = SOURCE_ROOT; };
+		92038D201E67134100C6C4C0 /* AjustesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AjustesVC.swift; sourceTree = "<group>"; };
 		923936E51E5E4FE500E3C234 /* AtividadeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AtividadeVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -117,6 +119,7 @@
 				544874FB1E58E5D400AF2F06 /* NotificacoesVC.swift */,
 				54F3A5591E5CF0E400400937 /* Agenda.swift */,
 				923936E51E5E4FE500E3C234 /* AtividadeVC.swift */,
+				92038D201E67134100C6C4C0 /* AjustesVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -232,6 +235,7 @@
 			files = (
 				544874FE1E58EDB100AF2F06 /* Notificacao.swift in Sources */,
 				923936E61E5E4FE500E3C234 /* AtividadeVC.swift in Sources */,
+				92038D211E67134100C6C4C0 /* AjustesVC.swift in Sources */,
 				54AD2A491E4E80F300990611 /* EsqueciSenhaVC.swift in Sources */,
 				54AD2A4D1E4E87AF00990611 /* CadastroVC.swift in Sources */,
 				54A984A71E54F7E100639B03 /* AtivAbertaTimeline.swift in Sources */,
