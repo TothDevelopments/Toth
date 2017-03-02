@@ -271,7 +271,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="7s2-vd-Rci">
                                         <rect key="frame" x="0.0" y="0.0" width="142" height="62"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="User_2" translatesAutoresizingMaskIntoConstraints="NO" id="IfU-cD-e9V">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="help" translatesAutoresizingMaskIntoConstraints="NO" id="IfU-cD-e9V">
                                                 <rect key="frame" x="0.0" y="0.0" width="50" height="62"/>
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GeL-Bh-RVO">
@@ -481,13 +481,13 @@
                                                                             <rect key="frame" x="0.0" y="0.0" width="246" height="20"/>
                                                                             <subviews>
                                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Atividade" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wyu-al-R78">
-                                                                                    <rect key="frame" x="0.0" y="0.0" width="176" height="20"/>
+                                                                                    <rect key="frame" x="0.0" y="0.5" width="176" height="19.5"/>
                                                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                                                     <color key="textColor" red="0.2901675105" green="0.29021435979999999" blue="0.29015725850000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                                     <nil key="highlightedColor"/>
                                                                                 </label>
                                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Resta 1 dia" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OY0-gi-m6L">
-                                                                                    <rect key="frame" x="176" y="3" width="70" height="14"/>
+                                                                                    <rect key="frame" x="176" y="3.5" width="70" height="13.5"/>
                                                                                     <constraints>
                                                                                         <constraint firstAttribute="width" constant="70" id="2wy-Tm-wrl"/>
                                                                                     </constraints>
@@ -1360,7 +1360,6 @@
         <image name="Speech Bubble Filled" width="30" height="30"/>
         <image name="User" width="40" height="40"/>
         <image name="User Filled" width="30" height="30"/>
-        <image name="User_2" width="50" height="50"/>
         <image name="atividade" width="909" height="910"/>
         <image name="avatar" width="256" height="256"/>
         <image name="background" width="3240" height="3230"/>
