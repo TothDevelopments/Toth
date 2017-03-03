@@ -434,7 +434,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="z9f-g2-DnX">
-                                                    <rect key="frame" x="10" y="12.5" width="355" height="60"/>
+                                                    <rect key="frame" x="10" y="12.5" width="300" height="60"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dani_teste" translatesAutoresizingMaskIntoConstraints="NO" id="78O-hp-r5h">
                                                             <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
@@ -444,7 +444,7 @@
                                                             </constraints>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Daenerys Targeryen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Igv-Jy-fkX">
-                                                            <rect key="frame" x="76" y="0.0" width="279" height="60"/>
+                                                            <rect key="frame" x="76" y="0.0" width="224" height="60"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -686,7 +686,7 @@
         <scene sceneID="Oyi-4g-Ega">
             <objects>
                 <collectionViewController id="i9d-Kc-p6Y" customClass="GruposVC" customModule="toth_ios" customModuleProvider="target" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" id="Jgs-U5-s10">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" id="Jgs-U5-s10">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="85"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.95634529698534287" green="0.96316416881572953" blue="0.98362078430688926" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -791,13 +791,13 @@
                                                                             <rect key="frame" x="0.0" y="0.0" width="246" height="20"/>
                                                                             <subviews>
                                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Atividade" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wyu-al-R78">
-                                                                                    <rect key="frame" x="0.0" y="0.0" width="176" height="20"/>
+                                                                                    <rect key="frame" x="0.0" y="0.5" width="176" height="19.5"/>
                                                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                                                     <color key="textColor" red="0.2901675105" green="0.29021435979999999" blue="0.29015725850000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                                     <nil key="highlightedColor"/>
                                                                                 </label>
                                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Resta 1 dia" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OY0-gi-m6L">
-                                                                                    <rect key="frame" x="176" y="3" width="70" height="14"/>
+                                                                                    <rect key="frame" x="176" y="3.5" width="70" height="13.5"/>
                                                                                     <constraints>
                                                                                         <constraint firstAttribute="width" constant="70" id="2wy-Tm-wrl"/>
                                                                                     </constraints>

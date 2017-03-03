@@ -23,7 +23,6 @@
 		54A984A71E54F7E100639B03 /* AtivAbertaTimeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A984A61E54F7E100639B03 /* AtivAbertaTimeline.swift */; };
 		54AD2A491E4E80F300990611 /* EsqueciSenhaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AD2A481E4E80F300990611 /* EsqueciSenhaVC.swift */; };
 		54AD2A4D1E4E87AF00990611 /* CadastroVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AD2A4C1E4E87AF00990611 /* CadastroVC.swift */; };
-		54ED45AD1E61051D007E2839 /* Segmentio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54ED45AC1E61051D007E2839 /* Segmentio.framework */; };
 		54ED45AF1E68F652007E2839 /* AjustPerfilCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54ED45AE1E68F652007E2839 /* AjustPerfilCell.swift */; };
 		54ED45CF1E692571007E2839 /* GrupoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54ED45CE1E692571007E2839 /* GrupoCell.swift */; };
 		54ED45D11E6925E5007E2839 /* GruposVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54ED45D01E6925E5007E2839 /* GruposVC.swift */; };
@@ -51,7 +50,6 @@
 		54A984A61E54F7E100639B03 /* AtivAbertaTimeline.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AtivAbertaTimeline.swift; sourceTree = "<group>"; };
 		54AD2A481E4E80F300990611 /* EsqueciSenhaVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EsqueciSenhaVC.swift; sourceTree = "<group>"; };
 		54AD2A4C1E4E87AF00990611 /* CadastroVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CadastroVC.swift; sourceTree = "<group>"; };
-		54ED45AC1E61051D007E2839 /* Segmentio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Segmentio.framework; path = Carthage/Build/iOS/Segmentio.framework; sourceTree = SOURCE_ROOT; };
 		54ED45AE1E68F652007E2839 /* AjustPerfilCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AjustPerfilCell.swift; sourceTree = "<group>"; };
 		54ED45CE1E692571007E2839 /* GrupoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GrupoCell.swift; sourceTree = "<group>"; };
 		54ED45D01E6925E5007E2839 /* GruposVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GruposVC.swift; sourceTree = "<group>"; };
@@ -64,7 +62,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				54ED45AD1E61051D007E2839 /* Segmentio.framework in Frameworks */,
 				54F3A55D1E5CF12100400937 /* FSCalendar.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -145,7 +142,6 @@
 		54F3A55B1E5CF10C00400937 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				54ED45AC1E61051D007E2839 /* Segmentio.framework */,
 				54F3A55C1E5CF12100400937 /* FSCalendar.framework */,
 			);
 			name = Frameworks;
@@ -227,7 +223,6 @@
 			);
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/FSCalendar.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/Segmentio.framework",
 			);
 			name = Carthage;
 			outputPaths = (
