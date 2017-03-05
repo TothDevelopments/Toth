@@ -72,8 +72,11 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
 
+//        if (id == R.id.action_notificacoes) {
+//            Intent intent = new Intent(this, NotificacoesActivity.class);
+//            startActivity(intent);
         if (id == R.id.action_notificacoes) {
-            Intent intent = new Intent(this, NotificacoesActivity.class);
+            Intent intent = new Intent(this, BimestreActivity.class);
             startActivity(intent);
         } else if (id == R.id.action_login) {
             Intent intent = new Intent(this, LoginActivity.class);

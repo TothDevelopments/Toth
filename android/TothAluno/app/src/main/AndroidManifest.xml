@@ -71,6 +71,12 @@
             android:screenOrientation="portrait"
             android:parentActivityName=".MainActivity" />
 
+        <activity
+            android:name=".BimestreActivity"
+            android:label="@string/title_activity_bimestre_tabbed"
+            android:theme="@style/AppTheme.NoActionBar">
+            
+        </activity>
     </application>
 
 </manifest>
