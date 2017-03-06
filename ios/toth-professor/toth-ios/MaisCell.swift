@@ -30,7 +30,7 @@ class MaisCell: UITableViewCell {
     
         imgCodSala.image = resizeImage(image: imgCodSala.image!, newWidth: 35)
         imgCodSala.layer.cornerRadius = 10
-        
+
         imgListaAlunos.image = resizeImage(image: imgListaAlunos.image!, newWidth: 35)
         imgListaAlunos.layer.cornerRadius = 10
         

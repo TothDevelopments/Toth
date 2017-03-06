@@ -21,6 +21,10 @@ class AlunoCell: UITableViewCell {
     
     func updateAlunoUI(Aluno: Aluno){
         alunoImgPreview.image = UIImage(named: Aluno.alunoImg)
+        
+        alunoImgPreview.image = resizeImage(image: alunoImgPreview.image!, newWidth: 40)
+        alunoImgPreview.layer.cornerRadius = 20
+        
         alunoNome.text = Aluno.alunoNome
         alunoStatus.text = Aluno.alunoStatus
     }
