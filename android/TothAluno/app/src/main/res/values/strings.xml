@@ -11,4 +11,6 @@
     <string name="menu_2">Agenda</string>
     <string name="menu_3">Conversas</string>
     <string name="menu_4">Opções</string>
+
+    <string name="title_activity_bimestre_tabbed">Bimestre</string>
 </resources>
