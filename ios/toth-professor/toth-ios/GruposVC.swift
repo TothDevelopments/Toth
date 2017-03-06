@@ -30,6 +30,7 @@ class GruposVC: UICollectionViewController {
             profGrupos.append(GrupoProfessor(imgGroupPreview: "dani_teste.png", titleGroup: "Escola Nome \(i)"))
         }
         
+        profGrupos.append(GrupoProfessor(imgGroupPreview: "plus-math.png", titleGroup: "Novo"))
         
     }
 

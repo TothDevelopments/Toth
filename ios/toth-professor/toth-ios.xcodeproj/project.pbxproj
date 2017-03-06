@@ -23,11 +23,15 @@
 		54A984A71E54F7E100639B03 /* AtivAbertaTimeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A984A61E54F7E100639B03 /* AtivAbertaTimeline.swift */; };
 		54AD2A491E4E80F300990611 /* EsqueciSenhaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AD2A481E4E80F300990611 /* EsqueciSenhaVC.swift */; };
 		54AD2A4D1E4E87AF00990611 /* CadastroVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AD2A4C1E4E87AF00990611 /* CadastroVC.swift */; };
-		54ED45AF1E68F652007E2839 /* AjustPerfilCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54ED45AE1E68F652007E2839 /* AjustPerfilCell.swift */; };
+		54ED45AF1E68F652007E2839 /* MaisCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54ED45AE1E68F652007E2839 /* MaisCell.swift */; };
 		54ED45CF1E692571007E2839 /* GrupoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54ED45CE1E692571007E2839 /* GrupoCell.swift */; };
 		54ED45D11E6925E5007E2839 /* GruposVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54ED45D01E6925E5007E2839 /* GruposVC.swift */; };
 		54F3A55A1E5CF0E400400937 /* AgendaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F3A5591E5CF0E400400937 /* AgendaVC.swift */; };
 		54F3A55D1E5CF12100400937 /* FSCalendar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54F3A55C1E5CF12100400937 /* FSCalendar.framework */; };
+		54FECB881E6C65830047D00F /* AlunosVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FECB871E6C65830047D00F /* AlunosVC.swift */; };
+		54FECB8A1E6C65EF0047D00F /* AlunoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FECB891E6C65EF0047D00F /* AlunoCell.swift */; };
+		54FECB8C1E6C90860047D00F /* Aluno.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FECB8B1E6C90860047D00F /* Aluno.swift */; };
+		54FECB901E6C9EC40047D00F /* MaisTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FECB8F1E6C9EC40047D00F /* MaisTVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,11 +54,15 @@
 		54A984A61E54F7E100639B03 /* AtivAbertaTimeline.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AtivAbertaTimeline.swift; sourceTree = "<group>"; };
 		54AD2A481E4E80F300990611 /* EsqueciSenhaVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EsqueciSenhaVC.swift; sourceTree = "<group>"; };
 		54AD2A4C1E4E87AF00990611 /* CadastroVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CadastroVC.swift; sourceTree = "<group>"; };
-		54ED45AE1E68F652007E2839 /* AjustPerfilCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AjustPerfilCell.swift; sourceTree = "<group>"; };
+		54ED45AE1E68F652007E2839 /* MaisCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaisCell.swift; sourceTree = "<group>"; };
 		54ED45CE1E692571007E2839 /* GrupoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GrupoCell.swift; sourceTree = "<group>"; };
 		54ED45D01E6925E5007E2839 /* GruposVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GruposVC.swift; sourceTree = "<group>"; };
 		54F3A5591E5CF0E400400937 /* AgendaVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgendaVC.swift; sourceTree = "<group>"; };
 		54F3A55C1E5CF12100400937 /* FSCalendar.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FSCalendar.framework; path = Carthage/Build/iOS/FSCalendar.framework; sourceTree = SOURCE_ROOT; };
+		54FECB871E6C65830047D00F /* AlunosVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlunosVC.swift; sourceTree = "<group>"; };
+		54FECB891E6C65EF0047D00F /* AlunoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlunoCell.swift; sourceTree = "<group>"; };
+		54FECB8B1E6C90860047D00F /* Aluno.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Aluno.swift; sourceTree = "<group>"; };
+		54FECB8F1E6C9EC40047D00F /* MaisTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaisTVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,8 +116,9 @@
 				54A984A21E54F46A00639B03 /* AtivAbertaCell.swift */,
 				544874FF1E58F22B00AF2F06 /* NotificacaoCell.swift */,
 				546556FA1E5E4F8800153996 /* AgendaCell.swift */,
-				54ED45AE1E68F652007E2839 /* AjustPerfilCell.swift */,
+				54ED45AE1E68F652007E2839 /* MaisCell.swift */,
 				54ED45CE1E692571007E2839 /* GrupoCell.swift */,
+				54FECB891E6C65EF0047D00F /* AlunoCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -124,6 +133,8 @@
 				544874FB1E58E5D400AF2F06 /* NotificacoesVC.swift */,
 				54F3A5591E5CF0E400400937 /* AgendaVC.swift */,
 				54ED45D01E6925E5007E2839 /* GruposVC.swift */,
+				54FECB871E6C65830047D00F /* AlunosVC.swift */,
+				54FECB8F1E6C9EC40047D00F /* MaisTVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -135,6 +146,7 @@
 				544874F01E58CA5C00AF2F06 /* GrupoProfessor.swift */,
 				544874FD1E58EDB100AF2F06 /* Notificacao.swift */,
 				546556FC1E5E509E00153996 /* Agenda.swift */,
+				54FECB8B1E6C90860047D00F /* Aluno.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -239,6 +251,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				546556FB1E5E4F8800153996 /* AgendaCell.swift in Sources */,
+				54FECB901E6C9EC40047D00F /* MaisTVC.swift in Sources */,
 				54ED45CF1E692571007E2839 /* GrupoCell.swift in Sources */,
 				544874FE1E58EDB100AF2F06 /* Notificacao.swift in Sources */,
 				54AD2A491E4E80F300990611 /* EsqueciSenhaVC.swift in Sources */,
@@ -247,12 +260,15 @@
 				544C22471E4A754C003B3914 /* LoginVC.swift in Sources */,
 				54F3A55A1E5CF0E400400937 /* AgendaVC.swift in Sources */,
 				546556FD1E5E509E00153996 /* Agenda.swift in Sources */,
+				54FECB881E6C65830047D00F /* AlunosVC.swift in Sources */,
 				54A984A31E54F46A00639B03 /* AtivAbertaCell.swift in Sources */,
-				54ED45AF1E68F652007E2839 /* AjustPerfilCell.swift in Sources */,
+				54ED45AF1E68F652007E2839 /* MaisCell.swift in Sources */,
 				544C22451E4A754C003B3914 /* AppDelegate.swift in Sources */,
 				54A984A51E54F66E00639B03 /* TimelineVC.swift in Sources */,
 				544875001E58F22B00AF2F06 /* NotificacaoCell.swift in Sources */,
+				54FECB8C1E6C90860047D00F /* Aluno.swift in Sources */,
 				544874F11E58CA5C00AF2F06 /* GrupoProfessor.swift in Sources */,
+				54FECB8A1E6C65EF0047D00F /* AlunoCell.swift in Sources */,
 				54ED45D11E6925E5007E2839 /* GruposVC.swift in Sources */,
 				544874FC1E58E5D400AF2F06 /* NotificacoesVC.swift in Sources */,
 			);
