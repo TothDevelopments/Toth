@@ -571,9 +571,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="455"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="70" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="lnr-js-BH7">
-                                <rect key="frame" x="0.0" y="64" width="320" height="455"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="70" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="lnr-js-BH7">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="395"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="AlunoCell" textLabel="aev-hq-Tdz" detailTextLabel="DBd-Oj-c9q" imageView="w1d-9x-xvp" style="IBUITableViewCellStyleSubtitle" id="Agk-8O-G37" customClass="AlunoCell" customModule="toth_ios" customModuleProvider="target">
@@ -613,6 +612,12 @@
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="lnr-js-BH7" secondAttribute="trailing" id="YhD-UA-vX5"/>
+                            <constraint firstAttribute="bottom" secondItem="lnr-js-BH7" secondAttribute="bottom" constant="60" id="dz9-jy-c91"/>
+                            <constraint firstItem="lnr-js-BH7" firstAttribute="top" secondItem="Vn2-kx-h8b" secondAttribute="bottom" id="srt-nY-7OZ"/>
+                            <constraint firstItem="lnr-js-BH7" firstAttribute="leading" secondItem="x5K-Kv-6IE" secondAttribute="leading" id="wDE-b7-VsH"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="tableView" destination="lnr-js-BH7" id="yG8-8V-GAA"/>
