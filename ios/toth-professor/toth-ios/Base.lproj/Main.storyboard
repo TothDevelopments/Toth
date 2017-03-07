@@ -224,10 +224,10 @@
                                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                         <prototypes>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="AgendaCell" id="bIA-Ns-2Kk" customClass="AgendaCell" customModule="toth_ios" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="55" width="320" height="71"/>
+                                                <rect key="frame" x="0.0" y="56" width="320" height="71"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bIA-Ns-2Kk" id="CLp-Oo-hX4">
-                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="71"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Yka-b6-brv">
@@ -371,18 +371,18 @@
                                         <rect key="frame" x="0.0" y="35" width="320" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="DdF-bd-Eiq" id="dYr-o0-yBf">
-                                            <rect key="frame" x="0.0" y="0.0" width="287" height="79.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="79"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Daenerys Targeryen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="mkW-MP-23e">
-                                                    <rect key="frame" x="110" y="0.0" width="175" height="79.5"/>
+                                                    <rect key="frame" x="109" y="0.0" width="176" height="79"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="dani_teste" id="6j6-ft-5Z2">
-                                                    <rect key="frame" x="15" y="0.0" width="80" height="79.5"/>
+                                                    <rect key="frame" x="15" y="0.0" width="79" height="79"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                 </imageView>
                                             </subviews>
@@ -407,18 +407,18 @@
                                         <rect key="frame" x="0.0" y="151" width="320" height="55"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Tkv-vD-RT7" id="s6v-gQ-dzs">
-                                            <rect key="frame" x="0.0" y="0.0" width="287" height="54.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="54"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Código da Sala" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="QSG-6K-iDo">
-                                                    <rect key="frame" x="84" y="0.0" width="201" height="54.5"/>
+                                                    <rect key="frame" x="84" y="0.0" width="201" height="54"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" layoutMarginsFollowReadableWidth="YES" image="atividade" id="xG7-fE-5bN">
-                                                    <rect key="frame" x="15" y="0.0" width="54" height="54.5"/>
+                                                    <rect key="frame" x="15" y="0.0" width="54" height="54"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                 </imageView>
                                             </subviews>
@@ -429,18 +429,18 @@
                                         <rect key="frame" x="0.0" y="206" width="320" height="55"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mdd-cc-PL1" id="j2T-xD-0II">
-                                            <rect key="frame" x="0.0" y="0.0" width="287" height="54.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="54"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Lista de Alunos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="HLi-Tw-MjX">
-                                                    <rect key="frame" x="84" y="0.0" width="201" height="54.5"/>
+                                                    <rect key="frame" x="84" y="0.0" width="201" height="54"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="atividade" id="gH0-88-RmC">
-                                                    <rect key="frame" x="15" y="0.0" width="54" height="54.5"/>
+                                                    <rect key="frame" x="15" y="0.0" width="54" height="54"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                 </imageView>
                                             </subviews>
@@ -454,18 +454,18 @@
                                         <rect key="frame" x="0.0" y="261" width="320" height="55"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="QzO-Nz-bC9" id="Xa4-pM-jwT">
-                                            <rect key="frame" x="0.0" y="0.0" width="287" height="54.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="54"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Notas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="b4U-1U-qmX">
-                                                    <rect key="frame" x="84" y="0.0" width="201" height="54.5"/>
+                                                    <rect key="frame" x="84" y="0.0" width="201" height="54"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="atividade" id="lfG-ch-qtU">
-                                                    <rect key="frame" x="15" y="0.0" width="54" height="54.5"/>
+                                                    <rect key="frame" x="15" y="0.0" width="54" height="54"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                 </imageView>
                                             </subviews>
@@ -480,18 +480,18 @@
                                         <rect key="frame" x="0.0" y="352" width="320" height="55"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="TVv-0t-tRa" id="Hwt-IF-60h">
-                                            <rect key="frame" x="0.0" y="0.0" width="287" height="54.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="54"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Ajuda" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Mlt-GH-Y0i">
-                                                    <rect key="frame" x="84" y="0.0" width="201" height="54.5"/>
+                                                    <rect key="frame" x="84" y="0.0" width="201" height="54"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="atividade" id="PYU-LO-59f">
-                                                    <rect key="frame" x="15" y="0.0" width="54" height="54.5"/>
+                                                    <rect key="frame" x="15" y="0.0" width="54" height="54"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                 </imageView>
                                             </subviews>
@@ -502,18 +502,18 @@
                                         <rect key="frame" x="0.0" y="407" width="320" height="55"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jgB-M7-8g0" id="ZVg-YT-NlA">
-                                            <rect key="frame" x="0.0" y="0.0" width="287" height="54.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="54"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Contar a um Amigo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="YeZ-SL-IvO">
-                                                    <rect key="frame" x="84" y="0.0" width="201" height="54.5"/>
+                                                    <rect key="frame" x="84" y="0.0" width="201" height="54"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="atividade" id="ugo-k5-N30">
-                                                    <rect key="frame" x="15" y="0.0" width="54" height="54.5"/>
+                                                    <rect key="frame" x="15" y="0.0" width="54" height="54"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                 </imageView>
                                             </subviews>
@@ -528,18 +528,18 @@
                                         <rect key="frame" x="0.0" y="498" width="320" height="55"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="51q-jd-6Gs" id="4go-DX-dmU">
-                                            <rect key="frame" x="0.0" y="0.0" width="287" height="54.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="54"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Sair" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="r5l-TD-eBb">
-                                                    <rect key="frame" x="84" y="0.0" width="201" height="54.5"/>
+                                                    <rect key="frame" x="84" y="0.0" width="201" height="54"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="atividade" id="u0b-qF-i3F">
-                                                    <rect key="frame" x="15" y="0.0" width="54" height="54.5"/>
+                                                    <rect key="frame" x="15" y="0.0" width="54" height="54"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                 </imageView>
                                             </subviews>
@@ -559,24 +559,6 @@
             </objects>
             <point key="canvasLocation" x="5169.375" y="2180.8098591549297"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="edz-qK-Uvf">
-            <objects>
-                <viewController id="h1n-r1-Hv9" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="oQ2-xY-X1N"/>
-                        <viewControllerLayoutGuide type="bottom" id="9d7-0i-qMr"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="xnd-Qu-hYe">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="5Ob-7q-sNs" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="5702" y="3144"/>
-        </scene>
         <!--AlunosVC-->
         <scene sceneID="ssv-xx-K5x">
             <objects>
@@ -594,28 +576,28 @@
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="AlunoCell" textLabel="aev-hq-Tdz" detailTextLabel="DBd-Oj-c9q" imageView="w1d-9x-xvp" style="IBUITableViewCellStyleSubtitle" id="Agk-8O-G37" customClass="AlunoCell" customModule="toth_ios" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="55" width="320" height="71"/>
+                                        <rect key="frame" x="0.0" y="56" width="320" height="70"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Agk-8O-G37" id="kpy-rZ-t4b">
-                                            <rect key="frame" x="0.0" y="0.0" width="287" height="69.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="69"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="aev-hq-Tdz">
-                                                    <rect key="frame" x="100" y="18" width="33.5" height="20.5"/>
+                                                    <rect key="frame" x="99" y="17" width="34" height="21"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="DBd-Oj-c9q">
-                                                    <rect key="frame" x="100" y="38.5" width="44" height="14.5"/>
+                                                    <rect key="frame" x="99" y="38" width="44" height="15"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="dani_teste" id="w1d-9x-xvp">
-                                                    <rect key="frame" x="15" y="0.0" width="70" height="69.5"/>
+                                                    <rect key="frame" x="15" y="0.0" width="69" height="69"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                 </imageView>
                                             </subviews>
@@ -679,7 +661,7 @@
         <scene sceneID="Oyi-4g-Ega">
             <objects>
                 <collectionViewController id="i9d-Kc-p6Y" customClass="GruposVC" customModule="toth_ios" customModuleProvider="target" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" id="Jgs-U5-s10">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" id="Jgs-U5-s10">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="85"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1449,7 +1431,7 @@
         <!--Atividade-->
         <scene sceneID="Kye-0N-mul">
             <objects>
-                <viewController id="iC2-lJ-WLI" sceneMemberID="viewController">
+                <viewController id="iC2-lJ-WLI" customClass="AtividadeVC" customModule="toth_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="im9-We-5mT"/>
                         <viewControllerLayoutGuide type="bottom" id="7U0-Vh-mHX"/>
@@ -1462,21 +1444,23 @@
                                 <rect key="frame" x="0.0" y="64" width="320" height="92"/>
                                 <color key="backgroundColor" red="0.41527596116065979" green="0.81150752305984497" blue="0.40835094451904297" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="92" id="Spf-63-NN6"/>
+                                    <constraint firstAttribute="height" constant="92" id="zrR-sx-Es3"/>
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="atividade" translatesAutoresizingMaskIntoConstraints="NO" id="sHf-QO-ZVf">
                                 <rect key="frame" x="125" y="75" width="70" height="70"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="70" id="Ftz-yy-jwF"/>
-                                    <constraint firstAttribute="height" constant="70" id="gxc-7g-DSX"/>
+                                    <constraint firstAttribute="width" constant="70" id="2sM-VD-VnI"/>
+                                    <constraint firstAttribute="height" constant="70" id="kJE-7J-GoS"/>
                                 </constraints>
                             </imageView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rgt-pw-1cT">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rgt-pw-1cT">
                                 <rect key="frame" x="0.0" y="252" width="320" height="267"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="arW-7f-6ro">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="arW-7f-6ro">
                                         <rect key="frame" x="8" y="8" width="304" height="251"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
@@ -1485,31 +1469,23 @@
                                     </textView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="arW-7f-6ro" secondAttribute="bottom" constant="8" id="E9y-bU-kg7"/>
-                                    <constraint firstItem="arW-7f-6ro" firstAttribute="top" secondItem="rgt-pw-1cT" secondAttribute="top" constant="8" id="GEL-aq-MgX"/>
-                                    <constraint firstAttribute="trailing" secondItem="arW-7f-6ro" secondAttribute="trailing" constant="8" id="gxY-NA-hHS"/>
-                                    <constraint firstItem="arW-7f-6ro" firstAttribute="leading" secondItem="rgt-pw-1cT" secondAttribute="leading" constant="8" id="kGA-Gj-hBb"/>
-                                </constraints>
                             </view>
-                            <view alpha="0.34999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h2S-pK-6J1">
+                            <view alpha="0.34999999999999998" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="h2S-pK-6J1">
                                 <rect key="frame" x="0.0" y="251" width="320" height="1"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="1" id="mKo-XI-lkQ"/>
-                                </constraints>
                             </view>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="v1L-rh-Hcc">
-                                <rect key="frame" x="0.0" y="168" width="320" height="72"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="v1L-rh-Hcc">
+                                <rect key="frame" x="20" y="168" width="220" height="74"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome da Atividade" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hbt-5K-rEN">
-                                        <rect key="frame" x="62.5" y="0.0" width="195" height="27.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="195" height="27.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="uh0-Rr-fbr">
-                                        <rect key="frame" x="50.5" y="32.5" width="219.5" height="19.5"/>
+                                        <rect key="frame" x="0.0" y="32.5" width="219.5" height="19.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Entrega:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F4b-ox-Aqs">
                                                 <rect key="frame" x="0.0" y="0.0" width="61" height="19.5"/>
@@ -1526,47 +1502,35 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="4ae-eS-x8Z">
-                                        <rect key="frame" x="58.5" y="57" width="203.5" height="15"/>
+                                        <rect key="frame" x="0.0" y="57" width="203.5" height="17"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="Tempo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uW5-ic-RPL">
-                                                <rect key="frame" x="0.0" y="0.0" width="44.5" height="15"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="44.5" height="17"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="para realizar a atividade" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pga-mB-CJd">
-                                                <rect key="frame" x="49.5" y="0.0" width="154" height="15"/>
+                                                <rect key="frame" x="49.5" y="0.0" width="154" height="17"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="15" id="7wL-XM-x79"/>
-                                        </constraints>
                                     </stackView>
                                 </subviews>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" red="0.93653303384780884" green="0.93861126899719238" blue="0.95611840486526489" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="sHf-QO-ZVf" firstAttribute="centerX" secondItem="aDo-F5-4mW" secondAttribute="centerX" id="3Iw-Qy-qkp"/>
-                            <constraint firstAttribute="trailing" secondItem="h2S-pK-6J1" secondAttribute="trailing" id="9dH-It-eoY"/>
-                            <constraint firstItem="v1L-rh-Hcc" firstAttribute="trailing" secondItem="aDo-F5-4mW" secondAttribute="trailing" id="DTF-Ts-0qD"/>
-                            <constraint firstItem="aDo-F5-4mW" firstAttribute="leading" secondItem="lox-js-Q7J" secondAttribute="leading" id="Edx-Gm-yog"/>
-                            <constraint firstItem="sHf-QO-ZVf" firstAttribute="centerY" secondItem="aDo-F5-4mW" secondAttribute="centerY" id="HWv-sg-LeS"/>
-                            <constraint firstAttribute="trailing" secondItem="aDo-F5-4mW" secondAttribute="trailing" id="NMr-Iu-EiP"/>
-                            <constraint firstItem="h2S-pK-6J1" firstAttribute="centerX" secondItem="lox-js-Q7J" secondAttribute="centerX" id="RU0-EK-cEa"/>
-                            <constraint firstItem="aDo-F5-4mW" firstAttribute="top" secondItem="im9-We-5mT" secondAttribute="bottom" id="Yqe-BU-uVr"/>
-                            <constraint firstAttribute="trailing" secondItem="rgt-pw-1cT" secondAttribute="trailing" id="a1Q-oj-2ku"/>
-                            <constraint firstItem="rgt-pw-1cT" firstAttribute="top" secondItem="v1L-rh-Hcc" secondAttribute="bottom" constant="12" id="aV6-g5-Dje"/>
-                            <constraint firstItem="v1L-rh-Hcc" firstAttribute="centerX" secondItem="aDo-F5-4mW" secondAttribute="centerX" id="chH-Z2-LC6"/>
-                            <constraint firstItem="h2S-pK-6J1" firstAttribute="leading" secondItem="lox-js-Q7J" secondAttribute="leading" id="fWF-pc-OQD"/>
-                            <constraint firstItem="7U0-Vh-mHX" firstAttribute="top" secondItem="rgt-pw-1cT" secondAttribute="bottom" id="hgX-zg-F4A"/>
-                            <constraint firstItem="rgt-pw-1cT" firstAttribute="leading" secondItem="lox-js-Q7J" secondAttribute="leading" id="ugc-3m-WYZ"/>
-                            <constraint firstItem="v1L-rh-Hcc" firstAttribute="leading" secondItem="aDo-F5-4mW" secondAttribute="leading" id="vAf-Ea-0nK"/>
-                            <constraint firstItem="v1L-rh-Hcc" firstAttribute="top" secondItem="aDo-F5-4mW" secondAttribute="bottom" constant="12" id="vU3-vQ-6xF"/>
-                            <constraint firstItem="rgt-pw-1cT" firstAttribute="top" secondItem="h2S-pK-6J1" secondAttribute="bottom" id="yiY-LM-Pzo"/>
+                            <constraint firstItem="v1L-rh-Hcc" firstAttribute="top" secondItem="aDo-F5-4mW" secondAttribute="bottom" constant="12" id="BgB-sK-5qH"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="v1L-rh-Hcc" secondAttribute="trailing" constant="64" id="Brm-hx-KN4"/>
+                            <constraint firstAttribute="trailing" secondItem="aDo-F5-4mW" secondAttribute="trailing" id="N2q-VY-mO1"/>
+                            <constraint firstItem="sHf-QO-ZVf" firstAttribute="centerX" secondItem="aDo-F5-4mW" secondAttribute="centerX" id="Qnp-Mw-sLK"/>
+                            <constraint firstItem="aDo-F5-4mW" firstAttribute="leading" secondItem="lox-js-Q7J" secondAttribute="leading" id="TLc-Yx-IhW"/>
+                            <constraint firstItem="v1L-rh-Hcc" firstAttribute="leading" secondItem="lox-js-Q7J" secondAttribute="leadingMargin" constant="4" id="Uhu-yY-fIe"/>
+                            <constraint firstItem="aDo-F5-4mW" firstAttribute="top" secondItem="im9-We-5mT" secondAttribute="bottom" id="dg7-dL-gyN"/>
+                            <constraint firstItem="sHf-QO-ZVf" firstAttribute="centerY" secondItem="aDo-F5-4mW" secondAttribute="centerY" id="kEZ-P2-mbt"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Atividade" id="sLW-fL-aGx">
@@ -1574,6 +1538,13 @@
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="descricaoAtividade" destination="arW-7f-6ro" id="o7L-FC-Nq7"/>
+                        <outlet property="entregaAtividade" destination="vRs-Gy-ewB" id="ghx-Jk-XxA"/>
+                        <outlet property="imgAtividade" destination="sHf-QO-ZVf" id="Oc9-B0-kPy"/>
+                        <outlet property="nomeAtividade" destination="Hbt-5K-rEN" id="hhW-b5-SEu"/>
+                        <outlet property="tempoAtividade" destination="uW5-ic-RPL" id="fbR-ib-Uij"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YTy-py-Q1M" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
