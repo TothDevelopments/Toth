@@ -7,76 +7,67 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme"  >
+        android:theme="@style/AppTheme">
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:screenOrientation="portrait" >
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".LoginActivity"
             android:label="Login"
-            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:parentActivityName=".MainActivity"
             android:screenOrientation="portrait"
-            android:parentActivityName=".MainActivity" />
-
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
             android:name=".CadastrarEmailActivity"
-            android:screenOrientation="portrait"
             android:label="Cadastre-se"
-            android:parentActivityName=".LoginActivity" />
-
+            android:parentActivityName=".LoginActivity"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".EsqueciSenhaActivity"
-            android:screenOrientation="portrait"
             android:label="Esqueci a senha"
-            android:parentActivityName=".EsqueciSenhaActivity" />
-
-
+            android:parentActivityName=".EsqueciSenhaActivity"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".ResumoAtividadeActivity"
             android:label="Atividade"
-            android:screenOrientation="portrait"
-            android:parentActivityName=".MainActivity" />
-
-
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".NotificacoesActivity"
             android:label="Notificações"
-            android:screenOrientation="portrait"
-            android:parentActivityName=".MainActivity" />
-
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".PesquisarNovoGrupoActivity"
             android:label="Encontrar novo grupo"
-            android:screenOrientation="portrait"
-            android:parentActivityName=".MainActivity" />
-
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".ResultadoNovoGrupoActivity"
             android:label="Novo grupo"
-            android:screenOrientation="portrait"
-            android:parentActivityName=".PesquisarNovoGrupoActivity" />
-
+            android:parentActivityName=".PesquisarNovoGrupoActivity"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".MeuBoletimActivity"
             android:label="Meu Boletim"
-            android:screenOrientation="portrait"
-            android:parentActivityName=".MainActivity" />
-
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".BimestreActivity"
             android:label="@string/title_activity_1_bimestre"
-            android:screenOrientation="portrait"
-            android:parentActivityName=".MeuBoletimActivity" />
-
+            android:parentActivityName=".MeuBoletimActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="layout.navbottom.MainActivityTeste"
+            android:label="@string/title_activity_main_teste"></activity>
     </application>
 
 </manifest>
