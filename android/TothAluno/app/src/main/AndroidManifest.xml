@@ -73,10 +73,10 @@
 
         <activity
             android:name=".BimestreActivity"
-            android:label="@string/title_activity_bimestre_tabbed"
-            android:theme="@style/AppTheme.NoActionBar">
-            
-        </activity>
+            android:label="@string/title_activity_1_bimestre"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".MeuBoletimActivity" />
+
     </application>
 
 </manifest>

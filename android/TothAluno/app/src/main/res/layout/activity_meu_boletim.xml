@@ -48,7 +48,8 @@
             android:paddingTop="5dp"
             android:paddingLeft="8dp"
             android:paddingRight="8dp"
-            android:layout_height="55dp">
+            android:layout_height="55dp"
+            android:id="@+id/item_lista_1_bimestre">
 
             <TextView
                 android:text="1º Bimestre"
@@ -89,7 +90,8 @@
             android:paddingTop="5dp"
             android:paddingLeft="8dp"
             android:paddingRight="8dp"
-            android:layout_height="55dp">
+            android:layout_height="55dp"
+            android:id="@+id/item_lista_2_bimestre">
 
             <TextView
                 android:text="2º Bimestre"
@@ -127,7 +129,8 @@
             android:paddingTop="5dp"
             android:paddingLeft="8dp"
             android:paddingRight="8dp"
-            android:layout_height="55dp">
+            android:layout_height="55dp"
+            android:id="@+id/item_lista_3_bimestre">
 
             <TextView
                 android:text="3º Bimestre"
@@ -165,7 +168,8 @@
             android:paddingTop="5dp"
             android:paddingLeft="8dp"
             android:paddingRight="8dp"
-            android:layout_height="55dp">
+            android:layout_height="55dp"
+            android:id="@+id/item_lista_4_bimestre">
 
             <TextView
                 android:text="4º Bimestre"

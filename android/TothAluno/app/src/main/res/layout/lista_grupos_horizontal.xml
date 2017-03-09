@@ -2,15 +2,15 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:id="@+id/linear_layout_lista"
-    android:layout_height="100dp">
+    android:layout_height="95dp"
+    android:background="#fff">
 
     <HorizontalScrollView
         android:id="@+id/horizontal_scroll_view"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:paddingTop="5dp"
+        android:layout_height="95dp"
+        android:paddingTop="8dp"
         android:layout_weight="3"
-        android:background="@color/background_lista_grupos"
         android:scrollbars="none">
         <LinearLayout
             android:layout_width="match_parent"
@@ -34,22 +34,33 @@
                 android:onClick="activityNovoGrupo" >
 
                 <ImageView
-                    android:layout_height="75dp"
-                    android:layout_width="75dp"
-                    android:src="@drawable/ic_add_circle_outline_white_48dp"
-                    android:layout_gravity="center"/>
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/ic_add_black_48dp"
+                    android:src="@drawable/botao_linha_azul" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Novo grupo"
-                    android:textSize="10sp"
                     android:layout_gravity="center"
-                    android:textColor="#fff" />
+                    android:text="Nome grupo"
+                    android:textColor="?attr/colorControlNormal"
+                    android:textSize="10sp" />
 
             </LinearLayout>
+
 
         </LinearLayout>
     </HorizontalScrollView>
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ECECEC"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+    </RelativeLayout>
 </LinearLayout>
