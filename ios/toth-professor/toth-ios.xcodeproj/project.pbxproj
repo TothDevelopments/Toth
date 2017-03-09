@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5439882E1E6E734E001A640C /* SemestresTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5439882D1E6E734E001A640C /* SemestresTVC.swift */; };
 		544874F11E58CA5C00AF2F06 /* GrupoProfessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544874F01E58CA5C00AF2F06 /* GrupoProfessor.swift */; };
 		544874FC1E58E5D400AF2F06 /* NotificacoesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544874FB1E58E5D400AF2F06 /* NotificacoesVC.swift */; };
 		544874FE1E58EDB100AF2F06 /* Notificacao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544874FD1E58EDB100AF2F06 /* Notificacao.swift */; };
@@ -38,6 +39,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5439882D1E6E734E001A640C /* SemestresTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SemestresTVC.swift; sourceTree = "<group>"; };
 		544874F01E58CA5C00AF2F06 /* GrupoProfessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GrupoProfessor.swift; sourceTree = "<group>"; };
 		544874FB1E58E5D400AF2F06 /* NotificacoesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificacoesVC.swift; sourceTree = "<group>"; };
 		544874FD1E58EDB100AF2F06 /* Notificacao.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notificacao.swift; sourceTree = "<group>"; };
@@ -261,6 +263,7 @@
 			files = (
 				92A217151E6EDD4E00581958 /* Atividade.swift in Sources */,
 				546556FB1E5E4F8800153996 /* AgendaCell.swift in Sources */,
+				5439882E1E6E734E001A640C /* SemestresTVC.swift in Sources */,
 				54FECB901E6C9EC40047D00F /* MaisTVC.swift in Sources */,
 				54ED45CF1E692571007E2839 /* GrupoCell.swift in Sources */,
 				544874FE1E58EDB100AF2F06 /* Notificacao.swift in Sources */,
