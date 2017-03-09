@@ -34,6 +34,7 @@
 		54FECB901E6C9EC40047D00F /* MaisTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FECB8F1E6C9EC40047D00F /* MaisTVC.swift */; };
 		924F7C7C1E6E339D008A97E4 /* AtividadeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924F7C7B1E6E339D008A97E4 /* AtividadeVC.swift */; };
 		92A217151E6EDD4E00581958 /* Atividade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A217141E6EDD4E00581958 /* Atividade.swift */; };
+		92A9D0BB1E71866400F826A0 /* CriarAtividadeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A9D0BA1E71866400F826A0 /* CriarAtividadeVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,6 +68,7 @@
 		54FECB8F1E6C9EC40047D00F /* MaisTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaisTVC.swift; sourceTree = "<group>"; };
 		924F7C7B1E6E339D008A97E4 /* AtividadeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AtividadeVC.swift; sourceTree = "<group>"; };
 		92A217141E6EDD4E00581958 /* Atividade.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Atividade.swift; sourceTree = "<group>"; };
+		92A9D0BA1E71866400F826A0 /* CriarAtividadeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CriarAtividadeVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +142,7 @@
 				54FECB871E6C65830047D00F /* AlunosVC.swift */,
 				54FECB8F1E6C9EC40047D00F /* MaisTVC.swift */,
 				924F7C7B1E6E339D008A97E4 /* AtividadeVC.swift */,
+				92A9D0BA1E71866400F826A0 /* CriarAtividadeVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -278,6 +281,7 @@
 				544874F11E58CA5C00AF2F06 /* GrupoProfessor.swift in Sources */,
 				54FECB8A1E6C65EF0047D00F /* AlunoCell.swift in Sources */,
 				54ED45D11E6925E5007E2839 /* GruposVC.swift in Sources */,
+				92A9D0BB1E71866400F826A0 /* CriarAtividadeVC.swift in Sources */,
 				544874FC1E58E5D400AF2F06 /* NotificacoesVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
