@@ -280,5 +280,162 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "toth-ios/NotasVC.swift"
+            timestampString = "510878873.074887"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "segmentChange(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "toth-ios/TrabalhoCell.swift"
+            timestampString = "510793911.166843"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "TrabalhoCell"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "toth_ios.TrabalhoCell.trabalhoEntrega.getter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UILabel&gt;"
+                  moduleName = "toth-ios"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andrerosa/Documents/GIT/Toth/ios/toth-professor/toth-ios/TrabalhoCell.swift"
+                  timestampString = "510793911.274235"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "27">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "toth_ios.TrabalhoCell.trabalhoEntrega.setter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UILabel&gt;"
+                  moduleName = "toth-ios"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andrerosa/Documents/GIT/Toth/ios/toth-professor/toth-ios/TrabalhoCell.swift"
+                  timestampString = "510793911.277958"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "42">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "toth_ios.TrabalhoCell.init (style : __C.UITableViewCellStyle, reuseIdentifier : Swift.Optional&lt;Swift.String&gt;) -&gt; toth_ios.TrabalhoCell"
+                  moduleName = "toth-ios"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andrerosa/Documents/GIT/Toth/ios/toth-professor/toth-ios/TrabalhoCell.swift"
+                  timestampString = "510793911.280844"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "270">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "toth_ios.TrabalhoCell.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;toth_ios.TrabalhoCell&gt;"
+                  moduleName = "toth-ios"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andrerosa/Documents/GIT/Toth/ios/toth-professor/toth-ios/TrabalhoCell.swift"
+                  timestampString = "510793911.283467"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "188">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "toth-ios/TrabalhoCell.swift"
+            timestampString = "510879279.294149"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "TrabalhoCell"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "toth_ios.TrabalhoCell.trabalhoNota.setter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UILabel&gt;"
+                  moduleName = "toth-ios"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andrerosa/Documents/GIT/Toth/ios/toth-professor/toth-ios/TrabalhoCell.swift"
+                  timestampString = "510879327.02944"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "42">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "toth_ios.TrabalhoCell.init (style : __C.UITableViewCellStyle, reuseIdentifier : Swift.Optional&lt;Swift.String&gt;) -&gt; toth_ios.TrabalhoCell"
+                  moduleName = "toth-ios"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andrerosa/Documents/GIT/Toth/ios/toth-professor/toth-ios/TrabalhoCell.swift"
+                  timestampString = "510879327.034489"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "70">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "toth_ios.TrabalhoCell.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;toth_ios.TrabalhoCell&gt;"
+                  moduleName = "toth-ios"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andrerosa/Documents/GIT/Toth/ios/toth-professor/toth-ios/TrabalhoCell.swift"
+                  timestampString = "510879327.037739"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "31">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

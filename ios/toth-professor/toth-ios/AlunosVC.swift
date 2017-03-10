@@ -21,7 +21,7 @@ class AlunosVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
             listaAlunos.append(Aluno(alunoNome: "Aluno \(i)", alunoImg: "dani_teste", alunoStatus: "Online"))
         }
         
-        self.title = "Lista de Alunos"
+        self.title = "Alunos"
         
         tableView.delegate = self
         tableView.dataSource = self

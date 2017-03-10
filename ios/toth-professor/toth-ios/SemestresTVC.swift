@@ -14,7 +14,7 @@ class SemestresTVC: UITableViewController {
         super.viewDidLoad()
 
         
-         self.title = "Notas"
+         self.title = "Semestres"
     }
 
    
