@@ -1,77 +1,239 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center_horizontal"
-    android:orientation="vertical"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.aluno.toth.tothaluno.LoginActivity">
-
-    <!-- Login progress -->
-    <ProgressBar
-        android:id="@+id/login_progress"
-        style="?android:attr/progressBarStyleLarge"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:visibility="gone" />
-
-    <ScrollView
-        android:id="@+id/login_form"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+    android:screenOrientation="portrait"
+    android:background="@color/colorPrimary">
 
         <LinearLayout
-            android:id="@+id/email_login_form"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:focusable="true"
+            android:focusableInTouchMode="true" >
 
-            <android.support.design.widget.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
 
-                <AutoCompleteTextView
-                    android:id="@+id/email"
+                <ImageView
+                    android:layout_width="match_parent"
+                    app:srcCompat="@drawable/toth_imagem_login"
+                    android:id="@+id/imageViewLogo"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginBottom="16dp"
+                    android:layout_height="75dp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal"
+                    android:paddingTop="30dp">
+
+                        <Button
+                            android:text="Entrar com Facebook"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/buttonEntrarFacebook"
+                            android:background="@drawable/botao_facebook"
+                            android:textColor="#fff"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_width="260dp" />
+
+                        <ImageView
+                            android:layout_height="50dp"
+                            app:srcCompat="@drawable/icon_facebook"
+                            android:id="@+id/imageViewLogoFacebook"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginStart="20dp"
+                            android:elevation="2dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignLeft="@+id/buttonEntrarFacebook"
+                            android:layout_alignStart="@+id/buttonEntrarFacebook"
+                            android:layout_width="12dp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal"
+                    android:paddingTop="5dp">
+
+                        <Button
+                            android:text="Entrar com Google"
+                            android:layout_width="260dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/buttonEntrarGoogle"
+                            android:background="@drawable/botao_gmail"
+                            android:textColor="#fff"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true" />
+
+                        <ImageView
+                            android:layout_height="50dp"
+                            android:elevation="2dp"
+                            app:srcCompat="@drawable/icon_google"
+                            android:id="@+id/imageViewLogoGoogle"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignLeft="@+id/buttonEntrarGoogle"
+                            android:layout_alignStart="@+id/buttonEntrarGoogle"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginStart="16dp"
+                            android:layout_width="30dp" />
+                </RelativeLayout>
+
+                <TextView
+                    android:text="OU"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="@string/prompt_email"
-                    android:inputType="textEmailAddress"
-                    android:maxLines="1"
-                    android:singleLine="true" />
+                    android:id="@+id/textView"
+                    android:gravity="center"
+                    android:paddingTop="16dp"
+                    android:textColor="#fff"/>
 
-            </android.support.design.widget.TextInputLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:paddingTop="16dp">
 
-            <android.support.design.widget.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="260dp"
+                            android:layout_height="50dp"
+                            app:srcCompat="@drawable/input_login"
+                            android:id="@+id/imageViewInputEmail" />
 
-                <EditText
-                    android:id="@+id/password"
+                        <ImageView
+                            app:srcCompat="@drawable/icon_email"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginStart="16dp"
+                            android:id="@+id/imageViewIconEmailCadastrar"
+                            android:layout_height="50dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignLeft="@+id/imageViewInputEmail"
+                            android:layout_alignStart="@+id/imageViewInputEmail"
+                            android:layout_width="25dp" />
+
+
+                        <EditText
+                            android:layout_height="50dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_toRightOf="@+id/imageViewIconEmailCadastrar"
+                            android:layout_toEndOf="@+id/imageViewIconEmailCadastrar"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginStart="10dp"
+                            android:id="@+id/textViewEmail"
+                            android:gravity="center_vertical"
+                            android:layout_width="200dp"
+                            android:textColor="#fff"
+                            android:textColorLink="@android:color/transparent"
+                            android:textColorHint="@android:color/white"
+                            android:textColorHighlight="@android:color/white"
+                            android:hint="E-mail"
+                            android:background="@android:color/transparent"
+                            android:selectAllOnFocus="false"
+                            android:inputType="textEmailAddress" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:paddingTop="5dp">
+
+                        <ImageView
+                            android:layout_width="260dp"
+                            android:layout_height="50dp"
+                            app:srcCompat="@drawable/input_login"
+                            android:id="@+id/imageViewInputSenha" />
+
+                        <ImageView
+                            app:srcCompat="@drawable/icon_lock"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginStart="16dp"
+                            android:id="@+id/imageViewIconSenha"
+                            android:layout_height="50dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignLeft="@+id/imageViewInputSenha"
+                            android:layout_alignStart="@+id/imageViewInputSenha"
+                            android:layout_width="25dp" />
+
+
+                        <EditText
+                            android:layout_height="50dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_toRightOf="@+id/imageViewIconSenha"
+                            android:layout_toEndOf="@+id/imageViewIconSenha"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginStart="10dp"
+                            android:id="@+id/textViewSenha"
+                            android:gravity="center_vertical"
+                            android:layout_width="200dp"
+                            android:textColor="#fff"
+                            android:textColorLink="@android:color/transparent"
+                            android:textColorHint="@android:color/white"
+                            android:textColorHighlight="@android:color/white"
+                            android:hint="Senha"
+                            android:background="@android:color/transparent"
+                            android:selectAllOnFocus="false"
+                            android:inputType="textPassword" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal"
+                    android:paddingTop="10dp">
+
+                        <Button
+                            android:text="ENTRAR"
+                            android:layout_width="260dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/buttonEntrar"
+                            android:background="@drawable/botao_branco"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:textColor="@android:color/black" />
+                </RelativeLayout>
+
+                <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="@string/prompt_password"
-                    android:imeActionId="@+id/login"
-                    android:imeActionLabel="@string/action_sign_in_short"
-                    android:imeOptions="actionUnspecified"
-                    android:inputType="textPassword"
-                    android:maxLines="1"
-                    android:singleLine="true" />
+                    android:gravity="center">
 
-            </android.support.design.widget.TextInputLayout>
+                        <RelativeLayout
+                            android:layout_width="260dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true">
 
-            <Button
-                android:id="@+id/email_sign_in_button"
-                style="?android:textAppearanceSmall"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:text="@string/action_sign_in"
-                android:textStyle="bold" />
+                                <Button
+                                    android:text="Esqueci a senha"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/buttonEsqueciSenha"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:textSize="10sp"
+                                    android:textColor="@android:color/white"
+                                    android:background="@android:color/transparent" />
+
+                                <Button
+                                    android:text="Cadastrar-se com e-mail"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/buttonCadastrar"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_alignParentStart="true"
+                                    android:textSize="10sp"
+                                    android:background="@android:color/transparent"
+                                    android:textColor="@android:color/white" />
+                        </RelativeLayout>
+                </RelativeLayout>
 
         </LinearLayout>
-    </ScrollView>
-</LinearLayout>
+</ScrollView>
