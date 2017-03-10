@@ -61,27 +61,25 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.activity_main, menu);
-        return true;
-    }
+        @Override
+        public boolean onCreateOptionsMenu(Menu menu) {
+            // Inflate the menu; this adds items to the action bar if it is present.
+            getMenuInflater().inflate(R.menu.activity_main, menu);
+            return true;
+        }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
 
-//        if (id == R.id.action_notificacoes) {
-//            Intent intent = new Intent(this, NotificacoesActivity.class);
-//            startActivity(intent);
         if (id == R.id.action_notificacoes) {
-            Intent intent = new Intent(this, BimestreActivity.class);
+            Intent intent = new Intent(this, NotificacoesActivity.class);
             startActivity(intent);
         } else if (id == R.id.action_login) {
             Intent intent = new Intent(this, LoginActivity.class);
             startActivity(intent);
         }
+
 
         return super.onOptionsItemSelected(item);
     }

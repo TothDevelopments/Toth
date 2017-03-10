@@ -12,5 +12,12 @@
     <string name="menu_3">Conversas</string>
     <string name="menu_4">Opções</string>
 
-    <string name="title_activity_bimestre_tabbed">Bimestre</string>
+    <string name="title_activity_1_bimestre">1º Bimestre</string>
+    <string name="title_activity_2_bimestre">2º Bimestre</string>
+    <string name="title_activity_3_bimestre">3º Bimestre</string>
+    <string name="title_activity_4_bimestre">4º Bimestre</string>
+    <string name="title_activity_main_teste">MainActivityTeste</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
 </resources>

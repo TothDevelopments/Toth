@@ -46,6 +46,9 @@
 		54FECB8A1E6C65EF0047D00F /* AlunoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FECB891E6C65EF0047D00F /* AlunoCell.swift */; };
 		54FECB8C1E6C90860047D00F /* Aluno.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FECB8B1E6C90860047D00F /* Aluno.swift */; };
 		54FECB901E6C9EC40047D00F /* MaisTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FECB8F1E6C9EC40047D00F /* MaisTVC.swift */; };
+		924F7C7C1E6E339D008A97E4 /* AtividadeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924F7C7B1E6E339D008A97E4 /* AtividadeVC.swift */; };
+		92A217151E6EDD4E00581958 /* Atividade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A217141E6EDD4E00581958 /* Atividade.swift */; };
+		92A9D0BB1E71866400F826A0 /* CriarAtividadeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A9D0BA1E71866400F826A0 /* CriarAtividadeVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -91,6 +94,9 @@
 		54FECB891E6C65EF0047D00F /* AlunoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlunoCell.swift; sourceTree = "<group>"; };
 		54FECB8B1E6C90860047D00F /* Aluno.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Aluno.swift; sourceTree = "<group>"; };
 		54FECB8F1E6C9EC40047D00F /* MaisTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaisTVC.swift; sourceTree = "<group>"; };
+		924F7C7B1E6E339D008A97E4 /* AtividadeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AtividadeVC.swift; sourceTree = "<group>"; };
+		92A217141E6EDD4E00581958 /* Atividade.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Atividade.swift; sourceTree = "<group>"; };
+		92A9D0BA1E71866400F826A0 /* CriarAtividadeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CriarAtividadeVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +173,8 @@
 				54ED45D01E6925E5007E2839 /* GruposVC.swift */,
 				54FECB871E6C65830047D00F /* AlunosVC.swift */,
 				54FECB8F1E6C9EC40047D00F /* MaisTVC.swift */,
+				924F7C7B1E6E339D008A97E4 /* AtividadeVC.swift */,
+				92A9D0BA1E71866400F826A0 /* CriarAtividadeVC.swift */,
 				5439882D1E6E734E001A640C /* SemestresTVC.swift */,
 				5439882F1E6F5F43001A640C /* NotasVC.swift */,
 				543988591E70E206001A640C /* TarefasTVC.swift */,

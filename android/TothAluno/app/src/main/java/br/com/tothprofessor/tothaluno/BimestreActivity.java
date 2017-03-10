@@ -41,8 +41,9 @@ public class BimestreActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bimestre);
 
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
+//        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+//        setSupportActionBar(toolbar);
+
         // Create the adapter that will return a fragment for each of the three
         // primary sections of the activity.
         mSectionsPagerAdapter = new SectionsPagerAdapter(getSupportFragmentManager());
@@ -86,7 +87,6 @@ public class BimestreActivity extends AppCompatActivity {
                                  Bundle savedInstanceState) {
             View rootView = inflater.inflate(R.layout.fragment_bimestre_tabbed, container, false);
             TextView textView = (TextView) rootView.findViewById(R.id.section_label);
-            textView.setText(getString(R.string.section_format, getArguments().getInt(ARG_SECTION_NUMBER)));
             return rootView;
         }
     }
@@ -109,8 +109,11 @@ public class BimestreActivity extends AppCompatActivity {
                     return new BimestreFragmentAtvidades();
                 case 1:
                     //Fragment para Provas
-                    return new BimestreFragmentProvas();
+                    return new BimestreFragmentTrabalhos();
                 case 2:
+                    //Fragment para Trabalhos
+                    return new BimestreFragmentProvas();
+                case 3:
                     //Fragment para Trabalhos
                     return new BimestreFragmentTrabalhos();
             }
@@ -120,7 +123,7 @@ public class BimestreActivity extends AppCompatActivity {
         @Override
         public int getCount() {
             // Show 3 total pages.
-            return 3;
+            return 4;
         }
 
         @Override
@@ -129,9 +132,11 @@ public class BimestreActivity extends AppCompatActivity {
                 case 0:
                     return "Atividades";
                 case 1:
-                    return "Provas";
-                case 2:
                     return "Trabalhos";
+                case 2:
+                    return "Provas";
+                case 3:
+                    return "Extras";
             }
             return null;
         }
