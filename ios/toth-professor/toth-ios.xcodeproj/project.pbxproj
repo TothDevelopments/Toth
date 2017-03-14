@@ -9,18 +9,8 @@
 /* Begin PBXBuildFile section */
 		5439882E1E6E734E001A640C /* SemestresTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5439882D1E6E734E001A640C /* SemestresTVC.swift */; };
 		543988301E6F5F43001A640C /* NotasVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5439882F1E6F5F43001A640C /* NotasVC.swift */; };
-		543988341E6F7A77001A640C /* TarefaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543988331E6F7A77001A640C /* TarefaCell.swift */; };
-		543988361E6F7F84001A640C /* Tarefa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543988351E6F7F84001A640C /* Tarefa.swift */; };
-		5439885A1E70E206001A640C /* TarefasTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543988591E70E206001A640C /* TarefasTVC.swift */; };
-		5439885C1E720196001A640C /* TrabalhosTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5439885B1E720196001A640C /* TrabalhosTVC.swift */; };
-		5439885E1E7201B6001A640C /* NotasExtrasTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5439885D1E7201B6001A640C /* NotasExtrasTVC.swift */; };
-		543988601E7201EB001A640C /* ProvasTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5439885F1E7201EB001A640C /* ProvasTVC.swift */; };
-		543988621E7204C6001A640C /* Trabalho.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543988611E7204C6001A640C /* Trabalho.swift */; };
-		543988641E7204CF001A640C /* Prova.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543988631E7204CF001A640C /* Prova.swift */; };
-		543988671E7204E3001A640C /* NotaExtra.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543988661E7204E3001A640C /* NotaExtra.swift */; };
-		543988691E7208ED001A640C /* TrabalhoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543988681E7208ED001A640C /* TrabalhoCell.swift */; };
-		5439886B1E720985001A640C /* NotaExtraCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5439886A1E720985001A640C /* NotaExtraCell.swift */; };
-		5439886D1E720A08001A640C /* ProvaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5439886C1E720A08001A640C /* ProvaCell.swift */; };
+		543988341E6F7A77001A640C /* NotaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543988331E6F7A77001A640C /* NotaCell.swift */; };
+		543988671E7204E3001A640C /* Atividades.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543988661E7204E3001A640C /* Atividades.swift */; };
 		544874F11E58CA5C00AF2F06 /* GrupoProfessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544874F01E58CA5C00AF2F06 /* GrupoProfessor.swift */; };
 		544874FC1E58E5D400AF2F06 /* NotificacoesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544874FB1E58E5D400AF2F06 /* NotificacoesVC.swift */; };
 		544874FE1E58EDB100AF2F06 /* Notificacao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544874FD1E58EDB100AF2F06 /* Notificacao.swift */; };
@@ -46,26 +36,13 @@
 		54FECB8A1E6C65EF0047D00F /* AlunoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FECB891E6C65EF0047D00F /* AlunoCell.swift */; };
 		54FECB8C1E6C90860047D00F /* Aluno.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FECB8B1E6C90860047D00F /* Aluno.swift */; };
 		54FECB901E6C9EC40047D00F /* MaisTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FECB8F1E6C9EC40047D00F /* MaisTVC.swift */; };
-		924F7C7C1E6E339D008A97E4 /* AtividadeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924F7C7B1E6E339D008A97E4 /* AtividadeVC.swift */; };
-		92A217151E6EDD4E00581958 /* Atividade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A217141E6EDD4E00581958 /* Atividade.swift */; };
-		92A9D0BB1E71866400F826A0 /* CriarAtividadeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A9D0BA1E71866400F826A0 /* CriarAtividadeVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5439882D1E6E734E001A640C /* SemestresTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SemestresTVC.swift; sourceTree = "<group>"; };
 		5439882F1E6F5F43001A640C /* NotasVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotasVC.swift; sourceTree = "<group>"; };
-		543988331E6F7A77001A640C /* TarefaCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TarefaCell.swift; sourceTree = "<group>"; };
-		543988351E6F7F84001A640C /* Tarefa.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tarefa.swift; sourceTree = "<group>"; };
-		543988591E70E206001A640C /* TarefasTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TarefasTVC.swift; sourceTree = "<group>"; };
-		5439885B1E720196001A640C /* TrabalhosTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrabalhosTVC.swift; sourceTree = "<group>"; };
-		5439885D1E7201B6001A640C /* NotasExtrasTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotasExtrasTVC.swift; sourceTree = "<group>"; };
-		5439885F1E7201EB001A640C /* ProvasTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProvasTVC.swift; sourceTree = "<group>"; };
-		543988611E7204C6001A640C /* Trabalho.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Trabalho.swift; sourceTree = "<group>"; };
-		543988631E7204CF001A640C /* Prova.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Prova.swift; sourceTree = "<group>"; };
-		543988661E7204E3001A640C /* NotaExtra.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotaExtra.swift; sourceTree = "<group>"; };
-		543988681E7208ED001A640C /* TrabalhoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrabalhoCell.swift; sourceTree = "<group>"; };
-		5439886A1E720985001A640C /* NotaExtraCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotaExtraCell.swift; sourceTree = "<group>"; };
-		5439886C1E720A08001A640C /* ProvaCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProvaCell.swift; sourceTree = "<group>"; };
+		543988331E6F7A77001A640C /* NotaCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotaCell.swift; sourceTree = "<group>"; };
+		543988661E7204E3001A640C /* Atividades.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Atividades.swift; sourceTree = "<group>"; };
 		544874F01E58CA5C00AF2F06 /* GrupoProfessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GrupoProfessor.swift; sourceTree = "<group>"; };
 		544874FB1E58E5D400AF2F06 /* NotificacoesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificacoesVC.swift; sourceTree = "<group>"; };
 		544874FD1E58EDB100AF2F06 /* Notificacao.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notificacao.swift; sourceTree = "<group>"; };
@@ -95,7 +72,6 @@
 		54FECB8B1E6C90860047D00F /* Aluno.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Aluno.swift; sourceTree = "<group>"; };
 		54FECB8F1E6C9EC40047D00F /* MaisTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaisTVC.swift; sourceTree = "<group>"; };
 		924F7C7B1E6E339D008A97E4 /* AtividadeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AtividadeVC.swift; sourceTree = "<group>"; };
-		92A217141E6EDD4E00581958 /* Atividade.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Atividade.swift; sourceTree = "<group>"; };
 		92A9D0BA1E71866400F826A0 /* CriarAtividadeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CriarAtividadeVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -153,10 +129,7 @@
 				54ED45AE1E68F652007E2839 /* MaisCell.swift */,
 				54ED45CE1E692571007E2839 /* GrupoCell.swift */,
 				54FECB891E6C65EF0047D00F /* AlunoCell.swift */,
-				543988331E6F7A77001A640C /* TarefaCell.swift */,
-				543988681E7208ED001A640C /* TrabalhoCell.swift */,
-				5439886A1E720985001A640C /* NotaExtraCell.swift */,
-				5439886C1E720A08001A640C /* ProvaCell.swift */,
+				543988331E6F7A77001A640C /* NotaCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -177,10 +150,6 @@
 				92A9D0BA1E71866400F826A0 /* CriarAtividadeVC.swift */,
 				5439882D1E6E734E001A640C /* SemestresTVC.swift */,
 				5439882F1E6F5F43001A640C /* NotasVC.swift */,
-				543988591E70E206001A640C /* TarefasTVC.swift */,
-				5439885B1E720196001A640C /* TrabalhosTVC.swift */,
-				5439885D1E7201B6001A640C /* NotasExtrasTVC.swift */,
-				5439885F1E7201EB001A640C /* ProvasTVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -193,10 +162,7 @@
 				544874FD1E58EDB100AF2F06 /* Notificacao.swift */,
 				546556FC1E5E509E00153996 /* Agenda.swift */,
 				54FECB8B1E6C90860047D00F /* Aluno.swift */,
-				543988351E6F7F84001A640C /* Tarefa.swift */,
-				543988611E7204C6001A640C /* Trabalho.swift */,
-				543988631E7204CF001A640C /* Prova.swift */,
-				543988661E7204E3001A640C /* NotaExtra.swift */,
+				543988661E7204E3001A640C /* Atividades.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -300,24 +266,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				543988671E7204E3001A640C /* NotaExtra.swift in Sources */,
+				543988671E7204E3001A640C /* Atividades.swift in Sources */,
 				546556FB1E5E4F8800153996 /* AgendaCell.swift in Sources */,
-				5439886D1E720A08001A640C /* ProvaCell.swift in Sources */,
-				543988341E6F7A77001A640C /* TarefaCell.swift in Sources */,
+				543988341E6F7A77001A640C /* NotaCell.swift in Sources */,
 				5439882E1E6E734E001A640C /* SemestresTVC.swift in Sources */,
 				54FECB901E6C9EC40047D00F /* MaisTVC.swift in Sources */,
-				543988601E7201EB001A640C /* ProvasTVC.swift in Sources */,
 				54ED45CF1E692571007E2839 /* GrupoCell.swift in Sources */,
 				544874FE1E58EDB100AF2F06 /* Notificacao.swift in Sources */,
-				5439885A1E70E206001A640C /* TarefasTVC.swift in Sources */,
 				54AD2A491E4E80F300990611 /* EsqueciSenhaVC.swift in Sources */,
-				5439885E1E7201B6001A640C /* NotasExtrasTVC.swift in Sources */,
 				54AD2A4D1E4E87AF00990611 /* CadastroVC.swift in Sources */,
 				54A984A71E54F7E100639B03 /* AtivAbertaTimeline.swift in Sources */,
 				544C22471E4A754C003B3914 /* LoginVC.swift in Sources */,
 				543988301E6F5F43001A640C /* NotasVC.swift in Sources */,
-				543988621E7204C6001A640C /* Trabalho.swift in Sources */,
-				543988641E7204CF001A640C /* Prova.swift in Sources */,
 				54F3A55A1E5CF0E400400937 /* AgendaVC.swift in Sources */,
 				546556FD1E5E509E00153996 /* Agenda.swift in Sources */,
 				54FECB881E6C65830047D00F /* AlunosVC.swift in Sources */,
@@ -327,13 +287,9 @@
 				54A984A51E54F66E00639B03 /* TimelineVC.swift in Sources */,
 				544875001E58F22B00AF2F06 /* NotificacaoCell.swift in Sources */,
 				54FECB8C1E6C90860047D00F /* Aluno.swift in Sources */,
-				543988691E7208ED001A640C /* TrabalhoCell.swift in Sources */,
-				5439885C1E720196001A640C /* TrabalhosTVC.swift in Sources */,
-				5439886B1E720985001A640C /* NotaExtraCell.swift in Sources */,
 				544874F11E58CA5C00AF2F06 /* GrupoProfessor.swift in Sources */,
 				54FECB8A1E6C65EF0047D00F /* AlunoCell.swift in Sources */,
 				54ED45D11E6925E5007E2839 /* GruposVC.swift in Sources */,
-				543988361E6F7F84001A640C /* Tarefa.swift in Sources */,
 				544874FC1E58E5D400AF2F06 /* NotificacoesVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
