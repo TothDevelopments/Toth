@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="br.com.tothprofessor.tothprofessor">
+    package="com.professor.toth.tothprofessor">
 
     <application
         android:allowBackup="true"
@@ -8,13 +8,71 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity
+            android:name=".Splash"
+            android:label="Toth Professor"
+            android:parentActivityName=".Splash"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".LoginActivity"
+            android:label="Login"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+
+        <activity
+            android:name=".CadastrarEmailActivity"
+            android:label="Cadastre-se"
+            android:parentActivityName=".LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".EsqueciSenhaActivity"
+            android:label="Esqueci a senha"
+            android:parentActivityName=".EsqueciSenhaActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ResumoAtividadeActivity"
+            android:label="Atividade"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NotificacoesActivity"
+            android:label="Notificações"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PesquisarNovoGrupoActivity"
+            android:label="Encontrar novo grupo"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ResultadoNovoGrupoActivity"
+            android:label="Novo grupo"
+            android:parentActivityName=".PesquisarNovoGrupoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MeuBoletimActivity"
+            android:label="Meu Boletim"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".BimestreActivity"
+            android:label="@string/title_activity_1_bimestre"
+            android:parentActivityName=".MeuBoletimActivity"
+            android:screenOrientation="portrait" />
+
     </application>
 
 </manifest>

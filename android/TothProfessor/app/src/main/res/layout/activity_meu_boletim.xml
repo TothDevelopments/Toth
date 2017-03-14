@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:screenOrientation="portrait">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/backgroundAtividadeNota" >
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/background_tarefa"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp" >
+
+            <TextView
+                android:text="Sua nota final"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView"
+                android:gravity="center_horizontal|center_vertical"
+                android:textSize="18sp"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:text="8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewNotaFinal"
+                android:gravity="center_horizontal|center_vertical"
+                android:textSize="36sp"
+                android:textColor="@android:color/white"
+                android:layout_below="@+id/textView"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:paddingTop="5dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:layout_height="55dp"
+            android:id="@+id/item_lista_1_bimestre">
+
+            <TextView
+                android:text="1º Bimestre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView1Bimestre"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:background="#ECECEC"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_height="1dp" />
+
+            <ImageView
+                app:srcCompat="@drawable/botao_facebook"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/imageViewFundoNota1Bimestre"
+                android:layout_width="45dp"
+                android:layout_height="45dp" />
+
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:paddingTop="5dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:layout_height="55dp"
+            android:id="@+id/item_lista_2_bimestre">
+
+            <TextView
+                android:text="2º Bimestre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView2Bimestre"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:background="#ECECEC"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_height="1dp" />
+
+            <ImageView
+                app:srcCompat="@drawable/botao_facebook"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/imageViewFundoNota2Bimestre"
+                android:layout_height="45dp"
+                android:layout_width="45dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:paddingTop="5dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:layout_height="55dp"
+            android:id="@+id/item_lista_3_bimestre">
+
+            <TextView
+                android:text="3º Bimestre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView3Bimestre"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:background="#ECECEC"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_height="1dp" />
+
+            <ImageView
+                app:srcCompat="@drawable/botao_facebook"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/imageViewFundoNota3Bimestre"
+                android:layout_width="45dp"
+                android:layout_height="45dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:paddingTop="5dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:layout_height="55dp"
+            android:id="@+id/item_lista_4_bimestre">
+
+            <TextView
+                android:text="4º Bimestre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView4Bimestre"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:background="#ECECEC"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_height="1dp" />
+
+            <ImageView
+                app:srcCompat="@drawable/botao_facebook"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/imageViewFundoNota4Bimestre"
+                android:layout_width="45dp"
+                android:layout_height="45dp" />
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+</ScrollView>
