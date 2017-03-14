@@ -8,55 +8,73 @@
 
 import UIKit
 
-class NotasVC: UIViewController {
+class NotasVC: UIViewController,UITableViewDelegate, UITableViewDataSource {
 
     
-    @IBOutlet weak var segmentedCtrl: UISegmentedControl!
-    @IBOutlet weak var contentView1: UIView!
-    @IBOutlet weak var contentView2: UIView!
-    @IBOutlet weak var contentView3: UIView!
-    @IBOutlet weak var contentView4: UIView!
+    @IBOutlet weak var segment: UISegmentedControl!
+    @IBOutlet weak var tableView: UITableView!
+
+    var atividadesAluno = [Atividade]()
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "Notas"
         
-        contentView1.isHidden = false
-        contentView2.isHidden = true
-        contentView3.isHidden = true
-        contentView4.isHidden = true
+        carregaAtividadeLista(atividade: "tarefa")
         
+        tableView.delegate = self
+        tableView.dataSource = self
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "NotaCell", for: indexPath) as? NotaCell{
+            
+            let atividadeCell = atividadesAluno[indexPath.row]
+            
+            cell.updateAtividadeUI(Atividade: atividadeCell)
+            
+            return cell
+            
+        } else{
+            return UITableViewCell()
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return atividadesAluno.count
     }
 
 
-    @IBAction func segmentChange(_ sender: Any) {
-        switch segmentedCtrl.selectedSegmentIndex{
-
+    @IBAction func segmentChange(_ sender: UISegmentedControl) {
+        
+        atividadesAluno.removeAll()
+        
+        switch segment.selectedSegmentIndex{
         case 0:
-            contentView1.isHidden = false
-            contentView2.isHidden = true
-            contentView3.isHidden = true
-            contentView4.isHidden = true
+            carregaAtividadeLista(atividade: "tarefa")
         case 1:
-            contentView1.isHidden = true
-            contentView2.isHidden = false
-            contentView3.isHidden = true
-            contentView4.isHidden = true
+            carregaAtividadeLista(atividade: "trabalho")
         case 2:
-            contentView1.isHidden = true
-            contentView2.isHidden = true
-            contentView3.isHidden = false
-            contentView4.isHidden = true
+            carregaAtividadeLista(atividade: "prova")
         case 3:
-            contentView1.isHidden = true
-            contentView2.isHidden = true
-            contentView3.isHidden = true
-            contentView4.isHidden = false
+            carregaAtividadeLista(atividade: "extras")
         default:
             break;
         }
+        
+        tableView.reloadData()
+        
     }
+  
+    func carregaAtividadeLista(atividade: String){
+        for i in 0...10{
+            atividadesAluno.append(Atividade(atividadeNota: "\(i)", atividadeImg: "atividade.png", atividadeEntrega: "22 de Jan, 2016",atividadeTitulo: "\(atividade) \(i)"))
+        }
+        
+    }
+    
+
+    
  
     
 }
