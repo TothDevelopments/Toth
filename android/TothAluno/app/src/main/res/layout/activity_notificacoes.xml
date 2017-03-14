@@ -7,43 +7,38 @@
     tools:context="br.com.tothprofessor.tothaluno.libs.MainActivityFragment">
 
 
-    <ScrollView
+    <!--<ScrollView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:scrollbars="none">-->
+
+
+    <!--</ScrollView>-->
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:scrollbars="none" >
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
-        <LinearLayout
+
+        <Button
+            android:id="@+id/buttonMarcarTodas"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/item_background"
+            android:text="Marcar todas como lidas"
+            android:textColor="@color/colorPrimary"
+            android:textSize="13sp" />
 
+        <ListView
+            android:id="@+id/list_view_notificacoes_activity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></ListView>
 
-            <Button
-                android:text="Marcar todas como lidas"
-                android:layout_width="match_parent"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentEnd="true"
-                android:textSize="13sp"
-                android:textColor="@color/colorPrimary"
-                android:id="@+id/buttonMarcarTodas"
-                android:background="@drawable/item_background"
-                android:layout_height="40dp" />
-
-            <include layout="@layout/item_lista_notificacoes"/>
-            <include layout="@layout/item_lista_notificacoes"/>
-            <include layout="@layout/item_lista_notificacoes"/>
-            <include layout="@layout/item_lista_notificacoes"/>
-            <include layout="@layout/item_lista_notificacoes"/>
-            <include layout="@layout/item_lista_notificacoes"/>
-            <include layout="@layout/item_lista_notificacoes"/>
-            <include layout="@layout/item_lista_notificacoes"/>
-
-
-
-        </LinearLayout>
-    </ScrollView>
+    </LinearLayout>
 </RelativeLayout>

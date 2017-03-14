@@ -16,25 +16,24 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:paddingLeft="75dp"
+            android:paddingLeft="16dp"
             android:paddingRight="16dp"
             android:paddingTop="5dp">
 
             <TextView
-                android:id="@+id/layout_item_titulo_notificacoes"
+                android:id="@+id/layout_item_titulo_bimestre"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="16sp"
-                android:text="Prof° José acaba de lançar a sua nota do 2° bimestre, venha conferir a sua nota."
+                android:text="Bimestre."
                 android:textColor="#212121" />
 
             <TextView
-                android:id="@+id/layout_item_subtitulo_notificacoes"
+                android:id="@+id/layout_item_subtitulo_bimestre"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/layout_item_titulo_notificacoes"
-                android:text="Há 3 horas."
-                android:textColor="#212121"
+                android:layout_below="@+id/layout_item_titulo_bimestre"
+                android:text="Bimestre."
                 android:textSize="13sp" />
 
 
@@ -52,11 +51,10 @@
         </RelativeLayout>
 
         <ImageView
-            android:id="@+id/imageViewAtividade"
+            android:id="@+id/imageViewBimestre"
             android:layout_alignParentTop="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_marginLeft="16dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
             card_view:srcCompat="@drawable/botao_gmail"
             android:layout_marginTop="5dp"
             android:layout_width="45dp"

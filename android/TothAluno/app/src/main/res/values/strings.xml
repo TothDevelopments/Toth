@@ -20,4 +20,32 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+
+    <string-array name="notificacoes_titulo">
+        <item>Tarefa 01</item>
+        <item>Tarefa 02</item>
+        <item>Tarefa 03</item>
+        <item>Tarefa 04</item>
+        <item>Tarefa 05</item>
+        <item>Tarefa 06</item>
+        <item>Tarefa 07</item>
+        <item>Tarefa 08</item>
+        <item>Tarefa 09</item>
+        <item>Tarefa 10</item>
+    </string-array>
+
+    <string-array name="notificacoes_subtitulo">
+        <item>05 de janeiro</item>
+        <item>06 de janeiro</item>
+        <item>07 de janeiro</item>
+        <item>08 de janeiro</item>
+        <item>09 de janeiro</item>
+        <item>10 de janeiro</item>
+        <item>11 de janeiro</item>
+        <item>12 de janeiro</item>
+        <item>13 de janeiro</item>
+        <item>14 de janeiro</item>
+    </string-array>
+
+
 </resources>
