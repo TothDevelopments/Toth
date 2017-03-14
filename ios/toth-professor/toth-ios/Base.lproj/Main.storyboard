@@ -445,14 +445,11 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v3H-vR-Gjo">
                                         <rect key="frame" x="0.0" y="301.5" width="289" height="53.5"/>
                                         <state key="normal" title="Avançar"/>
-                                        <connections>
-                                            <action selector="avancarPressionado:" destination="z8K-yd-gbN" eventType="touchUpInside" id="1c7-A6-0VI"/>
-                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Lvq-ye-h5q" firstAttribute="top" secondItem="EQB-bG-Ugw" secondAttribute="bottom" constant="8" id="F9z-cT-Y4k"/>
                             <constraint firstAttribute="trailing" secondItem="EQB-bG-Ugw" secondAttribute="trailing" id="Xy0-Bv-12T"/>
@@ -465,7 +462,7 @@
                     </view>
                     <modalPageSheetSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <connections>
-                        <outlet property="descricaoAtividade" destination="lef-dY-o32" id="v4g-yC-rNM"/>
+                        <outlet property="atividadeDescricao" destination="lef-dY-o32" id="Uhb-Kp-q5e"/>
                         <outlet property="fieldFinal" destination="awm-4D-0bt" id="X9j-SE-pdk"/>
                         <outlet property="fieldInicio" destination="pdj-YB-Jc4" id="O1o-fy-H1E"/>
                         <outlet property="imgAtividade" destination="qLw-B6-59I" id="Wqv-fq-SvN"/>
@@ -919,7 +916,7 @@
                                     <navigationItem id="NPo-A1-7wR">
                                         <nil key="title"/>
                                         <segmentedControl key="titleView" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" segmentControlStyle="plain" selectedSegmentIndex="0" id="yRL-QA-fwf">
-                                            <rect key="frame" x="11" y="8" width="299" height="29"/>
+                                            <rect key="frame" x="10.5" y="7.5" width="299" height="29"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <segments>
                                                 <segment title="Tarefas"/>
@@ -1184,7 +1181,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="OvF-h1-eOP">
-                                            <rect key="frame" x="8" y="7.5" width="271" height="45"/>
+                                            <rect key="frame" x="8" y="7" width="271" height="45"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ASz-ri-Z1h">
                                                     <rect key="frame" x="0.0" y="0.0" width="45" height="45"/>
@@ -1211,7 +1208,7 @@
                                                     <rect key="frame" x="59" y="5" width="212" height="35"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Extra 01" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0XP-ed-Wlz">
-                                                            <rect key="frame" x="0.0" y="0.0" width="61.5" height="14"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="62" height="14"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="14" id="WNk-co-cfR"/>
                                                             </constraints>
@@ -1278,7 +1275,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="w8R-qa-2Mq">
-                                            <rect key="frame" x="8" y="7.5" width="271" height="45"/>
+                                            <rect key="frame" x="8" y="7" width="271" height="45"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MSz-Q6-88q">
                                                     <rect key="frame" x="0.0" y="0.0" width="45" height="45"/>
@@ -1305,7 +1302,7 @@
                                                     <rect key="frame" x="59" y="5" width="212" height="35"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Prova 01" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DiP-Vo-8B0">
-                                                            <rect key="frame" x="0.0" y="0.0" width="65.5" height="14"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="66" height="14"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="14" id="0NA-k7-twD"/>
                                                             </constraints>
