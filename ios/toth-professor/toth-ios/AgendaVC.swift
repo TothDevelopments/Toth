@@ -13,7 +13,6 @@ class AgendaVC: UIViewController, UITableViewDelegate, UITableViewDataSource, FS
 
 
     @IBOutlet weak var calendar: FSCalendar!
-    @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var tableView: UITableView!
 
     var agendaCells = [Agenda]()
@@ -27,7 +26,6 @@ class AgendaVC: UIViewController, UITableViewDelegate, UITableViewDataSource, FS
             
         }
         
-        scrollView.contentSize.height = 700
         calendar.clipsToBounds = true
    
         tableView.delegate = self
@@ -53,6 +51,10 @@ class AgendaVC: UIViewController, UITableViewDelegate, UITableViewDataSource, FS
         return agendaCells.count
     }
     
+    func calendar(_ calendar: FSCalendar, didSelect date: Date) {
+        print("selecionou data")
+         //calendar.setScope(.week, animated: true)
+    }
     
     
 }
