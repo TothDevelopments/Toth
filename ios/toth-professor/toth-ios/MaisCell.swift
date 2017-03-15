@@ -18,7 +18,7 @@ class MaisCell: UITableViewCell {
     @IBOutlet weak var imgNotas: UIImageView!
     @IBOutlet weak var imgAjuda: UIImageView!
     @IBOutlet weak var imgShare: UIImageView!
-    @IBOutlet weak var imgSair: UIImageView!
+   
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -43,8 +43,6 @@ class MaisCell: UITableViewCell {
         imgShare.image = resizeImage(image: imgShare.image!, newWidth: 35)
         imgShare.layer.cornerRadius = 10
         
-        imgSair.image = resizeImage(image: imgSair.image!, newWidth: 35)
-        imgSair.layer.cornerRadius = 10
         
       
     }

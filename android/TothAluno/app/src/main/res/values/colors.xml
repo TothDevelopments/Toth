@@ -7,19 +7,19 @@
     <color name="colorActiveSmall">#FFFFFF</color>
     <color name="colorInactiveSmall">#50FFFFFF</color>
 
-    <color name="color_tab_1">#2196F3</color>
-    <color name="color_tab_2">#1976D2</color>
-    <color name="color_tab_3">#1E88E5</color>
-    <color name="color_tab_4">#2196F3</color>
+    <color name="color_tab_1">#2196f3</color>
+    <color name="color_tab_2">#2196f3</color>
+    <color name="color_tab_3">#2196f3</color>
+    <color name="color_tab_4">#2196f3</color>
 
     <color name="color_notification_back">#ffcd33</color>
     <color name="color_notification_text">#3E4757</color>
 
     <array name="tab_colors">
         <item name="tab_1">#2196f3</item>
-        <item name="tab_2">#1e88e5</item>
-        <item name="tab_3">#1976d2</item>
-        <item name="tab_4">#1565c0</item>
+        <item name="tab_2">#2196f3</item>
+        <item name="tab_3">#2196f3</item>
+        <item name="tab_4">#2196f3</item>
     </array>
 
     <color name="background_tarefa">#8BC34A</color>
@@ -27,4 +27,6 @@
     <color name="background_prova">#f44336</color>
 
     <color name="background_lista_grupos">#90CAF9</color>
+
+    <color name="background_splash_screnn">#25A5EF</color>
 </resources>
