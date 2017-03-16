@@ -28,20 +28,20 @@ class MaisCell: UITableViewCell {
         imgPerfilPreview.layer.cornerRadius = 30
         
     
-        imgCodSala.image = resizeImage(image: imgCodSala.image!, newWidth: 35)
-        imgCodSala.layer.cornerRadius = 10
+        imgCodSala.image = resizeImage(image: imgCodSala.image!, newWidth: 30)
+        imgCodSala.layer.cornerRadius = 7
 
-        imgListaAlunos.image = resizeImage(image: imgListaAlunos.image!, newWidth: 35)
-        imgListaAlunos.layer.cornerRadius = 10
+        imgListaAlunos.image = resizeImage(image: imgListaAlunos.image!, newWidth: 30)
+        imgListaAlunos.layer.cornerRadius = 7
         
-        imgNotas.image = resizeImage(image: imgNotas.image!, newWidth: 35)
-        imgNotas.layer.cornerRadius = 10
+        imgNotas.image = resizeImage(image: imgNotas.image!, newWidth: 30)
+        imgNotas.layer.cornerRadius = 7
         
-        imgAjuda.image = resizeImage(image: imgAjuda.image!, newWidth: 35)
-        imgAjuda.layer.cornerRadius = 10
+        imgAjuda.image = resizeImage(image: imgAjuda.image!, newWidth: 30)
+        imgAjuda.layer.cornerRadius = 7
         
-        imgShare.image = resizeImage(image: imgShare.image!, newWidth: 35)
-        imgShare.layer.cornerRadius = 10
+        imgShare.image = resizeImage(image: imgShare.image!, newWidth: 30)
+        imgShare.layer.cornerRadius = 7
         
         
       
