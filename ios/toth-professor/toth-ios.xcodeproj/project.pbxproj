@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		540EE0671E7A0D9D0034D0D2 /* descAtividade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540EE0661E7A0D9D0034D0D2 /* descAtividade.swift */; };
+		540EE06B1E7A483E0034D0D2 /* AlunoPerfilCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540EE06A1E7A483E0034D0D2 /* AlunoPerfilCell.swift */; };
 		5439882E1E6E734E001A640C /* PerfilAlunoTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5439882D1E6E734E001A640C /* PerfilAlunoTVC.swift */; };
 		543988301E6F5F43001A640C /* NotasVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5439882F1E6F5F43001A640C /* NotasVC.swift */; };
 		543988341E6F7A77001A640C /* NotaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543988331E6F7A77001A640C /* NotaCell.swift */; };
@@ -41,6 +42,7 @@
 
 /* Begin PBXFileReference section */
 		540EE0661E7A0D9D0034D0D2 /* descAtividade.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = descAtividade.swift; sourceTree = "<group>"; };
+		540EE06A1E7A483E0034D0D2 /* AlunoPerfilCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlunoPerfilCell.swift; sourceTree = "<group>"; };
 		5439882D1E6E734E001A640C /* PerfilAlunoTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PerfilAlunoTVC.swift; sourceTree = "<group>"; };
 		5439882F1E6F5F43001A640C /* NotasVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotasVC.swift; sourceTree = "<group>"; };
 		543988331E6F7A77001A640C /* NotaCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotaCell.swift; sourceTree = "<group>"; };
@@ -131,6 +133,7 @@
 				54ED45CE1E692571007E2839 /* GrupoCell.swift */,
 				54FECB891E6C65EF0047D00F /* AlunoCell.swift */,
 				543988331E6F7A77001A640C /* NotaCell.swift */,
+				540EE06A1E7A483E0034D0D2 /* AlunoPerfilCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -272,6 +275,7 @@
 				543988341E6F7A77001A640C /* NotaCell.swift in Sources */,
 				5439882E1E6E734E001A640C /* PerfilAlunoTVC.swift in Sources */,
 				54FECB901E6C9EC40047D00F /* MaisTVC.swift in Sources */,
+				540EE06B1E7A483E0034D0D2 /* AlunoPerfilCell.swift in Sources */,
 				54ED45CF1E692571007E2839 /* GrupoCell.swift in Sources */,
 				544874FE1E58EDB100AF2F06 /* Notificacao.swift in Sources */,
 				54AD2A491E4E80F300990611 /* EsqueciSenhaVC.swift in Sources */,
