@@ -38,6 +38,7 @@
 		54FECB8A1E6C65EF0047D00F /* AlunoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FECB891E6C65EF0047D00F /* AlunoCell.swift */; };
 		54FECB8C1E6C90860047D00F /* Aluno.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FECB8B1E6C90860047D00F /* Aluno.swift */; };
 		54FECB901E6C9EC40047D00F /* MaisTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FECB8F1E6C9EC40047D00F /* MaisTVC.swift */; };
+		9221414C1E79F59900B2905C /* CriarAtividadeTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9221414B1E79F59900B2905C /* CriarAtividadeTVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -75,7 +76,10 @@
 		54FECB891E6C65EF0047D00F /* AlunoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlunoCell.swift; sourceTree = "<group>"; };
 		54FECB8B1E6C90860047D00F /* Aluno.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Aluno.swift; sourceTree = "<group>"; };
 		54FECB8F1E6C9EC40047D00F /* MaisTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaisTVC.swift; sourceTree = "<group>"; };
+		9221414B1E79F59900B2905C /* CriarAtividadeTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CriarAtividadeTVC.swift; sourceTree = "<group>"; };
+		924F7C7B1E6E339D008A97E4 /* AtividadeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AtividadeVC.swift; sourceTree = "<group>"; };
 		92A9D0BA1E71866400F826A0 /* CriarAtividadeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CriarAtividadeVC.swift; sourceTree = "<group>"; };
+		92C4717E1E7371BA00287DC0 /* Eureka.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Eureka.framework; path = Carthage/Build/iOS/Eureka.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +100,7 @@
 				54A984A01E53C6EB00639B03 /* Assets.xcassets */,
 				544C22431E4A754C003B3914 /* toth-ios */,
 				544C22421E4A754C003B3914 /* Products */,
+				92C4717D1E7371B900287DC0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -153,7 +158,7 @@
 				92A9D0BA1E71866400F826A0 /* CriarAtividadeVC.swift */,
 				5439882D1E6E734E001A640C /* PerfilAlunoTVC.swift */,
 				5439882F1E6F5F43001A640C /* NotasVC.swift */,
-				540EE0661E7A0D9D0034D0D2 /* descAtividade.swift */,
+				9221414B1E79F59900B2905C /* CriarAtividadeTVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -175,6 +180,14 @@
 			isa = PBXGroup;
 			children = (
 				54F3A55C1E5CF12100400937 /* FSCalendar.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		92C4717D1E7371B900287DC0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				92C4717E1E7371BA00287DC0 /* Eureka.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -271,6 +284,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				543988671E7204E3001A640C /* Atividades.swift in Sources */,
+				9221414C1E79F59900B2905C /* CriarAtividadeTVC.swift in Sources */,
 				546556FB1E5E4F8800153996 /* AgendaCell.swift in Sources */,
 				543988341E6F7A77001A640C /* NotaCell.swift in Sources */,
 				5439882E1E6E734E001A640C /* PerfilAlunoTVC.swift in Sources */,
