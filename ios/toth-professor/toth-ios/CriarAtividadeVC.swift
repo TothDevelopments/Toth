@@ -15,9 +15,7 @@ class CriarAtividadeVC: UIViewController, UIPickerViewDelegate, UIPickerViewData
     @IBOutlet weak var tipoAtividade: UITextField!
     @IBOutlet weak var fieldInicio: UITextField!
     @IBOutlet weak var fieldFinal: UITextField!
-    @IBOutlet weak var imgBackground: UIImageView!
-    @IBOutlet weak var atividadeDescricao: UITextView!
-    
+    @IBOutlet weak var imgBackground: UIImageView!    
     
     // tipos de atividade
     let atividades = ["Trabalho", "Prova", "Tarefa"]
