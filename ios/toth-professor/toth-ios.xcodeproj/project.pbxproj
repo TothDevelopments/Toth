@@ -77,7 +77,6 @@
 		54FECB8B1E6C90860047D00F /* Aluno.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Aluno.swift; sourceTree = "<group>"; };
 		54FECB8F1E6C9EC40047D00F /* MaisTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaisTVC.swift; sourceTree = "<group>"; };
 		9221414B1E79F59900B2905C /* CriarAtividadeTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CriarAtividadeTVC.swift; sourceTree = "<group>"; };
-		924F7C7B1E6E339D008A97E4 /* AtividadeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AtividadeVC.swift; sourceTree = "<group>"; };
 		92A9D0BA1E71866400F826A0 /* CriarAtividadeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CriarAtividadeVC.swift; sourceTree = "<group>"; };
 		92C4717E1E7371BA00287DC0 /* Eureka.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Eureka.framework; path = Carthage/Build/iOS/Eureka.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */

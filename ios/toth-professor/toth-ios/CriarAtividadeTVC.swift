@@ -15,8 +15,6 @@ class CriarAtividadeTVC: UITableViewController, UIPickerViewDelegate, UIPickerVi
     @IBOutlet weak var tipoAtividade: UITextField!
     @IBOutlet weak var dataInicial: UITextField!
     @IBOutlet weak var dataFinal: UITextField!
-    @IBOutlet weak var cellTipoAtividade: UITableViewCell!
-    
     
     let atividades = ["Tarefa", "Trabalho", "Prova"]
     
