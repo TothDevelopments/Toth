@@ -11,18 +11,14 @@ import UIKit
 class CriarAtividadeVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, UITextFieldDelegate {
     
     @IBOutlet weak var nomeAtividade: UITextField!
-    @IBOutlet weak var descricaoAtividade: UITextView!
     @IBOutlet weak var imgAtividade: UIImageView!
     @IBOutlet weak var tipoAtividade: UITextField!
     @IBOutlet weak var fieldInicio: UITextField!
     @IBOutlet weak var fieldFinal: UITextField!
-    @IBOutlet weak var imgBackground: UIImageView!
+    @IBOutlet weak var imgBackground: UIImageView!    
     
     // tipos de atividade
     let atividades = ["Trabalho", "Prova", "Tarefa"]
-    
-    // instanciando uma atividade
-    var ativ01 = Atividade()
     
     let datePicker = UIDatePicker()
     var atividadePicker = UIPickerView()
@@ -96,14 +92,4 @@ class CriarAtividadeVC: UIViewController, UIPickerViewDelegate, UIPickerViewData
 
         self.view.endEditing(false)
     }
-    
-    /*
-    // função que finaliza a primeira etapa de criacao da atividade
-    @IBAction func avancarPressionado(_ sender: Any) {
-        ativ01.atividadeNome = nomeAtividade.text
-        ativ01.atividadeDescricao = descricaoAtividade.text
-        ativ01.atividadeInicio = fieldInicio.text
-        ativ01.atividadeEntrega = fieldFinal.text
-        ativ01.atividadeTipo = tipoAtividade.text
-    } */
 }

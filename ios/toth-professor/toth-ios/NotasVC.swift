@@ -20,6 +20,8 @@ class NotasVC: UIViewController,UITableViewDelegate, UITableViewDataSource {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+          self.title = "Notas"
+        
         carregaAtividadeLista(atividade: "tarefa")
         
         tableView.delegate = self

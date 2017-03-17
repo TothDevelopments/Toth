@@ -1,1 +1,2 @@
 github "WenchaoD/FSCalendar"
+github "xmartlabs/Eureka" ~> 2.0

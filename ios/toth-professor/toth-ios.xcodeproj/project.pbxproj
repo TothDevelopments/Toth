@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5439882E1E6E734E001A640C /* SemestresTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5439882D1E6E734E001A640C /* SemestresTVC.swift */; };
+		540EE0671E7A0D9D0034D0D2 /* descAtividade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540EE0661E7A0D9D0034D0D2 /* descAtividade.swift */; };
+		540EE06B1E7A483E0034D0D2 /* AlunoPerfilCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540EE06A1E7A483E0034D0D2 /* AlunoPerfilCell.swift */; };
+		5439882E1E6E734E001A640C /* PerfilAlunoTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5439882D1E6E734E001A640C /* PerfilAlunoTVC.swift */; };
 		543988301E6F5F43001A640C /* NotasVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5439882F1E6F5F43001A640C /* NotasVC.swift */; };
 		543988341E6F7A77001A640C /* NotaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543988331E6F7A77001A640C /* NotaCell.swift */; };
 		543988671E7204E3001A640C /* Atividades.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543988661E7204E3001A640C /* Atividades.swift */; };
@@ -36,10 +38,13 @@
 		54FECB8A1E6C65EF0047D00F /* AlunoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FECB891E6C65EF0047D00F /* AlunoCell.swift */; };
 		54FECB8C1E6C90860047D00F /* Aluno.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FECB8B1E6C90860047D00F /* Aluno.swift */; };
 		54FECB901E6C9EC40047D00F /* MaisTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FECB8F1E6C9EC40047D00F /* MaisTVC.swift */; };
+		9221414C1E79F59900B2905C /* CriarAtividadeTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9221414B1E79F59900B2905C /* CriarAtividadeTVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5439882D1E6E734E001A640C /* SemestresTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SemestresTVC.swift; sourceTree = "<group>"; };
+		540EE0661E7A0D9D0034D0D2 /* descAtividade.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = descAtividade.swift; sourceTree = "<group>"; };
+		540EE06A1E7A483E0034D0D2 /* AlunoPerfilCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlunoPerfilCell.swift; sourceTree = "<group>"; };
+		5439882D1E6E734E001A640C /* PerfilAlunoTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PerfilAlunoTVC.swift; sourceTree = "<group>"; };
 		5439882F1E6F5F43001A640C /* NotasVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotasVC.swift; sourceTree = "<group>"; };
 		543988331E6F7A77001A640C /* NotaCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotaCell.swift; sourceTree = "<group>"; };
 		543988661E7204E3001A640C /* Atividades.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Atividades.swift; sourceTree = "<group>"; };
@@ -71,8 +76,9 @@
 		54FECB891E6C65EF0047D00F /* AlunoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlunoCell.swift; sourceTree = "<group>"; };
 		54FECB8B1E6C90860047D00F /* Aluno.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Aluno.swift; sourceTree = "<group>"; };
 		54FECB8F1E6C9EC40047D00F /* MaisTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaisTVC.swift; sourceTree = "<group>"; };
-		924F7C7B1E6E339D008A97E4 /* AtividadeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AtividadeVC.swift; sourceTree = "<group>"; };
+		9221414B1E79F59900B2905C /* CriarAtividadeTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CriarAtividadeTVC.swift; sourceTree = "<group>"; };
 		92A9D0BA1E71866400F826A0 /* CriarAtividadeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CriarAtividadeVC.swift; sourceTree = "<group>"; };
+		92C4717E1E7371BA00287DC0 /* Eureka.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Eureka.framework; path = Carthage/Build/iOS/Eureka.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +99,7 @@
 				54A984A01E53C6EB00639B03 /* Assets.xcassets */,
 				544C22431E4A754C003B3914 /* toth-ios */,
 				544C22421E4A754C003B3914 /* Products */,
+				92C4717D1E7371B900287DC0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -130,6 +137,7 @@
 				54ED45CE1E692571007E2839 /* GrupoCell.swift */,
 				54FECB891E6C65EF0047D00F /* AlunoCell.swift */,
 				543988331E6F7A77001A640C /* NotaCell.swift */,
+				540EE06A1E7A483E0034D0D2 /* AlunoPerfilCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -146,10 +154,10 @@
 				54ED45D01E6925E5007E2839 /* GruposVC.swift */,
 				54FECB871E6C65830047D00F /* AlunosVC.swift */,
 				54FECB8F1E6C9EC40047D00F /* MaisTVC.swift */,
-				924F7C7B1E6E339D008A97E4 /* AtividadeVC.swift */,
 				92A9D0BA1E71866400F826A0 /* CriarAtividadeVC.swift */,
-				5439882D1E6E734E001A640C /* SemestresTVC.swift */,
+				5439882D1E6E734E001A640C /* PerfilAlunoTVC.swift */,
 				5439882F1E6F5F43001A640C /* NotasVC.swift */,
+				9221414B1E79F59900B2905C /* CriarAtividadeTVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -171,6 +179,14 @@
 			isa = PBXGroup;
 			children = (
 				54F3A55C1E5CF12100400937 /* FSCalendar.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		92C4717D1E7371B900287DC0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				92C4717E1E7371BA00287DC0 /* Eureka.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -267,10 +283,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				543988671E7204E3001A640C /* Atividades.swift in Sources */,
+				9221414C1E79F59900B2905C /* CriarAtividadeTVC.swift in Sources */,
 				546556FB1E5E4F8800153996 /* AgendaCell.swift in Sources */,
 				543988341E6F7A77001A640C /* NotaCell.swift in Sources */,
-				5439882E1E6E734E001A640C /* SemestresTVC.swift in Sources */,
+				5439882E1E6E734E001A640C /* PerfilAlunoTVC.swift in Sources */,
 				54FECB901E6C9EC40047D00F /* MaisTVC.swift in Sources */,
+				540EE06B1E7A483E0034D0D2 /* AlunoPerfilCell.swift in Sources */,
 				54ED45CF1E692571007E2839 /* GrupoCell.swift in Sources */,
 				544874FE1E58EDB100AF2F06 /* Notificacao.swift in Sources */,
 				54AD2A491E4E80F300990611 /* EsqueciSenhaVC.swift in Sources */,
@@ -288,6 +306,7 @@
 				544875001E58F22B00AF2F06 /* NotificacaoCell.swift in Sources */,
 				54FECB8C1E6C90860047D00F /* Aluno.swift in Sources */,
 				544874F11E58CA5C00AF2F06 /* GrupoProfessor.swift in Sources */,
+				540EE0671E7A0D9D0034D0D2 /* descAtividade.swift in Sources */,
 				54FECB8A1E6C65EF0047D00F /* AlunoCell.swift in Sources */,
 				54ED45D11E6925E5007E2839 /* GruposVC.swift in Sources */,
 				544874FC1E58E5D400AF2F06 /* NotificacoesVC.swift in Sources */,

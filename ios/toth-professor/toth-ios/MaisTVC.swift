@@ -22,7 +22,7 @@ class MaisTVC: UITableViewController {
 
    
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("dd")
+      
        // performSegue(withIdentifier: "listaAlunosSG", sender: self)
     }
 
