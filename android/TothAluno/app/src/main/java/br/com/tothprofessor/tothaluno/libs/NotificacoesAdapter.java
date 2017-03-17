@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -25,7 +26,7 @@ public class NotificacoesAdapter extends ArrayAdapter {
     }
 
     static  class  DataHandler{
-        //ImageView imagem;
+        ImageView imagem;
         TextView titulo;
         TextView subtitulo;
     }
@@ -59,6 +60,7 @@ public class NotificacoesAdapter extends ArrayAdapter {
             handler = new DataHandler();
             handler.titulo = (TextView) row.findViewById(R.id.layout_item_titulo_notificacoes);
             handler.subtitulo = (TextView) row.findViewById(R.id.layout_item_subtitulo_notificacoes);
+            handler.imagem = (ImageView) row.findViewById(R.id.imageViewAtividade);
             row.setTag(handler);
         }
         else {
@@ -66,7 +68,7 @@ public class NotificacoesAdapter extends ArrayAdapter {
         }
         NotificacoesDataProvider dataProvider;
         dataProvider = (NotificacoesDataProvider)this.getItem(position);
-        //handler.imagem.setImageResouce(dataProvider.getImg_notificacao());
+        handler.imagem.setImageResource(dataProvider.getImg_notificacao());
         handler.titulo.setText(dataProvider.getNotificacoes_titulo());
         handler.subtitulo.setText(dataProvider.getNotificacoes_subtitulo());
 

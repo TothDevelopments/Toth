@@ -6,17 +6,17 @@ package br.com.tothprofessor.tothaluno.libs;
 
 public class NotificacoesDataProvider {
 
-   // private int img_notificacao;
+    private int img_notificacao;
     private String notificacoes_titulo;
     private String notificacoes_subtitulo;
 
-//    public int getImg_notificacao() {
-//        return img_notificacao;
-//    }
-//
-//    public void setImg_notificacao(int img_notificacao) {
-//        this.img_notificacao = img_notificacao;
-//    }
+    public int getImg_notificacao() {
+        return img_notificacao;
+    }
+
+    public void setImg_notificacao(int img_notificacao) {
+        this.img_notificacao = img_notificacao;
+    }
 
     public String getNotificacoes_titulo() {
         return notificacoes_titulo;
@@ -34,11 +34,11 @@ public class NotificacoesDataProvider {
         this.notificacoes_subtitulo = notificacoes_subtitulo;
     }
 
-//    public NotificacoesDataProvider(int img_notificacao, String notificacoes_titulo, String notificacoes_subtitulo) {
-//        this.setImg_notificacao(img_notificacao);
-//        this.setNotificacoes_titulo(notificacoes_titulo);
-//        this.setNotificacoes_subtitulo(notificacoes_subtitulo);
-//    }
+    public NotificacoesDataProvider(int img_notificacao, String notificacoes_titulo, String notificacoes_subtitulo) {
+        this.setImg_notificacao(img_notificacao);
+        this.setNotificacoes_titulo(notificacoes_titulo);
+        this.setNotificacoes_subtitulo(notificacoes_subtitulo);
+    }
     public NotificacoesDataProvider(String notificacoes_titulo, String notificacoes_subtitulo) {
         this.setNotificacoes_titulo(notificacoes_titulo);
         this.setNotificacoes_subtitulo(notificacoes_subtitulo);

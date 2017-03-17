@@ -34,7 +34,7 @@ public class NotificacoesActivity  extends AppCompatActivity {
         adapter = new NotificacoesAdapter(getApplicationContext(), R.layout.item_lista_notificacoes);
         listView.setAdapter(adapter);
         for(String titulo: notificacoes_titulo) {
-            NotificacoesDataProvider dataProvider = new NotificacoesDataProvider(titulo, notificacoes_subtitulo[i]);
+            NotificacoesDataProvider dataProvider = new NotificacoesDataProvider(R.drawable.botao_gmail, titulo, notificacoes_subtitulo[i]);
             adapter.add(dataProvider);
             i++;
         }

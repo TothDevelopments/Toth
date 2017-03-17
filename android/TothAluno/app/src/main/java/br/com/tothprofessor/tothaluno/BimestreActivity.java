@@ -15,11 +15,10 @@ import android.view.ViewGroup;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import br.com.tothprofessor.tothaluno.libs.BimestreAdapter;
-import br.com.tothprofessor.tothaluno.libs.BimestreDataProvider;
 import br.com.tothprofessor.tothaluno.libs.BimestreFragmentAtvidades;
 import br.com.tothprofessor.tothaluno.libs.BimestreFragmentProvas;
 import br.com.tothprofessor.tothaluno.libs.BimestreFragmentTrabalhos;
+import br.com.tothprofessor.tothaluno.libs.BimestreFragmentExtras;
 
 public class BimestreActivity extends AppCompatActivity {
 
@@ -54,7 +53,6 @@ public class BimestreActivity extends AppCompatActivity {
 
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(mViewPager);
-
 
     }
 
@@ -109,21 +107,21 @@ public class BimestreActivity extends AppCompatActivity {
                     //Fragment para Atividades
                     return new BimestreFragmentAtvidades();
                 case 1:
-                    //Fragment para Provas
+                    //Fragment para Trabalhos
                     return new BimestreFragmentTrabalhos();
                 case 2:
-                    //Fragment para Trabalhos
+                    //Fragment para Provas
                     return new BimestreFragmentProvas();
                 case 3:
-                    //Fragment para Trabalhos
-                    return new BimestreFragmentTrabalhos();
+                    //Fragment para Extras
+                    return new BimestreFragmentExtras();
             }
             return null;
         }
 
         @Override
         public int getCount() {
-            // Show 3 total pages.
+            // Show 4 total pages.
             return 4;
         }
 

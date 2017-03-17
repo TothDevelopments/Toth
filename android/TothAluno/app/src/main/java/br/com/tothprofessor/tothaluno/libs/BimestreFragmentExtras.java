@@ -6,23 +6,21 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
-import android.widget.TextView;
 
 import br.com.tothprofessor.tothaluno.R;
 
-
 /**
- * Created by Felipe on 04/03/2017.
+ * Created by Felipe on 17/03/2017.
  */
 
-public class BimestreFragmentTrabalhos extends Fragment {
+public class BimestreFragmentExtras extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
 
-        View rootView = inflater.inflate(R.layout.fragment_bimestre_trabalhos, container, false);
-        ListView listView = (ListView) rootView.findViewById(R.id.list_view_bimestre_trabalhos);
+
+        View rootView = inflater.inflate(R.layout.fragment_bimestre_extras, container, false);
+        ListView listView = (ListView)  rootView.findViewById(R.id.list_view_bimestre_extras);
         String[] notificacoes_titulo = getResources().getStringArray(R.array.notificacoes_titulo);
         String[] notificacoes_subtitulo = getResources().getStringArray(R.array.notificacoes_subtitulo);
 
@@ -34,6 +32,7 @@ public class BimestreFragmentTrabalhos extends Fragment {
             adapter.add(dataProvider);
             i++;
         }
-        return rootView;
+        return  rootView;
+
     }
 }
