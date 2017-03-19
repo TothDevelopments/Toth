@@ -73,6 +73,12 @@
             android:parentActivityName=".MeuBoletimActivity"
             android:screenOrientation="portrait" />
 
+        <activity
+            android:name=".PlanoAulaActivity"
+            android:label="Plano de Aula"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" />
+
     </application>
 
 </manifest>
