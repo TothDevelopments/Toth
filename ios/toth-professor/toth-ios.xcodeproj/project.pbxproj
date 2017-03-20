@@ -39,6 +39,8 @@
 		54FECB8C1E6C90860047D00F /* Aluno.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FECB8B1E6C90860047D00F /* Aluno.swift */; };
 		54FECB901E6C9EC40047D00F /* MaisTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FECB8F1E6C9EC40047D00F /* MaisTVC.swift */; };
 		9221414C1E79F59900B2905C /* CriarAtividadeTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9221414B1E79F59900B2905C /* CriarAtividadeTVC.swift */; };
+		92F1B88C1E7B608200643B25 /* EntregasTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F1B88B1E7B608200643B25 /* EntregasTVC.swift */; };
+		92F1B88E1E7B644300643B25 /* EntregaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F1B88D1E7B644300643B25 /* EntregaCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -79,6 +81,8 @@
 		9221414B1E79F59900B2905C /* CriarAtividadeTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CriarAtividadeTVC.swift; sourceTree = "<group>"; };
 		92A9D0BA1E71866400F826A0 /* CriarAtividadeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CriarAtividadeVC.swift; sourceTree = "<group>"; };
 		92C4717E1E7371BA00287DC0 /* Eureka.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Eureka.framework; path = Carthage/Build/iOS/Eureka.framework; sourceTree = "<group>"; };
+		92F1B88B1E7B608200643B25 /* EntregasTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntregasTVC.swift; sourceTree = "<group>"; };
+		92F1B88D1E7B644300643B25 /* EntregaCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntregaCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +142,7 @@
 				54FECB891E6C65EF0047D00F /* AlunoCell.swift */,
 				543988331E6F7A77001A640C /* NotaCell.swift */,
 				540EE06A1E7A483E0034D0D2 /* AlunoPerfilCell.swift */,
+				92F1B88D1E7B644300643B25 /* EntregaCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -158,6 +163,7 @@
 				5439882D1E6E734E001A640C /* PerfilAlunoTVC.swift */,
 				5439882F1E6F5F43001A640C /* NotasVC.swift */,
 				9221414B1E79F59900B2905C /* CriarAtividadeTVC.swift */,
+				92F1B88B1E7B608200643B25 /* EntregasTVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -309,6 +315,8 @@
 				540EE0671E7A0D9D0034D0D2 /* descAtividade.swift in Sources */,
 				54FECB8A1E6C65EF0047D00F /* AlunoCell.swift in Sources */,
 				54ED45D11E6925E5007E2839 /* GruposVC.swift in Sources */,
+				92F1B88C1E7B608200643B25 /* EntregasTVC.swift in Sources */,
+				92F1B88E1E7B644300643B25 /* EntregaCell.swift in Sources */,
 				544874FC1E58E5D400AF2F06 /* NotificacoesVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
