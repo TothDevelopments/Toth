@@ -11,6 +11,7 @@ class CriarAtividadeTVC: UITableViewController, UIPickerViewDataSource,UIPickerV
 
     
     @IBOutlet weak var pickerAtividades: UIPickerView!
+    
     @IBOutlet weak var labelAtividadeTipo: UILabel!
     
     @IBOutlet weak var labelDuracao: UILabel!
@@ -21,13 +22,17 @@ class CriarAtividadeTVC: UITableViewController, UIPickerViewDataSource,UIPickerV
     
     @IBOutlet weak var terminaAtivLabel: UILabel!
     
+    @IBOutlet weak var cellPickerAtividade: UITableViewCell!
+    
+    
+    
     let pickerData = [["Selecione","Plano de Aula", "Tarefa","Trabalho","Prova"]]
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-       
+        //cellPickerAtividade.isHidden = true
         
         pickerAtividades.delegate   = self
         pickerAtividades.dataSource = self
@@ -81,6 +86,7 @@ class CriarAtividadeTVC: UITableViewController, UIPickerViewDataSource,UIPickerV
     func updatePickerLabel(){
         let atividade = pickerData[0][pickerAtividades.selectedRow(inComponent: 0)]
         labelAtividadeTipo.text = atividade
+        pickerAtividades.resignFirstResponder()
     }
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
@@ -104,7 +110,15 @@ class CriarAtividadeTVC: UITableViewController, UIPickerViewDataSource,UIPickerV
     
     /* Configuracao das expandable cells */
     
-      
+//    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//        if indexPath.row == 0{
+//            
+//        } else if indexPath.row == 1{
+//            cellPickerAtividade.isHidden = false
+//        }
+//        print(indexPath.row)
+//    }
+    
     /* ! Configuracao das expandable cells */
     
     
