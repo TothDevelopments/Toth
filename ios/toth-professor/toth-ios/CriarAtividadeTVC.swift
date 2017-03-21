@@ -7,92 +7,119 @@
 //
 
 import UIKit
+class CriarAtividadeTVC: UITableViewController, UIPickerViewDataSource,UIPickerViewDelegate  {
 
-class CriarAtividadeTVC: UITableViewController, UIPickerViewDelegate, UIPickerViewDataSource {
+    
+    @IBOutlet weak var pickerAtividades: UIPickerView!
+    
+    @IBOutlet weak var labelAtividadeTipo: UILabel!
+    
+    @IBOutlet weak var labelDuracao: UILabel!
+    
+    @IBOutlet weak var labelDiaAula: UILabel!
 
-    @IBOutlet weak var tituloAtividade: UITextField!
-    @IBOutlet weak var descricaoAtividade: UITextView!
-    @IBOutlet weak var tipoAtividade: UITextField!
-    @IBOutlet weak var dataInicial: UITextField!
-    @IBOutlet weak var dataFinal: UITextField!
+    @IBOutlet weak var comecaAtivLabel: UILabel!
     
-    let atividades = ["Tarefa", "Trabalho", "Prova"]
+    @IBOutlet weak var terminaAtivLabel: UILabel!
     
-    let datePicker = UIDatePicker()
-    var atividadePicker = UIPickerView()
+    @IBOutlet weak var cellPickerAtividade: UITableViewCell!
     
-
+    
+    
+    let pickerData = [["Selecione","Plano de Aula", "Tarefa","Trabalho","Prova"]]
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //cellPickerAtividade.isHidden = true
         
-        datePicker.datePickerMode = .date
+        pickerAtividades.delegate   = self
+        pickerAtividades.dataSource = self
         
-        atividadePicker.delegate = self
-        atividadePicker.dataSource = self
-        
-        tableView.dataSource = self
-        tableView.delegate = self
-        
-        tipoAtividade.inputView = atividadePicker
-        
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
-        
-        criarDatePicker()
-    }
-   
-    public func numberOfComponents(in pickerView: UIPickerView) -> Int {
-        return 1
     }
     
-    public func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return atividades.count
+    @IBAction func datePickerChanged(_ sender: UIDatePicker) {
+        
+        let pickerTag = sender.tag
+        
+        if pickerTag == 1{
+            
+            let dateFormatter = DateFormatter()
+            dateFormatter.dateFormat = "HH:mm"
+            let strDate = dateFormatter.string(from: sender.date)
+            self.labelDuracao.text = strDate
+            
+        } else if pickerTag == 2{
+            
+            let dateFormatter = DateFormatter()
+            dateFormatter.dateFormat = "EEEE, dd MMM yyyy"
+            let strDate = dateFormatter.string(from: sender.date)
+            self.labelDiaAula.text = strDate
+            
+        } else if pickerTag == 3{
+            
+            let dateFormatter = DateFormatter()
+            dateFormatter.dateFormat = "dd MMM yyyy, HH:mm"
+            let strDate = dateFormatter.string(from: sender.date)
+            self.comecaAtivLabel.text = strDate
+   
+        } else if pickerTag == 4{
+            
+            let dateFormatter = DateFormatter()
+            dateFormatter.dateFormat = "dd MMM yyyy, HH:mm"
+            let strDate = dateFormatter.string(from: sender.date)
+            self.terminaAtivLabel.text = strDate
+            
+        }
+    }
+    
+    @IBAction func diaInteiroSwitch(_ sender: Any) {
+    }
+    
+    func tableView(tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        return 44.0
+    }
+    
+    /* Configuracao dos pickerViews */
+    
+    func updatePickerLabel(){
+        let atividade = pickerData[0][pickerAtividades.selectedRow(inComponent: 0)]
+        labelAtividadeTipo.text = atividade
+        pickerAtividades.resignFirstResponder()
+    }
+    
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return pickerData.count
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return pickerData[component].count
     }
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return atividades[row]
+        return pickerData[component][row]
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        tipoAtividade.text = atividades[row]
-        self.view.endEditing(false)
+        updatePickerLabel()
     }
     
-    // funcoes do dataPicker
+     /* ! Configuracao dos pickerViews */
     
-    func criarDatePicker() {
-        
-        //toolbar
-        let toolbar = UIToolbar()
-        toolbar.sizeToFit()
-        
-        //bar button item
-        let doneButton = UIBarButtonItem(barButtonSystemItem: .done, target: nil, action: #selector (doneApertado))
-        toolbar.setItems([doneButton], animated: true)
-        
-        //anexa a toolbar aos textfields
-        dataInicial.inputAccessoryView = toolbar
-        
-        //anexa o datepicker aos textfields
-        dataInicial.inputView = datePicker
-
-    }
     
-    func doneApertado() {
-        
-        // formatação da Data
-        let formatoData = DateFormatter()
-        formatoData.dateFormat = "dd/MM/yyyy"
-        print(formatoData.string(from: datePicker.date))
-        
-        // grava a data no textfield
-        dataInicial.text = formatoData.string(from: datePicker.date)
-        
-        self.view.endEditing(false)
-    }
-
+    /* Configuracao das expandable cells */
+    
+//    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//        if indexPath.row == 0{
+//            
+//        } else if indexPath.row == 1{
+//            cellPickerAtividade.isHidden = false
+//        }
+//        print(indexPath.row)
+//    }
+    
+    /* ! Configuracao das expandable cells */
+    
+    
 }
