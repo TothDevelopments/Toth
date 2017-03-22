@@ -19,6 +19,4 @@ class GrupoCell: UICollectionViewCell {
         grupoImgPreview.layer.cornerRadius = grupoImgPreview.frame.size.width/2
         grupoNome.text = Grupo.titleGroup
     }
-    
-    
 }

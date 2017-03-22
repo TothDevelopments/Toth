@@ -40,6 +40,8 @@
 		54FECB8C1E6C90860047D00F /* Aluno.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FECB8B1E6C90860047D00F /* Aluno.swift */; };
 		54FECB901E6C9EC40047D00F /* MaisTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FECB8F1E6C9EC40047D00F /* MaisTVC.swift */; };
 		9221414C1E79F59900B2905C /* CriarAtividadeTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9221414B1E79F59900B2905C /* CriarAtividadeTVC.swift */; };
+		9290B7801E82BBA200F9DBE7 /* CriarGrupoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9290B77F1E82BBA200F9DBE7 /* CriarGrupoVC.swift */; };
+		9290B7931E82FA2A00F9DBE7 /* ImageRow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9290B7921E82FA2A00F9DBE7 /* ImageRow.framework */; };
 		92F1B88C1E7B608200643B25 /* EntregasTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F1B88B1E7B608200643B25 /* EntregasTVC.swift */; };
 		92F1B88E1E7B644300643B25 /* EntregaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F1B88D1E7B644300643B25 /* EntregaCell.swift */; };
 /* End PBXBuildFile section */
@@ -81,6 +83,8 @@
 		54FECB8B1E6C90860047D00F /* Aluno.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Aluno.swift; sourceTree = "<group>"; };
 		54FECB8F1E6C9EC40047D00F /* MaisTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaisTVC.swift; sourceTree = "<group>"; };
 		9221414B1E79F59900B2905C /* CriarAtividadeTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CriarAtividadeTVC.swift; sourceTree = "<group>"; };
+		9290B77F1E82BBA200F9DBE7 /* CriarGrupoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CriarGrupoVC.swift; sourceTree = "<group>"; };
+		9290B7921E82FA2A00F9DBE7 /* ImageRow.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageRow.framework; path = Carthage/Build/iOS/ImageRow.framework; sourceTree = SOURCE_ROOT; };
 		92C4717E1E7371BA00287DC0 /* Eureka.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Eureka.framework; path = Carthage/Build/iOS/Eureka.framework; sourceTree = "<group>"; };
 		92F1B88B1E7B608200643B25 /* EntregasTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntregasTVC.swift; sourceTree = "<group>"; };
 		92F1B88D1E7B644300643B25 /* EntregaCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntregaCell.swift; sourceTree = "<group>"; };
@@ -93,6 +97,7 @@
 			files = (
 				54F3A55D1E5CF12100400937 /* FSCalendar.framework in Frameworks */,
 				54296D231E81F36300FE5130 /* Eureka.framework in Frameworks */,
+				9290B7931E82FA2A00F9DBE7 /* ImageRow.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -165,6 +170,7 @@
 				5439882F1E6F5F43001A640C /* NotasVC.swift */,
 				9221414B1E79F59900B2905C /* CriarAtividadeTVC.swift */,
 				92F1B88B1E7B608200643B25 /* EntregasTVC.swift */,
+				9290B77F1E82BBA200F9DBE7 /* CriarGrupoVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -185,6 +191,7 @@
 		54F3A55B1E5CF10C00400937 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9290B7921E82FA2A00F9DBE7 /* ImageRow.framework */,
 				54296D221E81F36300FE5130 /* Eureka.framework */,
 				54F3A55C1E5CF12100400937 /* FSCalendar.framework */,
 			);
@@ -276,6 +283,7 @@
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/FSCalendar.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Eureka.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/ImageRow.framework",
 			);
 			name = Carthage;
 			outputPaths = (
@@ -294,6 +302,7 @@
 				543988671E7204E3001A640C /* Atividades.swift in Sources */,
 				9221414C1E79F59900B2905C /* CriarAtividadeTVC.swift in Sources */,
 				546556FB1E5E4F8800153996 /* AgendaCell.swift in Sources */,
+				9290B7801E82BBA200F9DBE7 /* CriarGrupoVC.swift in Sources */,
 				543988341E6F7A77001A640C /* NotaCell.swift in Sources */,
 				5439882E1E6E734E001A640C /* PerfilAlunoTVC.swift in Sources */,
 				54FECB901E6C9EC40047D00F /* MaisTVC.swift in Sources */,

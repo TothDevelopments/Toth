@@ -26,7 +26,7 @@ class GruposVC: UICollectionViewController {
         self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
 
         
-        for i in 0...10{
+        for i in 0...2{
             profGrupos.append(GrupoProfessor(imgGroupPreview: "dani_teste.png", titleGroup: "Escola Nome \(i)"))
         }
         
@@ -67,12 +67,27 @@ class GruposVC: UICollectionViewController {
             
             cell.updateGrupoUI(Grupo: grupo)
             
+            cell.tag = indexPath.row
+            
             return cell
             
         } else {
             return UICollectionViewCell()
         }
     }
+    
+    // função para realizar o segue para o novo criador de grupo ao apertar o +
+    
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        let selectedIndex = (indexPath.row + 1)
+        
+        if selectedIndex == profGrupos.count{
+            performSegue(withIdentifier: "segueCriarGrupo", sender: self)
+        } 
+    }
+    
+    
 
     // MARK: UICollectionViewDelegate
 
