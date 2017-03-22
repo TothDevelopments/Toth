@@ -10,8 +10,8 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:paddingTop="5dp"
-        android:layout_height="95dp">
+        android:layout_height="75dp"
+        android:paddingTop="5dp">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -24,16 +24,16 @@
                 android:id="@+id/layout_item_titulo_notificacoes"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="16sp"
-                android:text="Prof° José acaba de lançar a sua nota do 2° bimestre, venha conferir a sua nota."
-                android:textColor="#212121" />
+                android:text="..."
+                android:textColor="#212121"
+                android:textSize="16sp" />
 
             <TextView
                 android:id="@+id/layout_item_subtitulo_notificacoes"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/layout_item_titulo_notificacoes"
-                android:text="Há 3 horas."
+                android:text="..."
                 android:textColor="#212121"
                 android:textSize="13sp" />
 
@@ -41,10 +41,10 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:background="#ECECEC"
                 android:layout_alignParentBottom="true"
                 android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true">
+                android:layout_alignParentStart="true"
+                android:background="#ECECEC">
 
             </RelativeLayout>
 
@@ -53,15 +53,14 @@
 
         <ImageView
             android:id="@+id/imageViewAtividade"
-            android:layout_alignParentTop="true"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
             android:layout_marginLeft="16dp"
-            card_view:srcCompat="@drawable/botao_gmail"
             android:layout_marginTop="5dp"
-            android:layout_width="45dp"
-            android:layout_height="45dp" />
-
+            card_view:srcCompat="@drawable/botao_gmail" />
 
 
     </RelativeLayout>

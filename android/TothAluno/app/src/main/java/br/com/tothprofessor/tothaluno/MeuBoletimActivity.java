@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutCompat;
+import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
@@ -20,6 +21,11 @@ public class MeuBoletimActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_meu_boletim);
+
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar_meuBoletim);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
 
         RelativeLayout item_lista_1_bimestre = (RelativeLayout) findViewById(R.id.item_lista_1_bimestre);
         RelativeLayout item_lista_2_bimestre = (RelativeLayout) findViewById(R.id.item_lista_2_bimestre);
@@ -53,5 +59,11 @@ public class MeuBoletimActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+    }
+
+    @Override
+    public boolean onSupportNavigateUp() {
+        onBackPressed();
+        return true;
     }
 }
