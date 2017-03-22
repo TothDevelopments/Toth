@@ -7,119 +7,146 @@
 //
 
 import UIKit
-class CriarAtividadeTVC: UITableViewController, UIPickerViewDataSource,UIPickerViewDelegate  {
+import Eureka
 
+class CriarAtividadeTVC: FormViewController  {
     
-    @IBOutlet weak var pickerAtividades: UIPickerView!
-    
-    @IBOutlet weak var labelAtividadeTipo: UILabel!
-    
-    @IBOutlet weak var labelDuracao: UILabel!
-    
-    @IBOutlet weak var labelDiaAula: UILabel!
+    @IBOutlet weak var continuarBtn: UIBarButtonItem!
 
-    @IBOutlet weak var comecaAtivLabel: UILabel!
-    
-    @IBOutlet weak var terminaAtivLabel: UILabel!
-    
-    @IBOutlet weak var cellPickerAtividade: UITableViewCell!
-    
-    
-    
-    let pickerData = [["Selecione","Plano de Aula", "Tarefa","Trabalho","Prova"]]
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
+        initializeForm()
+    }
+    
+    @IBAction func dismissView(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
+    private func initializeForm() {
         
-        //cellPickerAtividade.isHidden = true
+        form =
+            Section()
         
-        pickerAtividades.delegate   = self
-        pickerAtividades.dataSource = self
+            <<< TextRow("Título").cellSetup {
+                cell,row in cell.textField.placeholder = row.tag
+            }
+            <<< PushRow<String>("tipoAtividade") {
+                $0.title = "Tipo de atividade"
+                $0.selectorTitle = "Atividade"
+                $0.options = ["Plano de aula","Tarefa","Trabalho","Prova"]
+                $0.value = "Plano de aula"
+            }
+            
+            +++
+            
+            Section(){
+                $0.tag = "secPlanoAula"
+                $0.hidden = "$tipoAtividade != 'Plano de aula'" 
+            }
+            
+            <<< DateInlineRow() {
+                $0.title = "Dia da aula"
+                $0.value = Date()
+            }
+            
+            +++
+            
+            Section(){
+                $0.tag = "secPeriodos"
+                $0.hidden = "$tipoAtividade == 'Plano de aula'"
+            }
+            
+            <<< SwitchRow("Dia inteiro") {
+                $0.title = $0.tag
+                }.onChange { [weak self] row in
+                    let startDate: DateTimeInlineRow! = self?.form.rowBy(tag: "Começa")
+                    let endDate: DateTimeInlineRow! = self?.form.rowBy(tag: "Termina")
+                    
+                    if row.value ?? false {
+                        startDate.dateFormatter?.dateStyle = .medium
+                        startDate.dateFormatter?.timeStyle = .none
+                        endDate.dateFormatter?.dateStyle = .medium
+                        endDate.dateFormatter?.timeStyle = .none
+                    }
+                    else {
+                        startDate.dateFormatter?.dateStyle = .short
+                        startDate.dateFormatter?.timeStyle = .short
+                        endDate.dateFormatter?.dateStyle = .short
+                        endDate.dateFormatter?.timeStyle = .short
+                    }
+                    startDate.updateCell()
+                    endDate.updateCell()
+                    startDate.inlineRow?.updateCell()
+                    endDate.inlineRow?.updateCell()
+            }
+            
+            <<< DateTimeInlineRow("Começa") {
+                $0.title = $0.tag
+                $0.value = Date().addingTimeInterval(60*60*24)
+                }
+                .onChange { [weak self] row in
+                    let endRow: DateTimeInlineRow! = self?.form.rowBy(tag: "Termina")
+                    if row.value?.compare(endRow.value!) == .orderedDescending {
+                        endRow.value = Date(timeInterval: 60*60*24, since: row.value!)
+                        endRow.cell!.backgroundColor = .white
+                        endRow.updateCell()
+                    }
+                }
+                .onExpandInlineRow { cell, row, inlineRow in
+                    inlineRow.cellUpdate { [weak self] cell, dateRow in
+                        let allRow: SwitchRow! = self?.form.rowBy(tag: "Dia inteiro")
+                        if allRow.value ?? false {
+                            cell.datePicker.datePickerMode = .date
+                        }
+                        else {
+                            cell.datePicker.datePickerMode = .dateAndTime
+                        }
+                    }
+                    let color = cell.detailTextLabel?.textColor
+                    row.onCollapseInlineRow { cell, _, _ in
+                        cell.detailTextLabel?.textColor = color
+                    }
+                    cell.detailTextLabel?.textColor = cell.tintColor
+            }
+            
+            <<< DateTimeInlineRow("Termina"){
+                $0.title = $0.tag
+                $0.value = Date().addingTimeInterval(60*60*25)
+                }
+                .onChange { [weak self] row in
+                    let startRow: DateTimeInlineRow! = self?.form.rowBy(tag: "Começa")
+                    if row.value?.compare(startRow.value!) == .orderedAscending {
+                        row.cell!.backgroundColor = .red
+                    }
+                    else{
+                        row.cell!.backgroundColor = .white
+                    }
+                    row.updateCell()
+                }
+                .onExpandInlineRow { cell, row, inlineRow in
+                    inlineRow.cellUpdate { [weak self] cell, dateRow in
+                        let allRow: SwitchRow! = self?.form.rowBy(tag: "Dia inteiro")
+                        if allRow.value ?? false {
+                            cell.datePicker.datePickerMode = .date
+                        }
+                        else {
+                            cell.datePicker.datePickerMode = .dateAndTime
+                        }
+                    }
+                    let color = cell.detailTextLabel?.textColor
+                    row.onCollapseInlineRow { cell, _, _ in
+                        cell.detailTextLabel?.textColor = color
+                }
+                cell.detailTextLabel?.textColor = cell.tintColor
+            }
+        
+
+            +++
+    
+             TextAreaRow("Descrição") {
+                $0.placeholder = "Descrição"
+                $0.textAreaHeight = .dynamic(initialTextViewHeight: 200)
+            }
         
     }
-    
-    @IBAction func datePickerChanged(_ sender: UIDatePicker) {
-        
-        let pickerTag = sender.tag
-        
-        if pickerTag == 1{
-            
-            let dateFormatter = DateFormatter()
-            dateFormatter.dateFormat = "HH:mm"
-            let strDate = dateFormatter.string(from: sender.date)
-            self.labelDuracao.text = strDate
-            
-        } else if pickerTag == 2{
-            
-            let dateFormatter = DateFormatter()
-            dateFormatter.dateFormat = "EEEE, dd MMM yyyy"
-            let strDate = dateFormatter.string(from: sender.date)
-            self.labelDiaAula.text = strDate
-            
-        } else if pickerTag == 3{
-            
-            let dateFormatter = DateFormatter()
-            dateFormatter.dateFormat = "dd MMM yyyy, HH:mm"
-            let strDate = dateFormatter.string(from: sender.date)
-            self.comecaAtivLabel.text = strDate
-   
-        } else if pickerTag == 4{
-            
-            let dateFormatter = DateFormatter()
-            dateFormatter.dateFormat = "dd MMM yyyy, HH:mm"
-            let strDate = dateFormatter.string(from: sender.date)
-            self.terminaAtivLabel.text = strDate
-            
-        }
-    }
-    
-    @IBAction func diaInteiroSwitch(_ sender: Any) {
-    }
-    
-    func tableView(tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
-        return 44.0
-    }
-    
-    /* Configuracao dos pickerViews */
-    
-    func updatePickerLabel(){
-        let atividade = pickerData[0][pickerAtividades.selectedRow(inComponent: 0)]
-        labelAtividadeTipo.text = atividade
-        pickerAtividades.resignFirstResponder()
-    }
-    
-    func numberOfComponents(in pickerView: UIPickerView) -> Int {
-        return pickerData.count
-    }
-    
-    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return pickerData[component].count
-    }
-    
-    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return pickerData[component][row]
-    }
-    
-    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        updatePickerLabel()
-    }
-    
-     /* ! Configuracao dos pickerViews */
-    
-    
-    /* Configuracao das expandable cells */
-    
-//    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        if indexPath.row == 0{
-//            
-//        } else if indexPath.row == 1{
-//            cellPickerAtividade.isHidden = false
-//        }
-//        print(indexPath.row)
-//    }
-    
-    /* ! Configuracao das expandable cells */
-    
     
 }
