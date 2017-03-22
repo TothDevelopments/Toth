@@ -49,7 +49,7 @@ class CriarGrupoVC: FormViewController {
             <<< PushRow<String>("ano") {
                 $0.title = "Ano"
                 $0.selectorTitle = "Ano"
-                $0.options = ["1º ano", "2º ano", "3º ano", "4º ano", "5º ano", "6º ano", "7º ano", "8º ano", "9º ano"]
+                $0.options = ["6º ano", "7º ano", "8º ano", "9º ano", "1º colegial", "2º colegial", "3º colegial"]
             }
             
             <<< PushRow<String>("Turma") {
