@@ -2,6 +2,7 @@ package br.com.tothprofessor.tothaluno;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.widget.ListView;
 
 import br.com.tothprofessor.tothaluno.libs.NotificacoesAdapter;
@@ -26,6 +27,12 @@ public class NotificacoesActivity  extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_notificacoes);
+
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar_notificacoes);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+
         listView = (ListView) findViewById(R.id.list_view_notificacoes_activity);
         notificacoes_titulo = getResources().getStringArray(R.array.notificacoes_titulo);
         notificacoes_subtitulo = getResources().getStringArray(R.array.notificacoes_subtitulo);
@@ -38,5 +45,13 @@ public class NotificacoesActivity  extends AppCompatActivity {
             adapter.add(dataProvider);
             i++;
         }
+
+
+    }
+
+    @Override
+    public boolean onSupportNavigateUp() {
+        onBackPressed();
+        return true;
     }
 }
