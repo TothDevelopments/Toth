@@ -31,54 +31,66 @@
             android:parentActivityName=".MainActivity"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
-
         <activity
             android:name=".CadastrarEmailActivity"
             android:label="Cadastre-se"
-            android:parentActivityName=".LoginActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".EsqueciSenhaActivity"
             android:label="Esqueci a senha"
-            android:parentActivityName=".EsqueciSenhaActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".ResumoAtividadeActivity"
             android:label="Atividade"
-            android:parentActivityName=".MainActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".NotificacoesActivity"
-            android:label="Notificações"
+            android:label="@string/title_activity_notificacao"
             android:parentActivityName=".MainActivity"
-            android:screenOrientation="portrait" />
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="br.com.tothprofessor.tothaluno.MainActivity" />
+        </activity>
+
         <activity
             android:name=".PesquisarNovoGrupoActivity"
             android:label="Encontrar novo grupo"
-            android:parentActivityName=".MainActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".ResultadoNovoGrupoActivity"
             android:label="Novo grupo"
-            android:parentActivityName=".PesquisarNovoGrupoActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".MeuBoletimActivity"
             android:label="Meu Boletim"
-            android:parentActivityName=".MainActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".BimestreActivity"
             android:label="@string/title_activity_1_bimestre"
-            android:parentActivityName=".MeuBoletimActivity"
-            android:screenOrientation="portrait" />
-
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".PlanoAulaActivity"
             android:label="Plano de Aula"
-            android:parentActivityName=".MainActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
 
+        <activity
+            android:name=".AtividadeActivity"
+            android:label="@string/title_activity_atividade"
+            android:parentActivityName=".ResumoAtividadeActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="br.com.tothprofessor.tothaluno.ResumoAtividadeActivity" />
+        </activity>
     </application>
 
 </manifest>

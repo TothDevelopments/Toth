@@ -3,6 +3,7 @@ package br.com.tothprofessor.tothaluno;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
@@ -18,6 +19,11 @@ public class CadastrarEmailActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cadastrar_email);
 
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar_cadastrarEmail);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+
 
         Button btEntrar = (Button) findViewById(R.id.buttonEntrarCadastrar);
 
@@ -29,4 +35,9 @@ public class CadastrarEmailActivity extends AppCompatActivity {
         });
     }
 
+    @Override
+    public boolean onSupportNavigateUp() {
+        onBackPressed();
+        return true;
+    }
 }

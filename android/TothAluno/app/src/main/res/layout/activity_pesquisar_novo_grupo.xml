@@ -14,6 +14,14 @@
         android:focusableInTouchMode="true" >
 
 
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_pesquisarNovoGrupo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme" />
+
         <TextView
             android:text="Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI."
             android:layout_width="match_parent"

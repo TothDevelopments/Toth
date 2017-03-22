@@ -10,8 +10,8 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:paddingTop="5dp"
-        android:layout_height="95dp">
+        android:layout_height="65dp"
+        android:paddingTop="5dp">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -24,9 +24,9 @@
                 android:id="@+id/layout_item_titulo_bimestre"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="16sp"
                 android:text="Bimestre."
-                android:textColor="#212121" />
+                android:textColor="#212121"
+                android:textSize="16sp" />
 
             <TextView
                 android:id="@+id/layout_item_subtitulo_bimestre"
@@ -40,10 +40,10 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:background="#ECECEC"
                 android:layout_alignParentBottom="true"
                 android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true">
+                android:layout_alignParentStart="true"
+                android:background="#ECECEC">
 
             </RelativeLayout>
 
@@ -52,14 +52,13 @@
 
         <ImageView
             android:id="@+id/imageViewBimestre"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentRight="true"
-            android:layout_marginRight="16dp"
-            card_view:srcCompat="@drawable/botao_gmail"
-            android:layout_marginTop="5dp"
             android:layout_width="45dp"
-            android:layout_height="45dp" />
-
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="5dp"
+            card_view:srcCompat="@drawable/botao_gmail" />
 
 
     </RelativeLayout>
