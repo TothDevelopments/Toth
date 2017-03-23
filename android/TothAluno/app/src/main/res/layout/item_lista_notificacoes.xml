@@ -10,15 +10,15 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="75dp"
-        android:paddingTop="5dp">
+        android:layout_height="wrap_content">
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:paddingLeft="75dp"
             android:paddingRight="16dp"
-            android:paddingTop="5dp">
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp" >
 
             <TextView
                 android:id="@+id/layout_item_titulo_notificacoes"
@@ -37,18 +37,6 @@
                 android:textColor="#212121"
                 android:textSize="13sp" />
 
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:layout_alignParentBottom="true"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:background="#ECECEC">
-
-            </RelativeLayout>
-
-
         </RelativeLayout>
 
         <ImageView
@@ -59,7 +47,8 @@
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:layout_marginLeft="16dp"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
             card_view:srcCompat="@drawable/botao_gmail" />
 
 

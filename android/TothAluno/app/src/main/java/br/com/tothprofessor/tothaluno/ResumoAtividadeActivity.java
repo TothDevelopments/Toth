@@ -2,6 +2,7 @@ package br.com.tothprofessor.tothaluno;
 
 import android.content.Intent;
 import android.graphics.Color;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.design.widget.Snackbar;
 import android.support.v4.app.FragmentContainer;
@@ -20,6 +21,7 @@ import android.widget.TextView;
 
 public class ResumoAtividadeActivity extends AppCompatActivity {
 
+    private Toolbar toolbar;
     private TextView textViewAtividadeNota;
     private TextView textViewNomeAtividade;
     private TextView textViewDataEntrega;
@@ -33,7 +35,11 @@ public class ResumoAtividadeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_resumo_atividade);
 
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar_resumoAtividade);
+        if(Build.VERSION.SDK_INT>=Build.VERSION_CODES.LOLLIPOP) {
+            getWindow().setStatusBarColor(Color.parseColor("#0D47A1"));
+        }
+
+        toolbar = (Toolbar) findViewById(R.id.toolbar_resumoAtividade);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);

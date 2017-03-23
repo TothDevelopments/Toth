@@ -1,5 +1,7 @@
 package br.com.tothprofessor.tothaluno;
 
+import android.graphics.Color;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -13,14 +15,18 @@ public class PlanoAulaActivity extends AppCompatActivity {
 
     private TextView textViewDtaPlanoAula;
     private TextView textViewPlanoAula;
-
+    private Toolbar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_plano_aula);
 
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar_planoAula);
+        if(Build.VERSION.SDK_INT>=Build.VERSION_CODES.LOLLIPOP) {
+            getWindow().setStatusBarColor(Color.parseColor("#0D47A1"));
+        }
+
+        toolbar = (Toolbar) findViewById(R.id.toolbar_planoAula);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
