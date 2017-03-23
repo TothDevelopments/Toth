@@ -1,6 +1,8 @@
 package br.com.tothprofessor.tothaluno;
 
 import android.content.Intent;
+import android.graphics.Color;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -13,13 +15,18 @@ import android.widget.Button;
 
 public class ResultadoNovoGrupoActivity extends AppCompatActivity {
 
+    private Toolbar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_resultado_novo_grupo);
 
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar_resultadoNovoGrupo);
+        if(Build.VERSION.SDK_INT>=Build.VERSION_CODES.LOLLIPOP) {
+            getWindow().setStatusBarColor(Color.parseColor("#0D47A1"));
+        }
+
+        toolbar = (Toolbar) findViewById(R.id.toolbar_resultadoNovoGrupo);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
