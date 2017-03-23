@@ -9,6 +9,13 @@
 import UIKit
 
 class CadastroVC: UIViewController {
+        
+    @IBAction func btnTermos(_ sender: Any) {
+    }
+
+    @IBAction func btnLogin(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,9 +23,5 @@ class CadastroVC: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-    @IBAction func backBtnPress(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
-    }
-    
 
 }
