@@ -10,10 +10,14 @@ import UIKit
 
 class LoginVC: UIViewController {
 
+    @IBOutlet weak var entrarLoginBtn: UIButton!
+    @IBOutlet weak var loginFacebook: UIButton!
+    @IBOutlet weak var loginGoogle: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-     
+       
     }
 
 }
