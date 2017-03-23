@@ -16,11 +16,24 @@ class CriarAtividadeTVC: FormViewController  {
     override func viewDidLoad() {
         super.viewDidLoad()
         initializeForm()
+        
+        
+     
     }
     
     @IBAction func dismissView(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
+    
+    private func avancarCriacao(tipoCriacao: Any?){
+        if (tipoCriacao as! String) != "Plano de aula" {
+            continuarBtn.title = "Avançar"
+        } else{
+            continuarBtn.title = "Salvar"
+        }
+    }
+    
+    
     private func initializeForm() {
         
         form =
@@ -34,7 +47,12 @@ class CriarAtividadeTVC: FormViewController  {
                 $0.selectorTitle = "Atividade"
                 $0.options = ["Plano de aula","Tarefa","Trabalho","Prova"]
                 $0.value = "Plano de aula"
-            }
+                }.onChange{ row in
+                    if let value = row.baseValue {
+                        self.avancarCriacao(tipoCriacao: value)
+                        
+                    }
+                }
             
             +++
             
