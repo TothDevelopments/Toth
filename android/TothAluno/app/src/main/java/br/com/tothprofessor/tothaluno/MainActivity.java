@@ -3,6 +3,7 @@ package br.com.tothprofessor.tothaluno;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
@@ -40,6 +41,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        if(Build.VERSION.SDK_INT>=Build.VERSION_CODES.LOLLIPOP) {
+            getWindow().setStatusBarColor(Color.parseColor("#0D47A1"));
+        }
+
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         toolbar.setTitle("Atividade");
         setSupportActionBar(toolbar);

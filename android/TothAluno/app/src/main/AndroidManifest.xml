@@ -46,6 +46,7 @@
             android:label="Atividade"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
+
         <activity
             android:name=".NotificacoesActivity"
             android:label="@string/title_activity_notificacao"

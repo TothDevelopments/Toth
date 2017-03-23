@@ -1,6 +1,8 @@
 package br.com.tothprofessor.tothaluno;
 
 import android.content.Intent;
+import android.graphics.Color;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -14,12 +16,18 @@ import android.widget.Toast;
 
 public class CadastrarEmailActivity extends AppCompatActivity {
 
+    private Toolbar toolbar;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cadastrar_email);
 
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar_cadastrarEmail);
+        if(Build.VERSION.SDK_INT>=Build.VERSION_CODES.LOLLIPOP) {
+            getWindow().setStatusBarColor(Color.parseColor("#0D47A1"));
+        }
+
+        toolbar = (Toolbar) findViewById(R.id.toolbar_cadastrarEmail);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
