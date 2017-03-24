@@ -70,7 +70,8 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public boolean onCreateOptionsMenu(Menu menu) {
             // Inflate the menu; this adds items to the action bar if it is present.
-            getMenuInflater().inflate(R.menu.activity_main, menu);
+            getMenuInflater().inflate(R.menu.activity_main_notificacoes, menu);
+
             return true;
         }
 
@@ -81,10 +82,11 @@ public class MainActivity extends AppCompatActivity {
         if (id == R.id.action_notificacoes) {
             Intent intent = new Intent(this, NotificacoesActivity.class);
             startActivity(intent);
-        } else if (id == R.id.action_login) {
-            Intent intent = new Intent(this, LoginActivity.class);
-            startActivity(intent);
         }
+//        else if (id == R.id.action_add_atividade) {
+//            Intent intent = new Intent(this, AtividadeActivity.class);
+//            startActivity(intent);
+//        }
 
 
         return super.onOptionsItemSelected(item);
@@ -209,7 +211,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void abrirAtividade(View view){
-        Intent intent = new Intent(this, ResumoAtividadeActivity.class);
+        Intent intent = new Intent(this, PreviewActivity.class);
 //        EditText editText = (EditText) findViewById(R.id.edit_message);
 //        String message = editText.getText().toString();
 //        intent.putExtra(EXTRA_MESSAGE, message);

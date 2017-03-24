@@ -19,7 +19,7 @@ import android.widget.TextView;
  * Created by kennedy on 18/02/17.
  */
 
-public class ResumoAtividadeActivity extends AppCompatActivity {
+public class ResumoAtividadeActivity2 extends AppCompatActivity {
 
     private Toolbar toolbar;
     private TextView textViewAtividadeNota;

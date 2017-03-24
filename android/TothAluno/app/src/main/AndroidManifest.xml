@@ -42,11 +42,10 @@
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".ResumoAtividadeActivity"
+            android:name=".ResumoAtividadeActivity2"
             android:label="Atividade"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
-
         <activity
             android:name=".NotificacoesActivity"
             android:label="@string/title_activity_notificacao"
@@ -56,7 +55,6 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="br.com.tothprofessor.tothaluno.MainActivity" />
         </activity>
-
         <activity
             android:name=".PesquisarNovoGrupoActivity"
             android:label="Encontrar novo grupo"
@@ -82,16 +80,17 @@
             android:label="Plano de Aula"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
-
         <activity
             android:name=".AtividadeActivity"
-            android:label="@string/title_activity_atividade"
-            android:parentActivityName=".ResumoAtividadeActivity"
+            android:label="Atividade ABC - Iniciada"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="br.com.tothprofessor.tothaluno.ResumoAtividadeActivity" />
         </activity>
+        <activity
+            android:name=".PreviewActivity"
+            android:label="Atividade ABC"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
     </application>
 
 </manifest>

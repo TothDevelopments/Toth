@@ -3,16 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
-        android:id="@+id/action_login"
-        android:title="Login"
-        app:showAsAction="ifRoom"/>
-
-    <item
         android:id="@+id/action_notificacoes"
         android:icon="@drawable/ic_public_white_48dp"
         android:title="Notificações"
         app:showAsAction="ifRoom"/>
-
-
 
 </menu>
