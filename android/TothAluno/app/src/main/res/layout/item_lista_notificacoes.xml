@@ -22,7 +22,7 @@
 
             <TextView
                 android:id="@+id/layout_item_titulo_notificacoes"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="..."
                 android:textColor="#212121"
@@ -30,7 +30,7 @@
 
             <TextView
                 android:id="@+id/layout_item_subtitulo_notificacoes"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/layout_item_titulo_notificacoes"
                 android:text="..."
