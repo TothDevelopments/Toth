@@ -8,6 +8,7 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
         <activity
             android:name=".Splash"
             android:label="Toth Aluno"
@@ -20,32 +21,40 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+
         <activity
             android:name=".LoginActivity"
             android:label="Login"
             android:parentActivityName=".MainActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/Theme.AppCompat.NoActionBar" />
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+
+        </activity>
+
         <activity
             android:name=".CadastrarEmailActivity"
             android:label="Cadastre-se"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+
         <activity
             android:name=".EsqueciSenhaActivity"
             android:label="Esqueci a senha"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".ResumoAtividadeActivity2"
-            android:label="Atividade"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+
         <activity
             android:name=".NotificacoesActivity"
             android:label="@string/title_activity_notificacao"
@@ -55,42 +64,61 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="br.com.tothprofessor.tothaluno.MainActivity" />
         </activity>
+
         <activity
             android:name=".PesquisarNovoGrupoActivity"
             android:label="Encontrar novo grupo"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+
         <activity
             android:name=".ResultadoNovoGrupoActivity"
             android:label="Novo grupo"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+
         <activity
             android:name=".MeuBoletimActivity"
             android:label="Meu Boletim"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+
         <activity
             android:name=".BimestreActivity"
             android:label="@string/title_activity_1_bimestre"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+
         <activity
-            android:name=".PlanoAulaActivity"
-            android:label="Plano de Aula"
+            android:name=".PreviewActivity"
+            android:label="Preview Atividade"
+            android:parentActivityName=".NotificacoesActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="br.com.tothprofessor.tothaluno.NotificacoesActivity" />
+        </activity>
+
         <activity
             android:name=".AtividadeActivity"
             android:label="Atividade ABC - Iniciada"
+            android:parentActivityName=".NotificacoesActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="br.com.tothprofessor.tothaluno.NotificacoesActivity" />
         </activity>
-        <activity
-            android:name=".PreviewActivity"
-            android:label="Atividade ABC"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar" />
+
     </application>
 
 </manifest>

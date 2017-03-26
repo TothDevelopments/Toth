@@ -23,9 +23,9 @@ public class PreviewActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_preview);
 
-//        if(Build.VERSION.SDK_INT>=Build.VERSION_CODES.LOLLIPOP) {
-//            getWindow().setStatusBarColor(Color.parseColor("#0D47A1"));
-//        }
+        if(Build.VERSION.SDK_INT>=Build.VERSION_CODES.LOLLIPOP) {
+            getWindow().setStatusBarColor(Color.parseColor("#0D47A1"));
+        }
 
         toolbar = (Toolbar) findViewById(R.id.toolbar_previewAtividade);
         setSupportActionBar(toolbar);

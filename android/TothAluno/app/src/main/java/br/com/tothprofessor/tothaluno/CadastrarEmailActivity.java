@@ -32,7 +32,6 @@ public class CadastrarEmailActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
 
-
         Button btEntrar = (Button) findViewById(R.id.buttonEntrarCadastrar);
 
         btEntrar.setOnClickListener(new View.OnClickListener() {
