@@ -28,7 +28,9 @@ public class BimestreFragmentExtras extends Fragment {
         BimestreAdapter adapter = new BimestreAdapter(this.getActivity(), R.layout.item_lista_bimestre);
         listView.setAdapter(adapter);
         for (String titulo : notificacoes_titulo) {
-            BimestreDataProvider dataProvider = new BimestreDataProvider(R.drawable.botao_gmail, titulo, notificacoes_subtitulo[i]);
+//            BimestreDataProvider dataProvider = new BimestreDataProvider(R.drawable.botao_gmail, titulo, notificacoes_subtitulo[i]);
+            BimestreDataProvider dataProvider = new BimestreDataProvider(R.drawable.botao_gmail, "Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos.", notificacoes_subtitulo[i]);
+
             adapter.add(dataProvider);
             i++;
         }

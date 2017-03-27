@@ -23,7 +23,7 @@ public class Splash extends Activity implements Runnable {
         }
 
         Handler handler = new Handler();
-        handler.postDelayed(this, 3000);
+        handler.postDelayed(this, 1000);
     }
 
     public void run(){
