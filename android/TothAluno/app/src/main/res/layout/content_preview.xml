@@ -8,10 +8,58 @@
     tools:context="br.com.tothprofessor.tothaluno.PreviewActivity"
     tools:showIn="@layout/activity_preview">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="@dimen/text_margin"
-        android:text="@string/large_text" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:id="@+id/relativeLayout2">
+
+            <TextView
+                android:id="@+id/textView_dataEntrega"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/text_margin"
+                android:text="Entregar dia 01 de abril"
+                android:textSize="16dp" />
+
+
+            <TextView
+                android:id="@+id/textView_tempoExecucao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:text="50 minutos para realizar"
+                android:textSize="14dp"
+                android:layout_above="@+id/relativeLayout3"
+                android:layout_alignLeft="@+id/textView_dataEntrega"
+                android:layout_alignStart="@+id/textView_dataEntrega" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:background="#d1d1d1"
+                android:id="@+id/relativeLayout3">
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="70dp"
+            android:layout_margin="@dimen/text_margin"
+            android:text="@string/large_text"
+            android:id="@+id/textView4" />
+
+
+    </RelativeLayout>
+
 
 </android.support.v4.widget.NestedScrollView>
