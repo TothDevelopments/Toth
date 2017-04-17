@@ -18,18 +18,37 @@ class CriarAtividadeTVC: FormViewController  {
         initializeForm()
         
         
-     
+        
     }
+    
+    @IBAction func prosseguirCriacao(_ sender: Any) {
+        if continuarBtn.tag == 1{
+            print("plano de aula")
+        } else{
+            performSegue(withIdentifier: "formularioAtividade", sender: nil)
+        }
+        
+    }
+    
+    
     
     @IBAction func dismissView(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
     
-    private func avancarCriacao(tipoCriacao: Any?){
-        if (tipoCriacao as! String) != "Plano de aula" {
-            continuarBtn.title = "Avançar"
-        } else{
-            continuarBtn.title = "Salvar"
+    private func mudaTipoAtividade(tipoCriacao: Any?){
+        if (tipoCriacao as! String) == "Plano de aula" {
+            self.title = "Novo Plano de Aula"
+            continuarBtn.tag = 1
+        } else if (tipoCriacao as! String) == "Tarefa" {
+            self.title = "Nova Tarefa"
+            continuarBtn.tag = 2
+        } else if (tipoCriacao as! String) == "Trabalho" {
+            self.title = "Novo Trabalho"
+            continuarBtn.tag = 3
+        } else if (tipoCriacao as! String) == "Prova" {
+            self.title = "Nova Prova"
+            continuarBtn.tag = 4
         }
     }
     
@@ -49,7 +68,7 @@ class CriarAtividadeTVC: FormViewController  {
                 $0.value = "Plano de aula"
                 }.onChange{ row in
                     if let value = row.baseValue {
-                        self.avancarCriacao(tipoCriacao: value)
+                        self.mudaTipoAtividade(tipoCriacao: value)
                         
                     }
                 }
