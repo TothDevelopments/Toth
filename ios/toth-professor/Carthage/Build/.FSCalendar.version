@@ -1,0 +1,10 @@
+{
+  "xcodeVersion" : "Xcode 8.3.1\nBuild version 8E1000a",
+  "commitish" : "2.7.4",
+  "iOS" : [
+    {
+      "hash" : "c0c814b163ed940d59245a03e75255676ece799e5b8f5296707dff2b55fc17ff",
+      "name" : "FSCalendar"
+    }
+  ]
+}

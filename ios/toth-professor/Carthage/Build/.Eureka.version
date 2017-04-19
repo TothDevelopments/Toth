@@ -1,0 +1,10 @@
+{
+  "xcodeVersion" : "Xcode 8.3.1\nBuild version 8E1000a",
+  "commitish" : "3.0.0",
+  "iOS" : [
+    {
+      "hash" : "49bfeefad3a1b6ef2d800c3c32d2a8337cc9675ff793a2e496f568cd7382a40c",
+      "name" : "Eureka"
+    }
+  ]
+}

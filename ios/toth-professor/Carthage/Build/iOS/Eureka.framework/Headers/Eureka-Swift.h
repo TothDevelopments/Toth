@@ -179,7 +179,7 @@ SWIFT_CLASS("_TtC6Eureka16DecimalFormatter")
 /// View controller that shows a form.
 SWIFT_CLASS("_TtC6Eureka18FormViewController")
 @interface FormViewController : UIViewController
-@property (nonatomic, strong) IBOutlet UITableView * _Nullable tableView;
+@property (nonatomic, strong) IBOutlet UITableView * _Null_unspecified tableView;
 /// Extra space to leave between between the row in focus and the keyboard
 @property (nonatomic) CGFloat rowKeyboardSpacing;
 /// Enables animated scrolling on row navigation
@@ -193,6 +193,8 @@ SWIFT_CLASS("_TtC6Eureka18FormViewController")
 - (void)viewWillAppear:(BOOL)animated;
 - (void)viewDidDisappear:(BOOL)animated;
 - (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
+- (void)tableView:(UITableView * _Nonnull)tableView willBeginReorderingRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+@property (nonatomic) BOOL animateTableView;
 @end
 
 @class UIScrollView;
@@ -240,6 +242,13 @@ SWIFT_CLASS("_TtC6Eureka18FormViewController")
 - (UIView * _Nullable)tableView:(UITableView * _Nonnull)tableView viewForFooterInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (CGFloat)tableView:(UITableView * _Nonnull)tableView heightForHeaderInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (CGFloat)tableView:(UITableView * _Nonnull)tableView heightForFooterInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
+- (BOOL)tableView:(UITableView * _Nonnull)tableView canEditRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+- (void)tableView:(UITableView * _Nonnull)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (BOOL)tableView:(UITableView * _Nonnull)tableView canMoveRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+- (NSIndexPath * _Nonnull)tableView:(UITableView * _Nonnull)tableView targetIndexPathForMoveFromRowAtIndexPath:(NSIndexPath * _Nonnull)sourceIndexPath toProposedIndexPath:(NSIndexPath * _Nonnull)proposedDestinationIndexPath SWIFT_WARN_UNUSED_RESULT;
+- (void)tableView:(UITableView * _Nonnull)tableView moveRowAtIndexPath:(NSIndexPath * _Nonnull)sourceIndexPath toIndexPath:(NSIndexPath * _Nonnull)destinationIndexPath;
+- (UITableViewCellEditingStyle)tableView:(UITableView * _Nonnull)tableView editingStyleForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+- (BOOL)tableView:(UITableView * _Nonnull)tableView shouldIndentWhileEditingRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
 @end
 
 

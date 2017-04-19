@@ -9,7 +9,9 @@
 /* Begin PBXBuildFile section */
 		540EE0671E7A0D9D0034D0D2 /* descAtividade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540EE0661E7A0D9D0034D0D2 /* descAtividade.swift */; };
 		540EE06B1E7A483E0034D0D2 /* AlunoPerfilCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540EE06A1E7A483E0034D0D2 /* AlunoPerfilCell.swift */; };
-		54296D231E81F36300FE5130 /* Eureka.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54296D221E81F36300FE5130 /* Eureka.framework */; };
+		54351BFB1EA71C8700C96B3D /* ImageRow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54351BF81EA71C8700C96B3D /* ImageRow.framework */; };
+		54351C041EA722BA00C96B3D /* Eureka.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54351C021EA722BA00C96B3D /* Eureka.framework */; };
+		54351C051EA722BA00C96B3D /* FSCalendar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54351C031EA722BA00C96B3D /* FSCalendar.framework */; };
 		5439882E1E6E734E001A640C /* PerfilAlunoTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5439882D1E6E734E001A640C /* PerfilAlunoTVC.swift */; };
 		543988301E6F5F43001A640C /* NotasVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5439882F1E6F5F43001A640C /* NotasVC.swift */; };
 		543988341E6F7A77001A640C /* NotaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543988331E6F7A77001A640C /* NotaCell.swift */; };
@@ -39,14 +41,12 @@
 		54ED45CF1E692571007E2839 /* GrupoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54ED45CE1E692571007E2839 /* GrupoCell.swift */; };
 		54ED45D11E6925E5007E2839 /* GruposVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54ED45D01E6925E5007E2839 /* GruposVC.swift */; };
 		54F3A55A1E5CF0E400400937 /* AgendaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F3A5591E5CF0E400400937 /* AgendaVC.swift */; };
-		54F3A55D1E5CF12100400937 /* FSCalendar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54F3A55C1E5CF12100400937 /* FSCalendar.framework */; };
 		54FECB881E6C65830047D00F /* AlunosVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FECB871E6C65830047D00F /* AlunosVC.swift */; };
 		54FECB8A1E6C65EF0047D00F /* AlunoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FECB891E6C65EF0047D00F /* AlunoCell.swift */; };
 		54FECB8C1E6C90860047D00F /* Aluno.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FECB8B1E6C90860047D00F /* Aluno.swift */; };
 		54FECB901E6C9EC40047D00F /* MaisTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FECB8F1E6C9EC40047D00F /* MaisTVC.swift */; };
 		9221414C1E79F59900B2905C /* CriarAtividadeTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9221414B1E79F59900B2905C /* CriarAtividadeTVC.swift */; };
 		9290B7801E82BBA200F9DBE7 /* CriarGrupoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9290B77F1E82BBA200F9DBE7 /* CriarGrupoVC.swift */; };
-		9290B7931E82FA2A00F9DBE7 /* ImageRow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9290B7921E82FA2A00F9DBE7 /* ImageRow.framework */; };
 		92F1B88C1E7B608200643B25 /* EntregasTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F1B88B1E7B608200643B25 /* EntregasTVC.swift */; };
 		92F1B88E1E7B644300643B25 /* EntregaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F1B88D1E7B644300643B25 /* EntregaCell.swift */; };
 /* End PBXBuildFile section */
@@ -54,7 +54,9 @@
 /* Begin PBXFileReference section */
 		540EE0661E7A0D9D0034D0D2 /* descAtividade.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = descAtividade.swift; sourceTree = "<group>"; };
 		540EE06A1E7A483E0034D0D2 /* AlunoPerfilCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlunoPerfilCell.swift; sourceTree = "<group>"; };
-		54296D221E81F36300FE5130 /* Eureka.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Eureka.framework; path = Carthage/Build/iOS/Eureka.framework; sourceTree = SOURCE_ROOT; };
+		54351BF81EA71C8700C96B3D /* ImageRow.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageRow.framework; path = Carthage/Build/iOS/ImageRow.framework; sourceTree = SOURCE_ROOT; };
+		54351C021EA722BA00C96B3D /* Eureka.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Eureka.framework; path = Carthage/Build/iOS/Eureka.framework; sourceTree = SOURCE_ROOT; };
+		54351C031EA722BA00C96B3D /* FSCalendar.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FSCalendar.framework; path = Carthage/Build/iOS/FSCalendar.framework; sourceTree = SOURCE_ROOT; };
 		5439882D1E6E734E001A640C /* PerfilAlunoTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PerfilAlunoTVC.swift; sourceTree = "<group>"; };
 		5439882F1E6F5F43001A640C /* NotasVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotasVC.swift; sourceTree = "<group>"; };
 		543988331E6F7A77001A640C /* NotaCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotaCell.swift; sourceTree = "<group>"; };
@@ -87,14 +89,12 @@
 		54ED45CE1E692571007E2839 /* GrupoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GrupoCell.swift; sourceTree = "<group>"; };
 		54ED45D01E6925E5007E2839 /* GruposVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GruposVC.swift; sourceTree = "<group>"; };
 		54F3A5591E5CF0E400400937 /* AgendaVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgendaVC.swift; sourceTree = "<group>"; };
-		54F3A55C1E5CF12100400937 /* FSCalendar.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FSCalendar.framework; path = Carthage/Build/iOS/FSCalendar.framework; sourceTree = SOURCE_ROOT; };
 		54FECB871E6C65830047D00F /* AlunosVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlunosVC.swift; sourceTree = "<group>"; };
 		54FECB891E6C65EF0047D00F /* AlunoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlunoCell.swift; sourceTree = "<group>"; };
 		54FECB8B1E6C90860047D00F /* Aluno.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Aluno.swift; sourceTree = "<group>"; };
 		54FECB8F1E6C9EC40047D00F /* MaisTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaisTVC.swift; sourceTree = "<group>"; };
 		9221414B1E79F59900B2905C /* CriarAtividadeTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CriarAtividadeTVC.swift; sourceTree = "<group>"; };
 		9290B77F1E82BBA200F9DBE7 /* CriarGrupoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CriarGrupoVC.swift; sourceTree = "<group>"; };
-		9290B7921E82FA2A00F9DBE7 /* ImageRow.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageRow.framework; path = Carthage/Build/iOS/ImageRow.framework; sourceTree = SOURCE_ROOT; };
 		92C4717E1E7371BA00287DC0 /* Eureka.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Eureka.framework; path = Carthage/Build/iOS/Eureka.framework; sourceTree = "<group>"; };
 		92F1B88B1E7B608200643B25 /* EntregasTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntregasTVC.swift; sourceTree = "<group>"; };
 		92F1B88D1E7B644300643B25 /* EntregaCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntregaCell.swift; sourceTree = "<group>"; };
@@ -105,9 +105,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				54F3A55D1E5CF12100400937 /* FSCalendar.framework in Frameworks */,
-				54296D231E81F36300FE5130 /* Eureka.framework in Frameworks */,
-				9290B7931E82FA2A00F9DBE7 /* ImageRow.framework in Frameworks */,
+				54351BFB1EA71C8700C96B3D /* ImageRow.framework in Frameworks */,
+				54351C051EA722BA00C96B3D /* FSCalendar.framework in Frameworks */,
+				54351C041EA722BA00C96B3D /* Eureka.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,9 +206,9 @@
 		54F3A55B1E5CF10C00400937 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				9290B7921E82FA2A00F9DBE7 /* ImageRow.framework */,
-				54296D221E81F36300FE5130 /* Eureka.framework */,
-				54F3A55C1E5CF12100400937 /* FSCalendar.framework */,
+				54351C021EA722BA00C96B3D /* Eureka.framework */,
+				54351C031EA722BA00C96B3D /* FSCalendar.framework */,
+				54351BF81EA71C8700C96B3D /* ImageRow.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

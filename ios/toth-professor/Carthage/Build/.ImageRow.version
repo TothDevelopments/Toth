@@ -1,0 +1,10 @@
+{
+  "xcodeVersion" : "Xcode 8.3.1\nBuild version 8E1000a",
+  "commitish" : "1.0.1",
+  "iOS" : [
+    {
+      "hash" : "6b1909fca42ed43f565211f825b4027f4fc31c23c6345d60fbc884da7aef0a7a",
+      "name" : "ImageRow"
+    }
+  ]
+}
