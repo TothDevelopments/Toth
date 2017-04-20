@@ -13,8 +13,11 @@ import android.view.animation.AnimationUtils;
 import android.widget.FrameLayout;
 
 import java.util.ArrayList;
+import java.util.Date;
+import java.util.Random;
 
 import br.com.tothprofessor.tothaluno.R;
+import br.com.tothprofessor.tothaluno.classes.Atividades;
 
 /**
  *
@@ -44,9 +47,10 @@ public class BottomNavigatorFragment extends Fragment {
 			initListaAtividades(view);
 			return view;
 		} else if (getArguments().getInt("index", 0) == 1) {
-			View view = inflater.inflate(R.layout.fragment_lista_atividades, container, false);
-			initFragmentCalendario(view);
-			return view;
+//			View view = inflater.inflate(R.layout.fragment_lista_atividades, container, false);
+//			initFragmentCalendario(view);
+//			return view;
+			return null;
 		} else if (getArguments().getInt("index", 0) == 2) {
 //			View view = inflater.inflate(R.layout.fragment_lista_atividades, container, false);
 //			initDemoList(view);
@@ -63,17 +67,18 @@ public class BottomNavigatorFragment extends Fragment {
 	 * Init the fragment
 	 */
 	private void initListaAtividades(View view) {
-
-		fragmentContainer = (FrameLayout) view.findViewById(R.id.fragment_container);
-		recyclerView = (RecyclerView) view.findViewById(R.id.fragment_demo_recycler_view);
+		fragmentContainer = (FrameLayout) view.findViewById(R.id.fragment_container_lista_atividades);
+		recyclerView = (RecyclerView) view.findViewById(R.id.fragment_demo_recycler_view_lista_atividades);
 		recyclerView.setHasFixedSize(true);
 		layoutManager = new LinearLayoutManager(getActivity());
 		recyclerView.setLayoutManager(layoutManager);
 
-		ArrayList<String> itemsData = new ArrayList<>();
-		itemsData.add("grupos");
+		ArrayList<Atividades> itemsData = new ArrayList<>();
 		for (int i = 0; i < 10; i++) {
-			itemsData.add("Atividade " + i);
+			Random gerador = new Random();
+			int aux = gerador.nextInt(4);
+
+			itemsData.add(new Atividades(i, aux, "Atividade "+i, "Conteúdo da atividade "+i, new Date()));
 		}
 
 		BottomNavigatorAdapter adapter = new BottomNavigatorAdapter(itemsData);
@@ -82,8 +87,8 @@ public class BottomNavigatorFragment extends Fragment {
 
 	private void initFragmentCalendario(View view) {
 
-		fragmentContainer = (FrameLayout) view.findViewById(R.id.fragment_container);
-		recyclerView = (RecyclerView) view.findViewById(R.id.fragment_demo_recycler_view);
+		fragmentContainer = (FrameLayout) view.findViewById(R.id.fragment_container_lista_atividades);
+		recyclerView = (RecyclerView) view.findViewById(R.id.fragment_demo_recycler_view_lista_atividades);
 		recyclerView.setHasFixedSize(true);
 		layoutManager = new LinearLayoutManager(getActivity());
 		recyclerView.setLayoutManager(layoutManager);
@@ -106,7 +111,7 @@ public class BottomNavigatorFragment extends Fragment {
 		layoutManager = new LinearLayoutManager(getActivity());
 		recyclerView.setLayoutManager(layoutManager);
 
-		ArrayList<String> itemsData = new ArrayList<>();
+		ArrayList<Atividades> itemsData = new ArrayList<>();
 
 		BottomNavigatorAdapter adapter = new BottomNavigatorAdapter(itemsData);
 		recyclerView.setAdapter(adapter);

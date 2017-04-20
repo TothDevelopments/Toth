@@ -12,13 +12,14 @@ import java.util.ArrayList;
 import java.util.Random;
 
 import br.com.tothprofessor.tothaluno.R;
+import br.com.tothprofessor.tothaluno.classes.Atividades;
 
 /**
  *
  */
 public class BottomNavigatorAdapter extends RecyclerView.Adapter<BottomNavigatorAdapter.ViewHolder> {
 
-	private ArrayList<String> mDataset = new ArrayList<>();
+	private ArrayList<Atividades> mDataset = new ArrayList<>();
 	private Boolean exibeListaGrupos = true;
 
 	public static class ViewHolder extends RecyclerView.ViewHolder {
@@ -26,19 +27,17 @@ public class BottomNavigatorAdapter extends RecyclerView.Adapter<BottomNavigator
 		public TextView mTextViewSubtitulo;
 		public TextView mTextViewDiasRestantes;
 		public ImageView mImageView;
-//		public LinearLayout mLinearLayout_lista_ativiade;
 
 		public ViewHolder(View v) {
 			super(v);
 			mTextViewTitulo = (TextView) v.findViewById(R.id.layout_item_titulo);
 			mTextViewSubtitulo = (TextView) v.findViewById(R.id.layout_item_subtitulo);
 			mTextViewDiasRestantes = (TextView) v.findViewById(R.id.layout_item_dias);
-			mImageView = (ImageView) v.findViewById(R.id.imageViewAtividade);
-//			mLinearLayout_lista_ativiade = (LinearLayout) v.findViewById(R.id.linear_layout_lista);
+			mImageView = (ImageView) v.findViewById(R.id.imageViewAtividadeListaAtividades);
 		}
 	}
 
-	public BottomNavigatorAdapter(ArrayList<String> dataset) {
+	public BottomNavigatorAdapter(ArrayList<Atividades> dataset) {
 		mDataset.clear();
 		exibeListaGrupos = true;
 		mDataset.addAll(dataset);
@@ -60,22 +59,19 @@ public class BottomNavigatorAdapter extends RecyclerView.Adapter<BottomNavigator
 
 	@Override
 	public void onBindViewHolder(ViewHolder holder, int position) {
-		if (mDataset.get(position) == "grupos") {
 
-		}else{
-			holder.mTextViewTitulo.setText(mDataset.get(position));
-			holder.mTextViewSubtitulo.setText("Descrição...");
-			holder.mTextViewDiasRestantes.setText("3 dias");
+		Atividades atividade = mDataset.get(position);
 
-			Random gerador = new Random();
-			int aux = gerador.nextInt(4);
-			if (aux == 1){
-				holder.mImageView.setImageResource(R.drawable.icon_atividade_tarefa);
-			} else if (aux == 2){
-				holder.mImageView.setImageResource(R.drawable.icon_atividade_trabalho);
-			} else if (aux == 3){
-				holder.mImageView.setImageResource(R.drawable.icon_atividade_prova);
-			}
+		holder.mTextViewTitulo.setText(atividade.getTitulo());
+		holder.mTextViewSubtitulo.setText(atividade.getConteudo());
+		holder.mTextViewDiasRestantes.setText(String.valueOf(atividade.getDataEntrega()));
+
+		if (atividade.getTipo() == 1){
+			holder.mImageView.setImageResource(R.drawable.icon_atividade_tarefa);
+		} else if (atividade.getTipo() == 2){
+			holder.mImageView.setImageResource(R.drawable.icon_atividade_trabalho);
+		} else if (atividade.getTipo() == 3){
+			holder.mImageView.setImageResource(R.drawable.icon_atividade_prova);
 		}
 	}
 
