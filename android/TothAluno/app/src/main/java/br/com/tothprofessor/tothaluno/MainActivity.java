@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
         toolbar = (Toolbar) findViewById(R.id.toolbar);
-        toolbar.setTitle("Nome do grupo");
+        toolbar.setTitle("Atividade");
         setSupportActionBar(toolbar);
 
 
@@ -155,18 +155,18 @@ public class MainActivity extends AppCompatActivity {
                 currentFragment.willBeDisplayed();
 
                 if (position == 0 ){
-//                    toolbar.setTitle("Atividade");
+                    toolbar.setTitle("Atividade");
 
                 } else if (position == 1) {
-//                    toolbar.setTitle("Agenda");
+                    toolbar.setTitle("Agenda");
                     bottomNavigation.setNotification("", 1);
 
                 } else if (position == 2) {
-//                    toolbar.setTitle("Conversas");
+                    toolbar.setTitle("Conversas");
                     bottomNavigation.setNotification("", 1);
 
                 } else if (position == 3) {
-//                    toolbar.setTitle("Opções");
+                    toolbar.setTitle("Opções");
                     bottomNavigation.setNotification("", 1);
 
                 }
