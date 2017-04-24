@@ -1,5 +1,6 @@
 package br.com.tothprofessor.tothaluno.libs;
 
+import android.app.PendingIntent;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -26,7 +27,6 @@ public class BottomNavigatorAdapter extends RecyclerView.Adapter<BottomNavigator
 		public TextView mTextViewSubtitulo;
 		public TextView mTextViewDiasRestantes;
 		public ImageView mImageView;
-//		public LinearLayout mLinearLayout_lista_ativiade;
 
 		public ViewHolder(View v) {
 			super(v);
@@ -34,7 +34,6 @@ public class BottomNavigatorAdapter extends RecyclerView.Adapter<BottomNavigator
 			mTextViewSubtitulo = (TextView) v.findViewById(R.id.layout_item_subtitulo);
 			mTextViewDiasRestantes = (TextView) v.findViewById(R.id.layout_item_dias);
 			mImageView = (ImageView) v.findViewById(R.id.imageViewAtividade);
-//			mLinearLayout_lista_ativiade = (LinearLayout) v.findViewById(R.id.linear_layout_lista);
 		}
 	}
 
