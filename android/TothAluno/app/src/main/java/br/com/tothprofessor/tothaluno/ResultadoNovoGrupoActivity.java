@@ -35,7 +35,7 @@ public class ResultadoNovoGrupoActivity extends AppCompatActivity {
 
         buttonConfirmarEntrarGrupo.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent intent = new Intent(ResultadoNovoGrupoActivity.this, MainActivity.class);
+                Intent intent = new Intent(ResultadoNovoGrupoActivity.this, MainActivity2.class);
                 startActivity(intent);
             }
         });

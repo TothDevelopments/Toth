@@ -8,7 +8,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
 
 /**
  * Created by kennedy on 11/02/17.
@@ -36,7 +35,7 @@ public class CadastrarEmailActivity extends AppCompatActivity {
 
         btEntrar.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent intent = new Intent(CadastrarEmailActivity.this, MainActivity.class);
+                Intent intent = new Intent(CadastrarEmailActivity.this, MainActivity2.class);
                 startActivity(intent);
             }
         });

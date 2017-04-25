@@ -22,7 +22,7 @@ import java.util.ArrayList;
 import br.com.tothprofessor.tothaluno.libs.BottomNavigatorFragment;
 import br.com.tothprofessor.tothaluno.libs.BottomNavigatorPagerAdapter;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity2 extends AppCompatActivity {
 
     private BottomNavigatorFragment currentFragment;
     private BottomNavigatorPagerAdapter adapter;
@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_main2);
 
         if(Build.VERSION.SDK_INT>=Build.VERSION_CODES.LOLLIPOP) {
             getWindow().setStatusBarColor(Color.parseColor("#0D47A1"));
@@ -188,8 +188,8 @@ public class MainActivity extends AppCompatActivity {
                 // Setting custom colors for notification
 //				AHNotification notification = new AHNotification.Builder()
 //						.setText(":)")
-//						.setBackgroundColor(ContextCompat.getColor(MainActivity.this, R.color.color_notification_back))
-//						.setTextColor(ContextCompat.getColor(MainActivity.this, R.color.color_notification_text))
+//						.setBackgroundColor(ContextCompat.getColor(MainActivity2.this, R.color.color_notification_back))
+//						.setTextColor(ContextCompat.getColor(MainActivity2.this, R.color.color_notification_text))
 //						.build();
 //				bottomNavigation.setNotification(notification, 1);
                 bottomNavigation.setNotification("3", 1);
@@ -205,7 +205,7 @@ public class MainActivity extends AppCompatActivity {
      * Reload activity
      */
     public void reload() {
-        startActivity(new Intent(this, MainActivity.class));
+        startActivity(new Intent(this, MainActivity2.class));
         finish();
     }
 

@@ -4,8 +4,8 @@
     android:id="@+id/content_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="br.com.tothprofessor.tothaluno.libs.MainActivityFragment"
-    tools:showIn="@layout/activity_main">
+    tools:context="br.com.tothprofessor.tothaluno.libs.MainActivityFragment2"
+    tools:showIn="@layout/activity_main2">
 
 
     <ScrollView

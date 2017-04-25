@@ -23,7 +23,7 @@
         </activity>
 
         <activity
-            android:name=".MainActivity"
+            android:name=".MainActivity2"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar">
@@ -33,7 +33,7 @@
         <activity
             android:name=".LoginActivity"
             android:label="Login"
-            android:parentActivityName=".MainActivity"
+            android:parentActivityName=".MainActivity2"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.NoActionBar">
 
@@ -58,11 +58,11 @@
         <activity
             android:name=".NotificacoesActivity"
             android:label="@string/title_activity_notificacao"
-            android:parentActivityName=".MainActivity"
+            android:parentActivityName=".MainActivity2"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="br.com.tothprofessor.tothaluno.MainActivity" />
+                android:value="br.com.tothprofessor.tothaluno.MainActivity2" />
         </activity>
 
         <activity
