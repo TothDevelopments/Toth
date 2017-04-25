@@ -52,7 +52,7 @@ public class BottomNavigatorFragment extends Fragment {
 //			initDemoList(view);
 //			return view;
 			return null;
-		}else {
+		} else {
 			View view = inflater.inflate(R.layout.fragment_opcoes, container, false);
 			initFragmentOpcoes(view);
 			return view;
