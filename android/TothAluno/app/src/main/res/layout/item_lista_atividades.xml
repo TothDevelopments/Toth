@@ -12,7 +12,6 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:paddingTop="5dp"
-        android:onClick="abrirAtividade"
         android:layout_height="65dp">
 
         <RelativeLayout
@@ -27,7 +26,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="16sp"
-                android:text="Lorem Ipsum é simples."
+                android:text="..."
                 android:textColor="#212121" />
 
             <TextView
@@ -35,7 +34,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="13sp"
-                android:text="Lorem Ipsum é simples."
+                android:text="..."
                 android:layout_below="@+id/layout_item_titulo"/>
 
 
@@ -44,7 +43,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="12sp"
-                android:text="5 dias"
+                android:text="..."
                 android:layout_alignParentTop="true"
                 android:layout_alignParentRight="true"
                 android:layout_alignParentEnd="true"/>
