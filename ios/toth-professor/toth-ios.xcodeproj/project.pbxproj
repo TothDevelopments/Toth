@@ -12,6 +12,8 @@
 		54351BFB1EA71C8700C96B3D /* ImageRow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54351BF81EA71C8700C96B3D /* ImageRow.framework */; };
 		54351C041EA722BA00C96B3D /* Eureka.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54351C021EA722BA00C96B3D /* Eureka.framework */; };
 		54351C051EA722BA00C96B3D /* FSCalendar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54351C031EA722BA00C96B3D /* FSCalendar.framework */; };
+		54351C081EAEB10B00C96B3D /* TextoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54351C071EAEB10B00C96B3D /* TextoCell.xib */; };
+		54351C0A1EAED2FA00C96B3D /* TextoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54351C091EAED2FA00C96B3D /* TextoCell.swift */; };
 		5439882E1E6E734E001A640C /* PerfilAlunoTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5439882D1E6E734E001A640C /* PerfilAlunoTVC.swift */; };
 		543988301E6F5F43001A640C /* NotasVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5439882F1E6F5F43001A640C /* NotasVC.swift */; };
 		543988341E6F7A77001A640C /* NotaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543988331E6F7A77001A640C /* NotaCell.swift */; };
@@ -57,6 +59,8 @@
 		54351BF81EA71C8700C96B3D /* ImageRow.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageRow.framework; path = Carthage/Build/iOS/ImageRow.framework; sourceTree = SOURCE_ROOT; };
 		54351C021EA722BA00C96B3D /* Eureka.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Eureka.framework; path = Carthage/Build/iOS/Eureka.framework; sourceTree = SOURCE_ROOT; };
 		54351C031EA722BA00C96B3D /* FSCalendar.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FSCalendar.framework; path = Carthage/Build/iOS/FSCalendar.framework; sourceTree = SOURCE_ROOT; };
+		54351C071EAEB10B00C96B3D /* TextoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TextoCell.xib; sourceTree = "<group>"; };
+		54351C091EAED2FA00C96B3D /* TextoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextoCell.swift; sourceTree = "<group>"; };
 		5439882D1E6E734E001A640C /* PerfilAlunoTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PerfilAlunoTVC.swift; sourceTree = "<group>"; };
 		5439882F1E6F5F43001A640C /* NotasVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotasVC.swift; sourceTree = "<group>"; };
 		543988331E6F7A77001A640C /* NotaCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotaCell.swift; sourceTree = "<group>"; };
@@ -114,6 +118,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		54351C061EAEB02700C96B3D /* CustomFields */ = {
+			isa = PBXGroup;
+			children = (
+				54351C071EAEB10B00C96B3D /* TextoCell.xib */,
+				54351C091EAED2FA00C96B3D /* TextoCell.swift */,
+			);
+			name = CustomFields;
+			sourceTree = "<group>";
+		};
 		544C22381E4A754C003B3914 = {
 			isa = PBXGroup;
 			children = (
@@ -151,6 +164,7 @@
 		544C22561E4A76FB003B3914 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				54351C061EAEB02700C96B3D /* CustomFields */,
 				54A984A21E54F46A00639B03 /* AtivAbertaCell.swift */,
 				544874FF1E58F22B00AF2F06 /* NotificacaoCell.swift */,
 				546556FA1E5E4F8800153996 /* AgendaCell.swift */,
@@ -283,6 +297,7 @@
 			files = (
 				544C224F1E4A754C003B3914 /* LaunchScreen.storyboard in Resources */,
 				54A984A11E53C6EB00639B03 /* Assets.xcassets in Resources */,
+				54351C081EAEB10B00C96B3D /* TextoCell.xib in Resources */,
 				544C224A1E4A754C003B3914 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -333,6 +348,7 @@
 				54F3A55A1E5CF0E400400937 /* AgendaVC.swift in Sources */,
 				546556FD1E5E509E00153996 /* Agenda.swift in Sources */,
 				54FECB881E6C65830047D00F /* AlunosVC.swift in Sources */,
+				54351C0A1EAED2FA00C96B3D /* TextoCell.swift in Sources */,
 				54A984A31E54F46A00639B03 /* AtivAbertaCell.swift in Sources */,
 				5479697F1EA13D16004CF804 /* EditarAtividadeTVC.swift in Sources */,
 				54ED45AF1E68F652007E2839 /* MaisCell.swift in Sources */,
