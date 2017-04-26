@@ -14,10 +14,17 @@
         android:layout_height="0dp"
         android:layout_weight="1">
 
+        <LinearLayout
+            android:id="@+id/ListTop"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="vertical"></LinearLayout>
+
         <ListView
             android:id="@+id/ListViewMain"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent"
+            android:layout_marginTop="100dp"/>
 
     </FrameLayout>
 
