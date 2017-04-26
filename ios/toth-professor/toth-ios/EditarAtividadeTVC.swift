@@ -9,39 +9,36 @@
 import UIKit
 import Eureka
 
+
 class EditarAtividadeTVC: FormViewController {
-
     override func viewDidLoad() {
-        super.viewDidLoad()
-
-        form +++ Section("Section1")
-            <<< TextRow(){ row in
-                row.title = "Text Row"
-                row.placeholder = "Enter text here"
-            }
-            <<< PhoneRow(){
-                $0.title = "Phone Row"
-                $0.placeholder = "And numbers here"
-            }
-            +++ Section("Section2")
-            <<< DateRow(){
-                $0.title = "Date Row"
-                $0.value = Date(timeIntervalSinceReferenceDate: 0)
-        }
-
-        self.navigationController?.isToolbarHidden = false
-
-        var items = [UIBarButtonItem]()
-        items.append(
-            UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: self, action: nil)
-        )
-        items.append(
-            UIBarButtonItem(barButtonSystemItem: .add, target: self, action: nil)
-        )
-        self.navigationController?.toolbar.items = items
         
+        super.viewDidLoad()
+        
+        form +++
+            MultivaluedSection(
+                multivaluedOptions: [.Reorder, .Insert, .Delete],
+                header: "Multivalued TextField",
+                footer: ".Insert multivaluedOption adds the 'Add New Tag' button row as last cell.") {
+                    $0.addButtonProvider = { section in
+                        return ButtonRow(){
+                            $0.title = "Nova Questão"
+                            }.cellUpdate { cell, row in
+                                cell.textLabel?.textAlignment = .left
+                        }
+                    }
+                    $0.multivaluedRowToInsertAt = { index in
+                        return ActionSheetRow<String>{
+                            $0.title = "Tap to select.."
+                            $0.options = ["Option 1", "Option 2", "Option 3", "Option 4", "Option 5"]
+                        }
+                    }
+                    
+        }
     }
-
-
-
+    
 }
+
+
+
+
