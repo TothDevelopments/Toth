@@ -12,8 +12,6 @@
 		54351BFB1EA71C8700C96B3D /* ImageRow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54351BF81EA71C8700C96B3D /* ImageRow.framework */; };
 		54351C041EA722BA00C96B3D /* Eureka.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54351C021EA722BA00C96B3D /* Eureka.framework */; };
 		54351C051EA722BA00C96B3D /* FSCalendar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54351C031EA722BA00C96B3D /* FSCalendar.framework */; };
-		54351C081EAEB10B00C96B3D /* TextoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54351C071EAEB10B00C96B3D /* TextoCell.xib */; };
-		54351C0A1EAED2FA00C96B3D /* TextoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54351C091EAED2FA00C96B3D /* TextoCell.swift */; };
 		5439882E1E6E734E001A640C /* PerfilAlunoTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5439882D1E6E734E001A640C /* PerfilAlunoTVC.swift */; };
 		543988301E6F5F43001A640C /* NotasVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5439882F1E6F5F43001A640C /* NotasVC.swift */; };
 		543988341E6F7A77001A640C /* NotaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543988331E6F7A77001A640C /* NotaCell.swift */; };
@@ -30,6 +28,8 @@
 		545758D51E8387940090424E /* DescAtividadeTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545758D41E8387940090424E /* DescAtividadeTVC.swift */; };
 		545758D71E83907F0090424E /* CodigoSalaTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545758D61E83907F0090424E /* CodigoSalaTVC.swift */; };
 		545758D91E839B3D0090424E /* LoginPadraoBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545758D81E839B3D0090424E /* LoginPadraoBtn.swift */; };
+		545974A21EB199D900024740 /* TextoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 545974A11EB199D900024740 /* TextoCell.xib */; };
+		545974A41EB199EE00024740 /* TextoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545974A31EB199EE00024740 /* TextoCell.swift */; };
 		546556FB1E5E4F8800153996 /* AgendaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546556FA1E5E4F8800153996 /* AgendaCell.swift */; };
 		546556FD1E5E509E00153996 /* Agenda.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546556FC1E5E509E00153996 /* Agenda.swift */; };
 		5479697F1EA13D16004CF804 /* EditarAtividadeTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5479697E1EA13D16004CF804 /* EditarAtividadeTVC.swift */; };
@@ -59,8 +59,6 @@
 		54351BF81EA71C8700C96B3D /* ImageRow.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageRow.framework; path = Carthage/Build/iOS/ImageRow.framework; sourceTree = SOURCE_ROOT; };
 		54351C021EA722BA00C96B3D /* Eureka.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Eureka.framework; path = Carthage/Build/iOS/Eureka.framework; sourceTree = SOURCE_ROOT; };
 		54351C031EA722BA00C96B3D /* FSCalendar.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FSCalendar.framework; path = Carthage/Build/iOS/FSCalendar.framework; sourceTree = SOURCE_ROOT; };
-		54351C071EAEB10B00C96B3D /* TextoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TextoCell.xib; sourceTree = "<group>"; };
-		54351C091EAED2FA00C96B3D /* TextoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextoCell.swift; sourceTree = "<group>"; };
 		5439882D1E6E734E001A640C /* PerfilAlunoTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PerfilAlunoTVC.swift; sourceTree = "<group>"; };
 		5439882F1E6F5F43001A640C /* NotasVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotasVC.swift; sourceTree = "<group>"; };
 		543988331E6F7A77001A640C /* NotaCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotaCell.swift; sourceTree = "<group>"; };
@@ -79,6 +77,8 @@
 		545758D41E8387940090424E /* DescAtividadeTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DescAtividadeTVC.swift; sourceTree = "<group>"; };
 		545758D61E83907F0090424E /* CodigoSalaTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CodigoSalaTVC.swift; sourceTree = "<group>"; };
 		545758D81E839B3D0090424E /* LoginPadraoBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginPadraoBtn.swift; sourceTree = "<group>"; };
+		545974A11EB199D900024740 /* TextoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TextoCell.xib; path = ../../../../../../.Trash/TextoCell.xib; sourceTree = "<group>"; };
+		545974A31EB199EE00024740 /* TextoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TextoCell.swift; path = ../../../../../../.Trash/TextoCell.swift; sourceTree = "<group>"; };
 		546556FA1E5E4F8800153996 /* AgendaCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgendaCell.swift; sourceTree = "<group>"; };
 		546556FC1E5E509E00153996 /* Agenda.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Agenda.swift; sourceTree = "<group>"; };
 		54795A411E5F991400DDE5D6 /* toth-ios-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "toth-ios-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
@@ -118,15 +118,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		54351C061EAEB02700C96B3D /* CustomFields */ = {
-			isa = PBXGroup;
-			children = (
-				54351C071EAEB10B00C96B3D /* TextoCell.xib */,
-				54351C091EAED2FA00C96B3D /* TextoCell.swift */,
-			);
-			name = CustomFields;
-			sourceTree = "<group>";
-		};
 		544C22381E4A754C003B3914 = {
 			isa = PBXGroup;
 			children = (
@@ -164,7 +155,7 @@
 		544C22561E4A76FB003B3914 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				54351C061EAEB02700C96B3D /* CustomFields */,
+				545974A51EB19C4000024740 /* CustomFields */,
 				54A984A21E54F46A00639B03 /* AtivAbertaCell.swift */,
 				544874FF1E58F22B00AF2F06 /* NotificacaoCell.swift */,
 				546556FA1E5E4F8800153996 /* AgendaCell.swift */,
@@ -215,6 +206,15 @@
 				543988661E7204E3001A640C /* Atividades.swift */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		545974A51EB19C4000024740 /* CustomFields */ = {
+			isa = PBXGroup;
+			children = (
+				545974A11EB199D900024740 /* TextoCell.xib */,
+				545974A31EB199EE00024740 /* TextoCell.swift */,
+			);
+			name = CustomFields;
 			sourceTree = "<group>";
 		};
 		54F3A55B1E5CF10C00400937 /* Frameworks */ = {
@@ -296,8 +296,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				544C224F1E4A754C003B3914 /* LaunchScreen.storyboard in Resources */,
+				545974A21EB199D900024740 /* TextoCell.xib in Resources */,
 				54A984A11E53C6EB00639B03 /* Assets.xcassets in Resources */,
-				54351C081EAEB10B00C96B3D /* TextoCell.xib in Resources */,
 				544C224A1E4A754C003B3914 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -339,6 +339,7 @@
 				54FECB901E6C9EC40047D00F /* MaisTVC.swift in Sources */,
 				540EE06B1E7A483E0034D0D2 /* AlunoPerfilCell.swift in Sources */,
 				54ED45CF1E692571007E2839 /* GrupoCell.swift in Sources */,
+				545974A41EB199EE00024740 /* TextoCell.swift in Sources */,
 				544874FE1E58EDB100AF2F06 /* Notificacao.swift in Sources */,
 				54AD2A491E4E80F300990611 /* EsqueciSenhaVC.swift in Sources */,
 				54AD2A4D1E4E87AF00990611 /* CadastroVC.swift in Sources */,
@@ -348,7 +349,6 @@
 				54F3A55A1E5CF0E400400937 /* AgendaVC.swift in Sources */,
 				546556FD1E5E509E00153996 /* Agenda.swift in Sources */,
 				54FECB881E6C65830047D00F /* AlunosVC.swift in Sources */,
-				54351C0A1EAED2FA00C96B3D /* TextoCell.swift in Sources */,
 				54A984A31E54F46A00639B03 /* AtivAbertaCell.swift in Sources */,
 				5479697F1EA13D16004CF804 /* EditarAtividadeTVC.swift in Sources */,
 				54ED45AF1E68F652007E2839 /* MaisCell.swift in Sources */,
