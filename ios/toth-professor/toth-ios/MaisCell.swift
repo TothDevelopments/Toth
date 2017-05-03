@@ -18,6 +18,7 @@ class MaisCell: UITableViewCell {
     @IBOutlet weak var imgNotas: UIImageView!
     @IBOutlet weak var imgAjuda: UIImageView!
     @IBOutlet weak var imgShare: UIImageView!
+    @IBOutlet weak var imgLancNotas: UIImageView!
    
     
     override func awakeFromNib() {
@@ -42,6 +43,9 @@ class MaisCell: UITableViewCell {
         
         imgShare.image = resizeImage(image: imgShare.image!, newWidth: 30)
         imgShare.layer.cornerRadius = 7
+        
+        imgLancNotas.image = resizeImage(image: imgLancNotas.image!, newWidth: 30)
+        imgLancNotas.layer.cornerRadius = 7
         
         
       

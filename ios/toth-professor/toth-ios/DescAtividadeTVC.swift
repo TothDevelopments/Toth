@@ -10,6 +10,14 @@ import UIKit
 
 class DescAtividadeTVC: UITableViewController {
 
+   
+    @IBAction func editarBtnPress(_ sender: Any) {
+      //  performSegue(withIdentifier: "editarAtividade", sender: self)
+//        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+//        let controller = storyboard.instantiateViewController(withIdentifier: "criarAtividade")
+//        self.present(controller, animated: true, completion: nil)
+
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -21,5 +29,4 @@ class DescAtividadeTVC: UITableViewController {
     override func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
         return 44
     }
-
 }
