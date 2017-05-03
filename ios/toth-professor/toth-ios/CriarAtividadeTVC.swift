@@ -25,7 +25,7 @@ class CriarAtividadeTVC: FormViewController  {
         if continuarBtn.tag == 1{
             print("plano de aula")
         } else{
-            performSegue(withIdentifier: "formularioAtividade", sender: nil)
+           // performSegue(withIdentifier: "formularioAtividade", sender: nil)
         }
         
     }

@@ -30,7 +30,7 @@
 		545758D91E839B3D0090424E /* LoginPadraoBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545758D81E839B3D0090424E /* LoginPadraoBtn.swift */; };
 		546556FB1E5E4F8800153996 /* AgendaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546556FA1E5E4F8800153996 /* AgendaCell.swift */; };
 		546556FD1E5E509E00153996 /* Agenda.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546556FC1E5E509E00153996 /* Agenda.swift */; };
-		5479697F1EA13D16004CF804 /* EditarAtividadeTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5479697E1EA13D16004CF804 /* EditarAtividadeTVC.swift */; };
+		54A7601E1EB94CAF00A667C4 /* LancamentoNotasVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A7601D1EB94CAF00A667C4 /* LancamentoNotasVC.swift */; };
 		54A984A11E53C6EB00639B03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54A984A01E53C6EB00639B03 /* Assets.xcassets */; };
 		54A984A31E54F46A00639B03 /* AtivAbertaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A984A21E54F46A00639B03 /* AtivAbertaCell.swift */; };
 		54A984A51E54F66E00639B03 /* TimelineVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A984A41E54F66E00639B03 /* TimelineVC.swift */; };
@@ -81,7 +81,7 @@
 		546556FA1E5E4F8800153996 /* AgendaCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgendaCell.swift; sourceTree = "<group>"; };
 		546556FC1E5E509E00153996 /* Agenda.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Agenda.swift; sourceTree = "<group>"; };
 		54795A411E5F991400DDE5D6 /* toth-ios-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "toth-ios-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
-		5479697E1EA13D16004CF804 /* EditarAtividadeTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditarAtividadeTVC.swift; sourceTree = "<group>"; };
+		54A7601D1EB94CAF00A667C4 /* LancamentoNotasVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LancamentoNotasVC.swift; sourceTree = "<group>"; };
 		54A984A01E53C6EB00639B03 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "toth-ios/Assets.xcassets"; sourceTree = "<group>"; };
 		54A984A21E54F46A00639B03 /* AtivAbertaCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AtivAbertaCell.swift; sourceTree = "<group>"; };
 		54A984A41E54F66E00639B03 /* TimelineVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineVC.swift; sourceTree = "<group>"; };
@@ -194,6 +194,7 @@
 				545758D61E83907F0090424E /* CodigoSalaTVC.swift */,
 				5479697E1EA13D16004CF804 /* EditarAtividadeTVC.swift */,
 				9290AAFD1EB94FC900D432F8 /* ChatAlunoVC.swift */,
+				54A7601D1EB94CAF00A667C4 /* LancamentoNotasVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -326,6 +327,7 @@
 				9290AB041EBA200700D432F8 /* Mensagens.swift in Sources */,
 				543988671E7204E3001A640C /* Atividades.swift in Sources */,
 				9221414C1E79F59900B2905C /* CriarAtividadeTVC.swift in Sources */,
+				54A7601E1EB94CAF00A667C4 /* LancamentoNotasVC.swift in Sources */,
 				546556FB1E5E4F8800153996 /* AgendaCell.swift in Sources */,
 				9290AB001EBA0BFA00D432F8 /* ChatCell.swift in Sources */,
 				545758CE1E832F1F0090424E /* EditarPerfilVC.swift in Sources */,
@@ -345,7 +347,6 @@
 				546556FD1E5E509E00153996 /* Agenda.swift in Sources */,
 				54FECB881E6C65830047D00F /* AlunosVC.swift in Sources */,
 				54A984A31E54F46A00639B03 /* AtivAbertaCell.swift in Sources */,
-				5479697F1EA13D16004CF804 /* EditarAtividadeTVC.swift in Sources */,
 				54ED45AF1E68F652007E2839 /* MaisCell.swift in Sources */,
 				544C22451E4A754C003B3914 /* AppDelegate.swift in Sources */,
 				54A984A51E54F66E00639B03 /* TimelineVC.swift in Sources */,
