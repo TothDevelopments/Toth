@@ -43,7 +43,6 @@ public class ListaGruposHorizontalAdapter extends BaseAdapter {
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-
         View item = convertView;
         Grupo grupo = grupos.get(position);
 
@@ -55,7 +54,7 @@ public class ListaGruposHorizontalAdapter extends BaseAdapter {
         ImageView imagem = (ImageView) item.findViewById(R.id.imagem_grupo);
 
         apelido.setText(grupo.getApelido());
-        imagem.setImageResource(R.drawable.ic_group);
+//        imagem.setImageResource(R.drawable.ic_group);
 
         return item;
     }

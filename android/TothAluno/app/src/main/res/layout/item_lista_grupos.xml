@@ -14,11 +14,11 @@
         android:src="@drawable/botao_linha_azul" />
 
     <TextView
+        android:id="@+id/apelido_grupo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:text="Nome grupo"
-        android:id="@+id/apelido_grupo"
         android:textColor="?attr/colorControlNormal"
         android:textSize="10sp" />
 
