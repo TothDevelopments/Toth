@@ -34,7 +34,7 @@ class TimelineVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
             
             let ativAberta = ativAbertas[indexPath.row]
             
-            cell.UpdateUI(AtivAbertaTimeline: ativAberta)
+            //cell.UpdateUI(AtivAbertaTimeline: ativAberta)
             
             return cell
             

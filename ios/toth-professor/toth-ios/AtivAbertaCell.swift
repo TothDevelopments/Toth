@@ -21,11 +21,11 @@ class AtivAbertaCell: UITableViewCell {
         // Initialization code
     }
 
-    func UpdateUI(AtivAbertaTimeline: AtivAbertaTimeline){
-        AtivPreviewImage.image = UIImage(named: AtivAbertaTimeline.ativImgPreview)
-        AtivTitulo.text = AtivAbertaTimeline.ativTitle
-        AtivResumo.text = AtivAbertaTimeline.ativDetails
-        AtivTimeLeft.text = AtivAbertaTimeline.ativTimeLeft
-    }
+//    func UpdateUI(AtivAbertaTimeline: AtivAbertaTimelinpe){
+//        AtivPreviewImage.image = UIImage(named: AtivAbertaTimeline.ativImgPreview)
+//        AtivTitulo.text = AtivAbertaTimeline.ativTitle
+//        AtivResumo.text = AtivAbertaTimeline.ativDetails
+//        AtivTimeLeft.text = AtivAbertaTimeline.ativTimeLeft
+//    }
 
 }
